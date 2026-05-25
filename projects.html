@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Проекты — B.A. Holding</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="projects.css" />
+  <script src="i18n.js" defer></script>
+</head>
+
+<body>
+
+  <div class="page-shell">
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a href="index.html" class="header__logo">
+        <img src="logo-dark.png" alt="B.A. Holding" />
+      </a>
+      <nav class="header__nav">
+        <a href="about.html" class="header__nav-link" data-i18n="nav.about">О компании</a>
+        <a href="projects.html" class="header__nav-link header__nav-link--active" data-i18n="nav.projects">Проекты</a>
+        <a href="investors.html" class="header__nav-link" data-i18n="nav.investors">Инвесторам</a>
+        <a href="career.html" class="header__nav-link" data-i18n="nav.career">Карьера</a>
+        <a href="news.html" class="header__nav-link" data-i18n="nav.news">Новости</a>
+        <a href="contacts.html" class="header__nav-link" data-i18n="nav.contacts">Контакты</a>
+      </nav>
+      <div class="lang-switch" role="group" aria-label="Language">
+        <button type="button" class="lang-switch__btn" data-lang-switch="ru">RU</button>
+        <button type="button" class="lang-switch__btn" data-lang-switch="uz">УЗ</button>
+      </div>
+      <a href="contacts.html#contact-form" class="btn btn--outline-blue btn--sm" data-i18n="nav.contact_btn">Связаться</a>
+      <button class="header__burger" aria-label="Меню" id="burgerBtn" data-i18n-attr="aria-label:nav.menu_aria"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="page-hero__bg">
+      <img src="assets/main/metallurgy.jpg" alt="" />
+    </div>
+    <div class="page-hero__overlay"></div>
+    <div class="page-hero__fade"></div>
+    <div class="container page-hero__content">
+      <nav class="breadcrumb">
+        <a href="index.html" class="breadcrumb__link" data-i18n="crumb.home">Главная</a>
+        <span class="breadcrumb__sep">/</span>
+        <span class="breadcrumb__current" data-i18n="crumb.projects">Проекты</span>
+      </nav>
+      <h1 class="page-hero__title"><span data-i18n="projects.hero.title_l1">Портфель</span><br><span data-i18n="projects.hero.title_l2">реализованных проектов</span></h1>
+    </div>
+  </section>
+
+  <!-- STATS BAR -->
+  <section class="proj-stats section-dark">
+    <div class="proj-stats__grid">
+      <div class="proj-stats__item">
+        <span class="proj-stats__number">11</span>
+        <span class="proj-stats__label">Предприятий в холдинге</span>
+      </div>
+      <div class="proj-stats__item">
+        <span class="proj-stats__number">$1 млрд+</span>
+        <span class="proj-stats__label">Годовой оборот</span>
+      </div>
+      <div class="proj-stats__item">
+        <span class="proj-stats__number">1 млн т+</span>
+        <span class="proj-stats__label">Металлопродукции в год</span>
+      </div>
+      <div class="proj-stats__item">
+        <span class="proj-stats__number">3 500+</span>
+        <span class="proj-stats__label">Сотрудников</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO GRID (02) -->
+  <section class="portfolio section-dark" id="portfolio">
+    <!-- <div class="portfolio__number">02</div> -->
+    <div class="container">
+      <div class="portfolio__header">
+        <div class="section-header__left">
+          <div class="section-label">
+            <span class="section-label__line"></span>
+            <span data-i18n="projects.portfolio.label">Все проекты</span>
+          </div>
+          <h2 class="section-heading" data-i18n="projects.portfolio.title">Портфель проектов</h2>
+        </div>
+      </div>
+
+      <!-- Cards grid -->
+      <div class="proj-grid" id="projGrid">
+
+        <a class="proj-card" href="project-nmz.html" data-cat="metallurgy" data-status="done">
+          <div class="proj-card__image-wrap">
+            <div class="proj-card__image" style="background-image: linear-gradient(135deg,rgba(14,28,66,0.5),rgba(8,18,46,0.65)), url('assets/img/projects/other/other (1).jpeg'); background-size: cover; background-position: center;"></div>
+          </div>
+          <div class="proj-card__body">
+            <span class="proj-card__cat">Металлургия</span>
+            <h3 class="proj-card__title">Наманганский металлургический завод (NMZ)</h3>
+            <p class="proj-card__desc">Один из крупнейших металлургических заводов холдинга. Производство арматурного периодического профиля и катанки для промышленности и строительства Узбекистана</p>
+            <div class="proj-card__meta">
+              <div class="proj-card__meta-row">
+                <span class="proj-card__meta-key">Наманганская обл., г. Чуст</span>
+                <span class="proj-card__meta-val">550 <span data-i18n="projects.meta.employees_short">сотр.</span></span>
+              </div>
+              <div class="proj-card__meta-row">
+                <span class="proj-card__meta-key" data-i18n="projects.meta.turnover">Оборот</span>
+                <span class="proj-card__meta-val">$200 млн</span>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a class="proj-card" href="project-tmz.html" data-cat="metallurgy" data-status="done">
+          <div class="proj-card__image-wrap">
+            <div class="proj-card__image" style="background-image: linear-gradient(135deg,rgba(14,28,66,0.5),rgba(8,18,46,0.65)), url('assets/img/projects/tmz/banner.JPG'); background-size: cover; background-position: center;"></div>
+          </div>
+          <div class="proj-card__body">
+            <span class="proj-card__cat">Металлургия</span>
+            <h3 class="proj-card__title">Таджикский металлургический завод</h3>
+            <p class="proj-card__desc">Таджикский металлургический завод — современное промышленное предприятие, специализирующееся на производстве арматуры, катанки и строительного металлопроката. З…</p>
+            <div class="proj-card__meta">
+              <div class="proj-card__meta-row">
+                <span class="proj-card__meta-key">Таджикистан, Согд, Гулистон</span>
+                <span class="proj-card__meta-val">350 <span data-i18n="projects.meta.employees_short">сотр.</span></span>
+              </div>
+              <div class="proj-card__meta-row">
+                <span class="proj-card__meta-key" data-i18n="projects.meta.turnover">Оборот</span>
+                <span class="proj-card__meta-val">50 млн долларов</span>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a class="proj-card" href="project-jmz.html" data-cat="metallurgy" data-status="done">
+          <div class="proj-card__image-wrap">
+            <div class="proj-card__image" style="background-image: linear-gradient(135deg,rgba(14,28,66,0.5),rgba(8,18,46,0.65)), url('assets/img/projects/jmz/banner.JPG'); background-size: cover; background-position: center;"></div>
+          </div>
+          <div class="proj-card__body">
+            <span class="proj-card__cat">Металлургия</span>
+            <h3 class="proj-card__title">Джизакский металлургический завод (JMZ)</h3>
+            <p class="proj-card__desc">Джизакский металлургический завод (JMZ) — современное предприятие, специализирующееся на производстве арматуры для строительной отрасли. Завод оснащён современн…</p>
+            <div class="proj-card__meta">
+              <div class="proj-card__meta-row">
+                <span class="proj-card__meta-key">Джизакская обл., г. Джизак</span>
+                <span class="proj-card__meta-val">250 <span data-i18n="projects.meta.employees_short">сотр.</span></span>
+              </div>
+              <div class="proj-card__meta-row">
+                <span class="proj-card__meta-key" data-i18n="projects.meta.turnover">Оборот</span>
+                <span class="proj-card__meta-val">150 млн долларов</span>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a class="proj-card" href="project-ba-chirchiq-metall.html" data-cat="metallurgy" data-status="done">
+          <div class="proj-card__image-wrap">
+            <div class="proj-card__image" style="background-image: linear-gradient(135deg,rgba(14,28,66,0.5),rgba(8,18,46,0.65)), url('assets/img/projects/chirchik-metall/banner.jpg'); background-size: cover; background-position: center;"></div>
+          </div>
+          <div class="proj-card__body">
+            <span class="proj-card__cat">Металлургия</span>
+            <h3 class="proj-card__title">Чирчикский металлургический завод BA Chirchiq Metall</h3>
+            <p class="proj-card__desc">BA Chirchiq Metall — современное промышленное предприятие, специализирующееся на производстве стальных шаров для строительных и промышленных нужд</p>
+            <div class="proj-card__meta">
+              <div class="proj-card__meta-row">
+                <span class="proj-card__meta-key">Ташкентская обл., г. Чирчик</span>
+                <span class="proj-card__meta-val">250 <span data-i18n="projects.meta.employees_short">сотр.</span></span>
+              </div>
+              <div class="proj-card__meta-row">
+                <span class="proj-card__meta-key" data-i18n="projects.meta.turnover">Оборот</span>
+                <span class="proj-card__meta-val">45 млн долларов</span>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a class="proj-card" href="project-emirate-steel.html" data-cat="metallurgy" data-status="done">
+          <div class="proj-card__image-wrap">
+            <div class="proj-card__image" style="background-image: linear-gradient(135deg,rgba(14,28,66,0.5),rgba(8,18,46,0.65)), url('assets/img/projects/other/other (6).jpeg'); background-size: cover; background-position: center;"></div>
+          </div>
+          <div class="proj-card__body">
+            <span class="proj-card__cat">Металлургия</span>
+            <h3 class="proj-card__title">Emirate Steel</h3>
+            <p class="proj-card__desc">Emirate Steel — современное металлургическое предприятие, специализирующееся на производстве металлопроката для строительных и промышленных проектов</p>
+            <div class="proj-card__meta">
+              <div class="proj-card__meta-row">
+                <span class="proj-card__meta-key">Джизакская обл., Бахмальский р-н</span>
+                <span class="proj-card__meta-val">250 <span data-i18n="projects.meta.employees_short">сотр.</span></span>
+              </div>
+              <div class="proj-card__meta-row">
+                <span class="proj-card__meta-key" data-i18n="projects.meta.turnover">Оборот</span>
+                <span class="proj-card__meta-val">50 млн долларов</span>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a class="proj-card" href="project-fuxin.html" data-cat="production" data-status="done">
+          <div class="proj-card__image-wrap">
+            <div class="proj-card__image" style="background-image: linear-gradient(135deg,rgba(14,28,66,0.5),rgba(8,18,46,0.65)), url('assets/img/projects/fuxin/banner.png'); background-size: cover; background-position: center;"></div>
+          </div>
+          <div class="proj-card__body">
+            <span class="proj-card__cat">Производство</span>
+            <h3 class="proj-card__title">Fu-xin</h3>
+            <p class="proj-card__desc">Fu-xin — современное предприятие, специализирующееся на производстве металлоконструкций и их горячем цинковании для защиты от коррозии</p>
+            <div class="proj-card__meta">
+              <div class="proj-card__meta-row">
+                <span class="proj-card__meta-key">Ташкент, Бектемирский р-н</span>
+                <span class="proj-card__meta-val">150 <span data-i18n="projects.meta.employees_short">сотр.</span></span>
+              </div>
+              <div class="proj-card__meta-row">
+                <span class="proj-card__meta-key" data-i18n="projects.meta.turnover">Оборот</span>
+                <span class="proj-card__meta-val">30 млн долларов</span>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a class="proj-card" href="project-china-house.html" data-cat="construction" data-status="done">
+          <div class="proj-card__image-wrap">
+            <div class="proj-card__image" style="background-image: linear-gradient(135deg,rgba(14,28,66,0.5),rgba(8,18,46,0.65)), url('assets/img/projects/china-house/banner.jpg'); background-size: cover; background-position: center;"></div>
+          </div>
+          <div class="proj-card__body">
+            <span class="proj-card__cat">Строительство</span>
+            <h3 class="proj-card__title">China House</h3>
+            <p class="proj-card__desc">China House — строительная компания, специализирующаяся на возведении современных жилых комплексов и коммерческой недвижимости</p>
+            <div class="proj-card__meta">
+              <div class="proj-card__meta-row">
+                <span class="proj-card__meta-key">Ташкент, Бектемирский р-н</span>
+                <span class="proj-card__meta-val">—</span>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a class="proj-card" href="project-tpp.html" data-cat="production" data-status="done">
+          <div class="proj-card__image-wrap">
+            <div class="proj-card__image" style="background-image: linear-gradient(135deg,rgba(14,28,66,0.5),rgba(8,18,46,0.65)), url('assets/img/projects/plast-polimer/banner.JPG'); background-size: cover; background-position: center;"></div>
+          </div>
+          <div class="proj-card__body">
+            <span class="proj-card__cat">Производство</span>
+            <h3 class="proj-card__title">Toshkent Plast Polimer</h3>
+            <p class="proj-card__desc">Toshkent Plast Polimer — промышленное предприятие, специализирующееся на выпуске картонной упаковки, пластмассовых изделий и полимерных компаундов</p>
+            <div class="proj-card__meta">
+              <div class="proj-card__meta-row">
+                <span class="proj-card__meta-key">Ташкент, ул. Олтин-Топган</span>
+                <span class="proj-card__meta-val">250 <span data-i18n="projects.meta.employees_short">сотр.</span></span>
+              </div>
+              <div class="proj-card__meta-row">
+                <span class="proj-card__meta-key" data-i18n="projects.meta.turnover">Оборот</span>
+                <span class="proj-card__meta-val">22 млн долларов</span>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a class="proj-card" href="project-ba-texnopark.html" data-cat="production" data-status="done">
+          <div class="proj-card__image-wrap">
+            <div class="proj-card__image" style="background-image: linear-gradient(135deg,rgba(14,28,66,0.5),rgba(8,18,46,0.65)), url('assets/img/projects/other/other (11).jpeg'); background-size: cover; background-position: center;"></div>
+          </div>
+          <div class="proj-card__body">
+            <span class="proj-card__cat">Производство</span>
+            <h3 class="proj-card__title">BA Texnopark (Wang Da Group)</h3>
+            <p class="proj-card__desc">BA Texnopark — промышленный технопарк, предоставляющий в аренду производственные и складские помещения для размещения предприятий различных отраслей</p>
+            <div class="proj-card__meta">
+              <div class="proj-card__meta-row">
+                <span class="proj-card__meta-key">Сырдарьинская обл., Хакикат</span>
+                <span class="proj-card__meta-val">более 1000 <span data-i18n="projects.meta.employees_short">сотр.</span></span>
+              </div>
+              <div class="proj-card__meta-row">
+                <span class="proj-card__meta-key" data-i18n="projects.meta.turnover">Оборот</span>
+                <span class="proj-card__meta-val">70 млн долларов</span>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a class="proj-card" href="project-awiner-agro.html" data-cat="agro" data-status="done">
+          <div class="proj-card__image-wrap">
+            <div class="proj-card__image" style="background-image: linear-gradient(135deg,rgba(14,28,66,0.5),rgba(8,18,46,0.65)), url('assets/img/projects/agro/banner.jpg'); background-size: cover; background-position: center;"></div>
+          </div>
+          <div class="proj-card__body">
+            <span class="proj-card__cat">Агрохимия</span>
+            <h3 class="proj-card__title">Awiner AGRО</h3>
+            <p class="proj-card__desc">Awiner AGRO — компания, специализирующаяся на производстве и поставке химических препаратов для защиты растений и повышения урожайности в сельском хозяйстве</p>
+            <div class="proj-card__meta">
+              <div class="proj-card__meta-row">
+                <span class="proj-card__meta-key">Ташкентская обл., Ахангаранский р-н</span>
+                <span class="proj-card__meta-val">—</span>
+              </div>
+              <div class="proj-card__meta-row">
+                <span class="proj-card__meta-key" data-i18n="projects.meta.turnover">Оборот</span>
+                <span class="proj-card__meta-val">10 млн долларов</span>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a class="proj-card" href="project-sirdarya-metal-construction.html" data-cat="production" data-status="done">
+          <div class="proj-card__image-wrap">
+            <div class="proj-card__image" style="background-image: linear-gradient(135deg,rgba(14,28,66,0.5),rgba(8,18,46,0.65)), url('assets/img/projects/other/other (16).jpeg'); background-size: cover; background-position: center;"></div>
+          </div>
+          <div class="proj-card__body">
+            <span class="proj-card__cat">Производство</span>
+            <h3 class="proj-card__title">Sirdarya Metal Construction</h3>
+            <p class="proj-card__desc">Sirdarya Metal Construction — современное предприятие, специализирующееся на производстве и монтаже металлических конструкций для строительных проектов различно…</p>
+            <div class="proj-card__meta">
+              <div class="proj-card__meta-row">
+                <span class="proj-card__meta-key">Сырдарьинская обл., Хакикат</span>
+                <span class="proj-card__meta-val">200 <span data-i18n="projects.meta.employees_short">сотр.</span></span>
+              </div>
+              <div class="proj-card__meta-row">
+                <span class="proj-card__meta-key" data-i18n="projects.meta.turnover">Оборот</span>
+                <span class="proj-card__meta-val">18 млн долларов</span>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a class="proj-card" href="project-shengli-steel.html" data-cat="metallurgy" data-status="done">
+          <div class="proj-card__image-wrap">
+            <div class="proj-card__image" style="background-image: linear-gradient(135deg,rgba(14,28,66,0.5),rgba(8,18,46,0.65)), url('assets/img/projects/other/other (21).jpeg'); background-size: cover; background-position: center;"></div>
+          </div>
+          <div class="proj-card__body">
+            <span class="proj-card__cat">Металлургия</span>
+            <h3 class="proj-card__title">Shengli Steel</h3>
+            <p class="proj-card__desc">Shengli Steel — промышленное предприятие, специализирующееся на переработке металлургического шлака и производстве вторичного сырья для металлургии и строительс</p>
+            <div class="proj-card__meta">
+              <div class="proj-card__meta-row">
+                <span class="proj-card__meta-key">Ташкентская обл., г. Бекабад</span>
+                <span class="proj-card__meta-val">150 <span data-i18n="projects.meta.employees_short">сотр.</span></span>
+              </div>
+              <div class="proj-card__meta-row">
+                <span class="proj-card__meta-key" data-i18n="projects.meta.turnover">Оборот</span>
+                <span class="proj-card__meta-val">15 млн долларов</span>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a class="proj-card" href="project-tai-chang-group.html" data-cat="metallurgy" data-status="done">
+          <div class="proj-card__image-wrap">
+            <div class="proj-card__image" style="background-image: linear-gradient(135deg,rgba(14,28,66,0.5),rgba(8,18,46,0.65)), url('assets/img/projects/other/other (26).jpeg'); background-size: cover; background-position: center;"></div>
+          </div>
+          <div class="proj-card__body">
+            <span class="proj-card__cat">Металлургия</span>
+            <h3 class="proj-card__title">Tai Chang Group</h3>
+            <p class="proj-card__desc">Tai Chang Group — современное металлургическое предприятие, специализирующееся на производстве крупногабаритного металлопроката из высоколегированных сталей для…</p>
+            <div class="proj-card__meta">
+              <div class="proj-card__meta-row">
+                <span class="proj-card__meta-key">Ташкентская обл., Ахангаранский р-н</span>
+                <span class="proj-card__meta-val">350 <span data-i18n="projects.meta.employees_short">сотр.</span></span>
+              </div>
+              <div class="proj-card__meta-row">
+                <span class="proj-card__meta-key" data-i18n="projects.meta.turnover">Оборот</span>
+                <span class="proj-card__meta-val">210 млн долларов</span>
+              </div>
+            </div>
+          </div>
+        </a>
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      </div>
+      <p class="portfolio__count" id="projCount">Всего 13 предприятий</p>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="contact-cta section-dark">
+    <div class="container">
+      <div class="contact-cta__inner">
+        <div class="section-label section-label--centered">
+          <span class="section-label__line"></span>
+          <span>Сотрудничество</span>
+          <span class="section-label__line"></span>
+        </div>
+        <h2 class="contact-cta__heading">Готовы обсудить ваш <span class="fw-bold">проект</span>?</h2>
+        <p class="contact-cta__desc">Мы открыты для новых партнёрств и совместных проектов. Свяжитесь с нашей командой
+          для обсуждения возможностей.</p>
+        <div style="display:flex;gap:20px;flex-wrap:wrap;justify-content:center">
+          <a href="index.html#contact" class="btn btn--blue">Связаться с нами</a>
+          <a href="investors.html" class="btn btn--outline">Инвесторам</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  </div><!-- /.page-shell -->
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__main">
+      <div class="container">
+        <div class="footer__grid">
+          <div class="footer__brand">
+            <a href="index.html" class="footer__logo">
+              <img src="logo-light.png" alt="B.A. Holding" />
+            </a>
+            <p class="footer__brand-desc" data-i18n="footer.brand_desc">Диверсифицированная холдинговая компания, управляющая проектами в сферах
+              строительства, промышленности и медиа с фокусом на стратегическое партнёрство с инвесторами.</p>
+            <div class="footer__socials">
+              <a href="#" class="footer__social" aria-label="Telegram">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <defs>
+                    <linearGradient id="tg-grad" x1="0.5" y1="0" x2="0.5" y2="1">
+                      <stop offset="0" stop-color="#37BBFE"/>
+                      <stop offset="1" stop-color="#007DBB"/>
+                    </linearGradient>
+                  </defs>
+                  <circle cx="12" cy="12" r="12" fill="url(#tg-grad)"/>
+                  <path d="M5.49 11.6 17.3 7.04c.55-.2 1.03.13.85.96L16.13 18.5c-.14.66-.54.82-1.09.51l-3.02-2.23-1.46 1.4c-.16.16-.3.3-.6.3l.21-3.05 5.55-5.01c.24-.21-.05-.33-.37-.13l-6.86 4.32-2.96-.92c-.64-.2-.66-.64.05-.95z" fill="#fff"/>
+                </svg>
+              </a>
+              <a href="#" class="footer__social" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <defs>
+                    <radialGradient id="ig-grad" cx="0.3" cy="1.05" r="1.1">
+                      <stop offset="0" stop-color="#FED576"/>
+                      <stop offset="0.26" stop-color="#F47133"/>
+                      <stop offset="0.61" stop-color="#BC3081"/>
+                      <stop offset="1" stop-color="#4C63D2"/>
+                    </radialGradient>
+                  </defs>
+                  <rect x="2" y="2" width="20" height="20" rx="5.5" fill="url(#ig-grad)"/>
+                  <circle cx="12" cy="12" r="4.2" fill="none" stroke="#fff" stroke-width="1.7"/>
+                  <circle cx="17.3" cy="6.7" r="1.15" fill="#fff"/>
+                </svg>
+              </a>
+              <a href="#" class="footer__social" aria-label="Facebook">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path d="M24 12c0-6.63-5.37-12-12-12S0 5.37 0 12c0 5.99 4.39 10.95 10.13 11.85v-8.38H7.08V12h3.05V9.36c0-3.01 1.79-4.67 4.53-4.67 1.31 0 2.69.23 2.69.23v2.96h-1.52c-1.49 0-1.96.93-1.96 1.88V12h3.33l-.53 3.47h-2.8v8.38C19.61 22.95 24 17.99 24 12z" fill="#1877F2"/>
+                  <path d="m16.67 15.47.53-3.47h-3.33V9.76c0-.95.47-1.88 1.96-1.88h1.52V4.92s-1.38-.23-2.69-.23c-2.74 0-4.53 1.66-4.53 4.67V12H7.08v3.47h3.05v8.38c.61.1 1.24.15 1.87.15s1.26-.05 1.87-.15v-8.38h2.8z" fill="#fff"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="footer__col">
+            <h4 class="footer__col-title" data-i18n="footer.col_info">Информация</h4>
+            <ul class="footer__links">
+              <li><a href="about.html" data-i18n="nav.about">О компании</a></li>
+              <li><a href="projects.html" data-i18n="nav.projects">Проекты</a></li>
+              <li><a href="investors.html" data-i18n="nav.investors">Инвесторам</a></li>
+              <li><a href="career.html" data-i18n="nav.career">Карьера</a></li>
+              <li><a href="news.html" data-i18n="nav.news">Новости</a></li>
+              <li><a href="contacts.html" data-i18n="nav.contacts">Контакты</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h4 class="footer__col-title" data-i18n="footer.col_contacts">Контакты</h4>
+            <ul class="footer__contacts">
+              <li><a href="mailto:info@baholding.com">info@baholding.com</a></li>
+              <li><a href="tel:+998999999999">+998 55 203 22 22</a></li>
+              <li data-i18n="footer.address">Узбекистан, Ташкент, 123456</li>
+            </ul>
+          </div>
+          <div class="footer__col footer__col--map">
+            <h4 class="footer__col-title" data-i18n="footer.col_map">Мы на карте</h4>
+            <div class="footer__map">
+              <iframe src="https://yandex.com/map-widget/v1/?ll=69.279737%2C41.311081&z=11&pt=69.279737%2C41.311081%2Cpm2rdm" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="B.A. Holding на карте"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <div class="footer__bottom-inner">
+          <p class="footer__copy" data-i18n="footer.copy">© 2026 B.A. Holding. Все права защищены.</p>
+          <div class="footer__legal">
+            <a href="#" data-i18n="footer.privacy">Политика конфиденциальности</a>
+            <a href="#" data-i18n="footer.terms">Условия использования</a>
+            <a href="#" data-i18n="footer.cookies">Политика cookies</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Header scroll
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => header.classList.toggle('header--scrolled', window.scrollY > 40));
+
+    // Burger
+    const burgerBtn = document.getElementById('burgerBtn');
+    const nav = document.querySelector('.header__nav');
+    burgerBtn.addEventListener('click', () => { nav.classList.toggle('header__nav--open'); });
+
+    // Filtering
+    let activeFilter = 'all';
+    let activeStatus = 'all';
+    const cards = Array.from(document.querySelectorAll('.proj-card'));
+    const countEl = document.getElementById('projCount');
+    const CARD_DUR = 0.32;
+
+    const hideCardInstant = card => {
+      if (window.gsap) gsap.killTweensOf(card);
+      card.style.display = 'none';
+      card.style.opacity = '';
+      card.style.transform = '';
+    };
+
+    const showCard = (card, delay = 0) => {
+      if (!window.gsap) { card.style.display = ''; return; }
+      card.style.display = '';
+      gsap.killTweensOf(card);
+      gsap.fromTo(card,
+        { opacity: 0, scale: 0.92, y: 8 },
+        { opacity: 1, scale: 1, y: 0, duration: CARD_DUR, ease: 'power2.out', delay,
+          clearProps: 'opacity,transform'
+        });
+    };
+
+    function applyFilters({ animate = false } = {}) {
+      const toHide = [];
+      const visibleCards = [];
+
+      cards.forEach(card => {
+        const catOk = activeFilter === 'all' || card.dataset.cat === activeFilter;
+        const statusOk = activeStatus === 'all' || card.dataset.status === activeStatus;
+        const show = catOk && statusOk;
+        const wasHidden = card.style.display === 'none';
+
+        if (show) {
+          visibleCards.push(card);
+        } else if (!wasHidden) {
+          toHide.push(card);
+        }
+      });
+
+      if (animate && window.gsap) {
+        toHide.forEach(hideCardInstant);
+        visibleCards.forEach((c, i) => showCard(c, i * 0.08));
+      } else {
+        toHide.forEach(c => { c.style.display = 'none'; });
+        visibleCards.forEach(c => { c.style.display = ''; });
+      }
+
+      const tpl = (window.i18n && window.i18n.T[window.i18n.getLang()]['projects.count_template'])
+        || 'Показано {visible} из {total} предприятий';
+      countEl.textContent = tpl.replace('{visible}', visibleCards.length).replace('{total}', cards.length);
+    }
+
+    document.querySelectorAll('[data-filter]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        if (btn.classList.contains('filter-btn--active')) return;
+        document.querySelectorAll('[data-filter]').forEach(b => b.classList.remove('filter-btn--active'));
+        btn.classList.add('filter-btn--active');
+        activeFilter = btn.dataset.filter;
+        applyFilters({ animate: true });
+      });
+    });
+
+    document.querySelectorAll('[data-status]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        if (btn.classList.contains('filter-btn--active')) return;
+        document.querySelectorAll('[data-status]').forEach(b => b.classList.remove('filter-btn--active'));
+        btn.classList.add('filter-btn--active');
+        activeStatus = btn.dataset.status;
+        applyFilters({ animate: true });
+      });
+    });
+
+    // Apply category filter from URL (?cat=metallurgy) — used by direction cards on the homepage.
+    (() => {
+      const validCats = ['metallurgy', 'construction', 'production', 'agro'];
+      const cat = new URLSearchParams(window.location.search).get('cat');
+      if (!cat || !validCats.includes(cat)) return;
+      activeFilter = cat;
+      document.querySelectorAll('[data-filter]').forEach(b => {
+        b.classList.toggle('filter-btn--active', b.dataset.filter === cat);
+      });
+      applyFilters();
+      const grid = document.getElementById('projGrid');
+      if (grid) grid.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    })();
+
+    document.addEventListener('i18n:change', () => applyFilters());
+
+    // Cards are now <a> elements — their href is per-project, no extra click handler needed.
+  </script>
+  <script src="modal.js"></script>
+
+  <!-- GSAP Animations -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="animations.js"></script>
+</body>
+
+</html>

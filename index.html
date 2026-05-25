@@ -1,0 +1,1475 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>B.A. Holding — Диверсифицированный холдинг</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="news.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="i18n.js" defer></script>
+</head>
+
+<body>
+
+  <div class="page-shell">
+
+  <!-- ===== HEADER ===== -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a href="#" class="header__logo">
+        <img src="logo-dark.png" alt="B.A. Holding" />
+      </a>
+      <nav class="header__nav">
+        <a href="about.html" class="header__nav-link" data-i18n="nav.about">О компании</a>
+        <a href="projects.html" class="header__nav-link" data-i18n="nav.projects">Проекты</a>
+        <a href="investors.html" class="header__nav-link" data-i18n="nav.investors">Инвесторам</a>
+        <a href="career.html" class="header__nav-link" data-i18n="nav.career">Карьера</a>
+        <a href="news.html" class="header__nav-link" data-i18n="nav.news">Новости</a>
+        <a href="contacts.html" class="header__nav-link" data-i18n="nav.contacts">Контакты</a>
+      </nav>
+      <div class="lang-switch" role="group" aria-label="Language">
+        <button type="button" class="lang-switch__btn" data-lang-switch="ru">RU</button>
+        <button type="button" class="lang-switch__btn" data-lang-switch="uz">УЗ</button>
+      </div>
+      <a href="contacts.html#contact-form" class="btn btn--outline-blue btn--sm" data-i18n="nav.contact_btn">Связаться</a>
+      <button class="header__burger" aria-label="Меню" id="burgerBtn" data-i18n-attr="aria-label:nav.menu_aria">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="hero__bg">
+      <video autoplay muted loop playsinline class="hero__bg-video">
+        <source src="main-video.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="hero__radial"></div>
+    <div class="hero__overlay"></div>
+    <div class="hero__fade"></div>
+    <div class="container hero__content">
+      <div class="hero__text">
+        <div class="section-label">
+          <span class="section-label__line"></span>
+          <span data-i18n="index.hero.label">Многопрофильный инвестиционный холдинг</span>
+        </div>
+        <h1 class="hero__heading" data-i18n="index.hero.heading">
+          Строим будущее через стратегическое видение
+        </h1>
+        <p class="hero__desc" data-i18n="index.hero.desc">
+          B.A. Holding объединяет 18 предприятий в сферах металлургии, строительства, девелопмента, агрохимии и
+          производства. Годовой оборот — свыше $1 млрд, более 4 000 сотрудников.
+        </p>
+        <div class="hero__actions">
+          <a href="#directions" class="btn btn--blue" data-i18n="index.hero.btn_directions">Направления</a>
+          <a href="#about" class="btn btn--outline-blue" data-i18n="index.hero.btn_more">Подробнее</a>
+        </div>
+      </div>
+    </div>
+    <div class="hero__scroll">
+      <span class="hero__scroll-text" data-i18n="index.hero.scroll">ВНИЗ</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="about section-dark" id="about">
+    <!-- <div class="about__number">01</div> -->
+    <div class="container">
+      <div class="section-label">
+        <span class="section-label__line"></span>
+        <span data-i18n="index.about.label">О компании</span>
+      </div>
+      <div class="about__grid">
+        <div class="about__image-wrap">
+          <img src="assets/main/office-main.png"
+            alt="О компании" class="about__image" loading="lazy" data-i18n-attr="alt:nav.about" />
+          <div class="about__image-corner"></div>
+        </div>
+        <div class="about__text-col">
+          <h2 class="about__heading">
+            <span data-i18n="about.who.heading_l1">Многопрофильный холдинг,</span><br />
+            <span data-i18n="about.who.heading_l2">основанный в 2007 году</span>
+          </h2>
+          <p class="about__para" data-i18n="index.about.para">
+            B.A. Holding — многопрофильный инвестиционный холдинг, объединяющий 18 предприятий в сферах тяжёлой
+            промышленности, металлургии, строительства, девелопмента, агрохимии и производства пластиковой продукции.
+            Холдинг реализует проекты полного цикла — от инициации и инвестирования до операционного управления и
+            масштабирования. География присутствия охватывает ключевые регионы Узбекистана и Республику Таджикистан. Холдинг имеет
+            успешный опыт запуска greenfield-проектов и создания совместных предприятий с китайскими партнёрами.
+          </p>
+          <a href="#" class="link-arrow">
+            <span data-i18n="index.about.more">Узнать больше о нас</span>
+            <img src="https://www.figma.com/api/mcp/asset/e38e75d9-665e-406e-adaa-4315eff09171" alt="" />
+          </a>
+        </div>
+      </div>
+      <div class="stats">
+        <div class="stats__item">
+          <span class="stats__number">$1 млрд+</span>
+          <span class="stats__label" data-i18n="index.stats.turnover">Годовой оборот</span>
+        </div>
+        <div class="stats__item">
+          <span class="stats__number">18</span>
+          <span class="stats__label" data-i18n="index.stats.enterprises">Предприятий в холдинге</span>
+        </div>
+        <div class="stats__item">
+          <span class="stats__number">5 000+</span>
+          <span class="stats__label" data-i18n="index.stats.employees">Сотрудников</span>
+        </div>
+        <div class="stats__item">
+          <span class="stats__number">2007</span>
+          <span class="stats__label" data-i18n="index.stats.founded">Год основания</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== DIRECTIONS ===== -->
+  <section class="directions section-dark" id="directions">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-header__left">
+          <div class="section-label">
+            <span class="section-label__line"></span>
+            <span data-i18n="index.directions.label">Направления бизнеса</span>
+          </div>
+          <h2 class="section-heading" data-i18n="index.directions.title">Ключевые сферы деятельности</h2>
+        </div>
+        <a href="#" class="link-arrow">
+          <span data-i18n="index.directions.all">Все направления</span>
+          <img src="https://www.figma.com/api/mcp/asset/e38e75d9-665e-406e-adaa-4315eff09171" alt="" />
+        </a>
+      </div>
+      <ul class="directions__grid">
+        <li class="direction-card" data-anim="left">
+          <a href="projects.html?cat=metallurgy">
+            <img src="assets/main/metallurgy.jpg"
+              alt="Металлургия" class="direction-card__img" loading="lazy" data-i18n-attr="alt:projects.filter_metallurgy" />
+            <span class="direction-card__overlay"></span>
+            <span class="direction-card__content">
+              <span class="direction-card__sector">BA METAL</span>
+              <span class="direction-card__title" data-i18n="projects.filter_metallurgy">Металлургия</span>
+              <span class="direction-card__btn"><span data-i18n="index.directions.go">Перейти</span></span>
+            </span>
+          </a>
+        </li>
+        <li class="direction-card" data-anim="down">
+          <a href="projects.html?cat=construction">
+            <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1400&q=80"
+              alt="Строительство" class="direction-card__img" loading="lazy" data-i18n-attr="alt:projects.filter_construction" />
+            <span class="direction-card__overlay"></span>
+            <span class="direction-card__content">
+              <span class="direction-card__sector">BA BUILD</span>
+              <span class="direction-card__title" data-i18n="projects.filter_construction">Строительство</span>
+              <span class="direction-card__btn"><span data-i18n="index.directions.go">Перейти</span></span>
+            </span>
+          </a>
+        </li>
+        <li class="direction-card" data-anim="up">
+          <a href="projects.html?cat=production">
+            <img src="https://images.unsplash.com/photo-1488972685288-c3fd157d7c7a?auto=format&fit=crop&w=1200&q=80"
+              alt="Производство" class="direction-card__img" loading="lazy" data-i18n-attr="alt:projects.filter_production" />
+            <span class="direction-card__overlay"></span>
+            <span class="direction-card__content">
+              <span class="direction-card__sector">BA PROD</span>
+              <span class="direction-card__title" data-i18n="projects.filter_production">Производство</span>
+              <span class="direction-card__btn"><span data-i18n="index.directions.go">Перейти</span></span>
+            </span>
+          </a>
+        </li>
+        <li class="direction-card" data-anim="right">
+          <a href="projects.html?cat=agro">
+            <img src="https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&w=1200&q=80"
+              alt="Агрохимия" class="direction-card__img" loading="lazy" data-i18n-attr="alt:projects.filter_agro" />
+            <span class="direction-card__overlay"></span>
+            <span class="direction-card__content">
+              <span class="direction-card__sector">BA CHEM</span>
+              <span class="direction-card__title" data-i18n="projects.filter_agro">Агрохимия</span>
+              <span class="direction-card__btn"><span data-i18n="index.directions.go">Перейти</span></span>
+            </span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== ADVANTAGES ===== -->
+  <section class="advantages section-dark" id="advantages" style="display: none;">
+    <!-- <div class="advantages__number">03</div> -->
+    <div class="container">
+      <div class="section-header">
+        <div class="section-header__left">
+          <div class="section-label">
+            <span class="section-label__line"></span>
+            <span data-i18n="index.adv.label">Почему B.A. Holding</span>
+          </div>
+          <h2 class="section-heading">Наши конкурентные <span class="fw-semibold" data-i18n="index.adv.heading_p2">преимущества</span></h2>
+        </div>
+        <a href="#about" class="link-arrow">
+          О компании
+          <img src="https://www.figma.com/api/mcp/asset/e38e75d9-665e-406e-adaa-4315eff09171" alt="" />
+        </a>
+      </div>
+      <div class="advantages__grid">
+        <div class="advantage-card">
+          <div class="advantage-card__icon-wrap">
+            <img src="https://www.figma.com/api/mcp/asset/d8367c5b-bbab-4c6c-9a7c-deae7549103d" alt=""
+              class="advantage-card__icon" />
+          </div>
+          <h3 class="advantage-card__title" data-i18n="index.adv.c1.title">Управление проектами</h3>
+          <p class="advantage-card__text" data-i18n="index.adv.c1.text">Комплексное сопровождение сложных проектов от концепции до завершения с
+            соблюдением сроков, бюджетов и стандартов качества.</p>
+        </div>
+        <div class="advantage-card">
+          <div class="advantage-card__icon-wrap">
+            <img src="https://www.figma.com/api/mcp/asset/f0a5deb5-2b4a-4e71-a3a4-c557d53f5b3c" alt=""
+              class="advantage-card__icon" />
+          </div>
+          <h3 class="advantage-card__title" data-i18n="index.adv.c2.title">Работа с инвесторами</h3>
+          <p class="advantage-card__text" data-i18n="index.adv.c2.text">Прозрачные и структурированные партнёрства с инвесторами, включающие детальную
+            отчётность, общее видение и согласованные стратегические цели.</p>
+        </div>
+        <div class="advantage-card">
+          <div class="advantage-card__icon-wrap">
+            <img src="https://www.figma.com/api/mcp/asset/e4fe820d-9dcf-4f0c-9210-3dae3c275541" alt=""
+              class="advantage-card__icon" />
+          </div>
+          <h3 class="advantage-card__title" data-i18n="index.adv.c3.title">Диверсифицированная структура</h3>
+          <p class="advantage-card__text" data-i18n="index.adv.c3.text">Мультисекторный портфель, балансирующий риски и возможности в строительной,
+            промышленной и медиа-вертикалях бизнеса.</p>
+        </div>
+        <div class="advantage-card">
+          <div class="advantage-card__icon-wrap">
+            <img src="https://www.figma.com/api/mcp/asset/15ac3dbf-f971-46d7-9858-5a4b9a9f347d" alt=""
+              class="advantage-card__icon" />
+          </div>
+          <h3 class="advantage-card__title" data-i18n="index.adv.c4.title">Устойчивый рост</h3>
+          <p class="advantage-card__text" data-i18n="index.adv.c4.text">Долгосрочное стратегическое планирование, ориентированное на ответственное
+            развитие, операционную эффективность и стабильное создание стоимости.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section class="projects section-dark" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-header__left">
+          <div class="section-label">
+            <span class="section-label__line"></span>
+            <span data-i18n="index.proj.label">Наши проекты</span>
+          </div>
+          <h2 class="section-heading">Реализованные <span class="fw-semibold" data-i18n="index.proj.heading_p2">работы</span></h2>
+        </div>
+        <a href="projects.html" class="link-arrow">
+          Все проекты
+          <img src="https://www.figma.com/api/mcp/asset/e38e75d9-665e-406e-adaa-4315eff09171" alt="" />
+        </a>
+      </div>
+      <div class="projects-slider">
+        <div class="projects-swiper-wrap">
+        <div class="swiper projects-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="project-card">
+                <div class="project-card__info">
+                  <span class="project-card__category" data-i18n="index.proj.cat1">Строительство · Коммерческая недвижимость</span>
+                  <h3 class="project-card__title">Бизнес-центр<br />«Ривер-сайд»</h3>
+                  <p class="project-card__desc">
+                    Знаковый коммерческий проект, сочетающий современную архитектуру с устойчивыми инженерными
+                    решениями.
+                    Комплекс площадью 45 000 кв.м включает офисные помещения класса А, торговые площади и
+                    интегрированную
+                    «зелёную» инфраструктуру с сертификацией BREEAM Excellent.
+                  </p>
+                  <div class="project-card__actions">
+                    <a href="#" class="btn btn--blue btn--sm" data-i18n="index.proj.more">Смотреть проект</a>
+                    <a href="#" class="link-arrow link-arrow--sm">
+                      Детали проекта
+                      <img src="https://www.figma.com/api/mcp/asset/40cb8210-7453-4c77-9864-702b830e6c0c" alt="" />
+                    </a>
+                  </div>
+                </div>
+                <div class="project-card__image-wrap">
+                  <img src="https://images.unsplash.com/photo-1582407947304-fd86f028f716?auto=format&fit=crop&w=1400&q=80"
+                    alt="Бизнес-центр Ривер-сайд" class="project-card__image" loading="lazy" />
+                  <div class="project-card__image-gradient"></div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="project-card">
+                <div class="project-card__info">
+                  <span class="project-card__category" data-i18n="index.proj.cat2">Металлургия</span>
+                  <h3 class="project-card__title">Namangan<br />Metallurgiya Zavodi</h3>
+                  <p class="project-card__desc">
+                    Производство металлопроката для отраслей промышленности и строительства: арматурный периодический
+                    профиль и катанка.
+                    Один из ключевых металлургических заводов холдинга с годовым оборотом $195–200 млн.
+                  </p>
+                  <div class="project-card__actions">
+                    <a href="#" class="btn btn--blue btn--sm" data-i18n="index.proj.more">Смотреть проект</a>
+                    <a href="#" class="link-arrow link-arrow--sm">
+                      Детали проекта
+                      <img src="https://www.figma.com/api/mcp/asset/40cb8210-7453-4c77-9864-702b830e6c0c" alt="" />
+                    </a>
+                  </div>
+                </div>
+                <div class="project-card__image-wrap">
+                  <img src="https://images.unsplash.com/photo-1565620731358-8ab5cfb9a5d2?auto=format&fit=crop&w=1400&q=80"
+                    alt="NMZ" class="project-card__image" loading="lazy" />
+                  <div class="project-card__image-gradient"></div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="project-card">
+                <div class="project-card__info">
+                  <span class="project-card__category" data-i18n="index.proj.cat3">Строительство и девелопмент</span>
+                  <h3 class="project-card__title">China House<br />Construction Company</h3>
+                  <p class="project-card__desc">
+                    Проектирование, строительство и реализация жилых и коммерческих объектов с использованием передовых
+                    китайских технологий.
+                    Уже завершено 7 объектов общей площадью 250 000 кв.м.
+                  </p>
+                  <div class="project-card__actions">
+                    <a href="#" class="btn btn--blue btn--sm" data-i18n="index.proj.more">Смотреть проект</a>
+                    <a href="#" class="link-arrow link-arrow--sm">
+                      Детали проекта
+                      <img src="https://www.figma.com/api/mcp/asset/40cb8210-7453-4c77-9864-702b830e6c0c" alt="" />
+                    </a>
+                  </div>
+                </div>
+                <div class="project-card__image-wrap">
+                  <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1400&q=80"
+                    alt="China House" class="project-card__image" loading="lazy" />
+                  <div class="project-card__image-gradient"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- ===== INVESTORS ===== -->
+  <section class="investors section-dark" id="investors" style="display: none;">
+    <!-- <div class="investors__number">05</div> -->
+    <div class="container">
+    <div class="investors__grid">
+      <div class="investors__image-col">
+        <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=1400&q=80"
+          alt="Инвесторы" class="investors__image" loading="lazy" />
+        <div class="investors__image-overlay"></div>
+      </div>
+      <div class="investors__content">
+        <div class="section-label">
+          <span class="section-label__line"></span>
+          <span data-i18n="index.inv.label">Отношения с инвесторами</span>
+        </div>
+        <h2 class="investors__heading">
+          Стратегические <span class="fw-semibold" data-i18n="index.inv.heading_p2">партнёрства</span><br />
+          для долгосрочного роста
+        </h2>
+        <p class="investors__para" data-i18n="index.inv.para1">
+          B.A. Holding поддерживает прозрачные и структурированные отношения со своими инвесторами. Мы ставим во главу
+          угла открытую коммуникацию, детальную отчётность и общее стратегическое видение для обеспечения взаимного
+          успеха.
+        </p>
+        <p class="investors__para" data-i18n="index.inv.para2">
+          Наша система работы с инвесторами построена на доверии, ответственности и приверженности устойчивому созданию
+          стоимости. Мы приглашаем партнёров, разделяющих наше видение ответственного развития и долгосрочного роста
+          бизнеса.
+        </p>
+        <div class="investors__features">
+          <div class="investors__feature">
+            <span class="investors__feature-dot"></span>
+            <span data-i18n="index.inv.p1">Прозрачная отчётность</span>
+          </div>
+          <div class="investors__feature">
+            <span class="investors__feature-dot"></span>
+            <span data-i18n="index.inv.p2">Стратегическое согласование</span>
+          </div>
+          <div class="investors__feature">
+            <span class="investors__feature-dot"></span>
+            <span data-i18n="index.inv.p3">Управление рисками</span>
+          </div>
+          <div class="investors__feature">
+            <span class="investors__feature-dot"></span>
+            <span data-i18n="index.inv.p4">Долгосрочное видение</span>
+          </div>
+        </div>
+        <a href="#contact" class="btn btn--blue btn--sm" data-i18n="index.inv.cta">Стать партнёром</a>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- ===== GEOGRAPHY (Interactive Map) ===== -->
+  <section class="geography section-dark" id="geography">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-header__left">
+          <div class="section-label">
+            <span class="section-label__line"></span>
+            <span data-i18n="index.geo.label">География присутствия</span>
+          </div>
+          <h2 class="section-heading">Наши офисы и <span class="fw-semibold" data-i18n="index.geo.heading_p2">производственные площадки</span></h2>
+        </div>
+        <a href="contacts.html" class="link-arrow">
+          Все контакты
+          <img src="https://www.figma.com/api/mcp/asset/e38e75d9-665e-406e-adaa-4315eff09171" alt="" />
+        </a>
+      </div>
+
+      <div class="geography__grid">
+        <!-- ===== MAP ===== -->
+        <div class="geography__map-wrap">
+          <div class="geography__map-glow"></div>
+
+          <div class="geography__map-frame">
+            <img src="assets/main/uzb+tjk.svg" alt="Карта Узбекистана и Таджикистана" class="geography__map-img" />
+
+            <button type="button" class="geography__pin geography__pin--main is-active" data-city="tashkent" style="--x: 68%; --y: 49%;" aria-label="Офисы в Ташкенте">
+              <span class="geography__pin-inner">
+                <span class="geography__pin-pulse"></span>
+                <span class="geography__pin-pulse geography__pin-pulse--2"></span>
+                <span class="geography__pin-core"></span>
+                <span class="geography__pin-dot"></span>
+              </span>
+              <span class="geography__pin-label" data-i18n="index.geo.pin.tashkent">Ташкент</span>
+            </button>
+
+            <button type="button" class="geography__pin" data-city="chirchiq" style="--x: 70%; --y: 43%;" aria-label="BA Chirchiq Metall, Чирчик">
+              <span class="geography__pin-inner">
+                <span class="geography__pin-pulse"></span>
+                <span class="geography__pin-core"></span>
+                <span class="geography__pin-dot"></span>
+              </span>
+              <span class="geography__pin-label" data-i18n="index.geo.pin.chirchiq">Чирчик</span>
+            </button>
+
+            <button type="button" class="geography__pin" data-city="ahangaran" style="--x: 77%; --y: 55%;" aria-label="Производственный кластер в Ахангаране">
+              <span class="geography__pin-inner">
+                <span class="geography__pin-pulse"></span>
+                <span class="geography__pin-core"></span>
+                <span class="geography__pin-dot"></span>
+              </span>
+              <span class="geography__pin-label" data-i18n="index.geo.pin.ahangaran">Ахангаран</span>
+            </button>
+
+            <button type="button" class="geography__pin" data-city="bekabad" style="--x: 76%; --y: 58%;" aria-label="Shengli Steel, Бекабад">
+              <span class="geography__pin-inner">
+                <span class="geography__pin-pulse"></span>
+                <span class="geography__pin-core"></span>
+                <span class="geography__pin-dot"></span>
+              </span>
+              <span class="geography__pin-label" data-i18n="index.geo.pin.bekabad">Бекабад</span>
+            </button>
+
+            <button type="button" class="geography__pin" data-city="chust" style="--x: 78%; --y: 50%;" aria-label="NMZ, Чустский район">
+              <span class="geography__pin-inner">
+                <span class="geography__pin-pulse"></span>
+                <span class="geography__pin-core"></span>
+                <span class="geography__pin-dot"></span>
+              </span>
+              <span class="geography__pin-label" data-i18n="index.geo.pin.chust">Чуст</span>
+            </button>
+
+            <button type="button" class="geography__pin" data-city="sirdaryo" style="--x: 66%; --y: 55%;" aria-label="Кластер в Сырдарьинской области">
+              <span class="geography__pin-inner">
+                <span class="geography__pin-pulse"></span>
+                <span class="geography__pin-core"></span>
+                <span class="geography__pin-dot"></span>
+              </span>
+              <span class="geography__pin-label" data-i18n="index.geo.pin.sirdaryo">Сырдарья</span>
+            </button>
+
+            <button type="button" class="geography__pin geography__pin--label-left" data-city="jizzakh" style="--x: 58%; --y: 60%;" aria-label="JMZ и Emirate Steel, Джизак">
+              <span class="geography__pin-inner">
+                <span class="geography__pin-pulse"></span>
+                <span class="geography__pin-core"></span>
+                <span class="geography__pin-dot"></span>
+              </span>
+              <span class="geography__pin-label" data-i18n="index.geo.pin.jizzakh">Джизак</span>
+            </button>
+
+            <button type="button" class="geography__pin" data-city="sogd" style="--x: 74%; --y: 67%;" aria-label="TMZ, Согдийская область, Таджикистан">
+              <span class="geography__pin-inner">
+                <span class="geography__pin-pulse"></span>
+                <span class="geography__pin-core"></span>
+                <span class="geography__pin-dot"></span>
+              </span>
+              <span class="geography__pin-label" data-i18n="index.geo.pin.sogd">Гулистон</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Info panel -->
+        <div class="geography__panel">
+          <div class="geography__panel-card" id="cityCard">
+            <button type="button" class="geography__panel-back" data-back hidden>
+              <svg viewBox="0 0 16 16" aria-hidden="true">
+                <path d="M13 8H3M7 4L3 8l4 4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span data-back-label>К офисам Ташкента</span>
+            </button>
+            <div class="geography__panel-head">
+              <div>
+                <span class="geography__panel-tag" data-tag>Главный офис</span>
+                <h3 class="geography__panel-title" data-title>Ташкент</h3>
+              </div>
+              <img class="geography__panel-logo" src="logo-light.png" alt="B.A. Holding" />
+            </div>
+            <p class="geography__panel-desc" data-desc>
+              Многопрофильная инвестиционная компания. Координация всех бизнес-направлений холдинга — строительство, металлургия, производство, агросектор, IT.
+            </p>
+
+            <ul class="geography__panel-offices" data-offices hidden></ul>
+
+            <ul class="geography__panel-list">
+              <li>
+                <span class="geography__panel-key" data-i18n="index.geo.panel.address">Адрес</span>
+                <span class="geography__panel-val" data-address>Ташкент, Мирзо-Улугбекский район, ул. Мухаммада Юсуфа, 17А</span>
+              </li>
+              <li>
+                <span class="geography__panel-key" data-i18n="index.geo.panel.phone">Телефон</span>
+                <a class="geography__panel-val geography__panel-link" data-phone-href href="tel:+998555032222"><span data-phone>+998 55 503 22 22</span></a>
+              </li>
+              <li>
+                <span class="geography__panel-key" data-i18n="index.geo.panel.email">Email</span>
+                <a class="geography__panel-val geography__panel-link" data-email-href href="mailto:guzal.tojimirzaeva@baholding.uz"><span data-email>guzal.tojimirzaeva@baholding.uz</span></a>
+              </li>
+              <li>
+                <span class="geography__panel-key" data-i18n="index.geo.panel.hours">Часы работы</span>
+                <span class="geography__panel-val" data-hours>Пн–Пт · 09:00–18:00</span>
+              </li>
+              <li>
+                <span class="geography__panel-key" data-i18n="index.geo.panel.emp">Сотрудников</span>
+                <span class="geography__panel-val" data-employees>5000+</span>
+              </li>
+              <li>
+                <span class="geography__panel-key" data-i18n="index.geo.panel.sec">Направления</span>
+                <span class="geography__panel-val" data-sectors>Управление · Инвестиции · Промышленность</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== NEWS ===== -->
+  <section class="news-home section-dark" id="news">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-header__left">
+          <div class="section-label">
+            <span class="section-label__line"></span>
+            <span data-i18n="index.news.label">Новости</span>
+          </div>
+        </div>
+        <a href="news.html" class="link-arrow">
+          Все новости
+          <img src="https://www.figma.com/api/mcp/asset/e38e75d9-665e-406e-adaa-4315eff09171" alt="" />
+        </a>
+      </div>
+
+      <div class="news-home__slider">
+        <div class="swiper news-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <article class="news-card">
+                <div class="news-card__image-wrap">
+                  <div class="news-card__image news-card__image--1"></div>
+                  <span class="news-cat news-cat--company">Компания</span>
+                </div>
+                <div class="news-card__body">
+                  <div class="news-card__meta">
+                    <time datetime="2026-04-10">10 апреля 2026</time>
+                    <span>5 мин</span>
+                  </div>
+                  <h3 class="news-card__title">B.A. Holding достиг годового оборота свыше $1 млрд — рекорд за всю историю холдинга</h3>
+                  <p class="news-card__excerpt">По итогам 2025 года совокупный годовой оборот B.A. Holding впервые превысил отметку в $1 млрд за счёт металлургических активов и расширения строительного дивизиона.</p>
+                  <a href="news-item.html" class="news-card__link">
+                    Подробнее
+                    <svg viewBox="0 0 16 16" aria-hidden="true">
+                      <path d="M3 8h10M9 4l4 4-4 4" />
+                    </svg>
+                  </a>
+                </div>
+              </article>
+            </div>
+            <div class="swiper-slide">
+              <article class="news-card">
+                <div class="news-card__image-wrap">
+                  <div class="news-card__image news-card__image--3"></div>
+                  <span class="news-cat news-cat--projects">Проекты</span>
+                </div>
+                <div class="news-card__body">
+                  <div class="news-card__meta">
+                    <time datetime="2026-03-20">20 марта 2026</time>
+                    <span>5 мин</span>
+                  </div>
+                  <h3 class="news-card__title">Джизакский металлургический завод выходит на проектную мощность 200 тыс. т/год</h3>
+                  <p class="news-card__excerpt">После завершения второй очереди строительства JMZ достиг плановых показателей производства арматуры классов A400 и A500.</p>
+                  <a href="news-item.html" class="news-card__link">
+                    Подробнее
+                    <svg viewBox="0 0 16 16" aria-hidden="true">
+                      <path d="M3 8h10M9 4l4 4-4 4" />
+                    </svg>
+                  </a>
+                </div>
+              </article>
+            </div>
+            <div class="swiper-slide">
+              <article class="news-card">
+                <div class="news-card__image-wrap">
+                  <div class="news-card__image news-card__image--4"></div>
+                  <span class="news-cat news-cat--industry">Промышленность</span>
+                </div>
+                <div class="news-card__body">
+                  <div class="news-card__meta">
+                    <time datetime="2026-03-14">14 марта 2026</time>
+                    <span>3 мин</span>
+                  </div>
+                  <h3 class="news-card__title">FUXIN запустил новую линию горячего цинкования мощностью 5 000 т/год</h3>
+                  <p class="news-card__excerpt">Ввод в эксплуатацию нового оборудования увеличит долю антикоррозионных покрытий в общем объёме выпуска предприятия.</p>
+                  <a href="news-item.html" class="news-card__link">
+                    Подробнее
+                    <svg viewBox="0 0 16 16" aria-hidden="true">
+                      <path d="M3 8h10M9 4l4 4-4 4" />
+                    </svg>
+                  </a>
+                </div>
+              </article>
+            </div>
+            <div class="swiper-slide">
+              <article class="news-card">
+                <div class="news-card__image-wrap">
+                  <div class="news-card__image news-card__image--2"></div>
+                  <span class="news-cat news-cat--company">Компания</span>
+                </div>
+                <div class="news-card__body">
+                  <div class="news-card__meta">
+                    <time datetime="2026-02-28">28 февраля 2026</time>
+                    <span>4 мин</span>
+                  </div>
+                  <h3 class="news-card__title">B.A. Holding подписал меморандум о стратегическом партнёрстве с CITIC Group</h3>
+                  <p class="news-card__excerpt">Соглашение охватывает совместные проекты в металлургии, инжиниринге и инфраструктуре на период 2026–2030 гг.</p>
+                  <a href="news-item.html" class="news-card__link">
+                    Подробнее
+                    <svg viewBox="0 0 16 16" aria-hidden="true">
+                      <path d="M3 8h10M9 4l4 4-4 4" />
+                    </svg>
+                  </a>
+                </div>
+              </article>
+            </div>
+            <div class="swiper-slide">
+              <article class="news-card">
+                <div class="news-card__image-wrap">
+                  <div class="news-card__image news-card__image--5"></div>
+                  <span class="news-cat news-cat--projects">Проекты</span>
+                </div>
+                <div class="news-card__body">
+                  <div class="news-card__meta">
+                    <time datetime="2026-02-12">12 февраля 2026</time>
+                    <span>3 мин</span>
+                  </div>
+                  <h3 class="news-card__title">Запущена вторая очередь жилого комплекса «Ривер-сайд» — сдано 1 200 квартир</h3>
+                  <p class="news-card__excerpt">Девелоперский дивизион ввёл в эксплуатацию вторую очередь флагманского проекта, опередив график на два месяца.</p>
+                  <a href="news-item.html" class="news-card__link">
+                    Подробнее
+                    <svg viewBox="0 0 16 16" aria-hidden="true">
+                      <path d="M3 8h10M9 4l4 4-4 4" />
+                    </svg>
+                  </a>
+                </div>
+              </article>
+            </div>
+            <div class="swiper-slide">
+              <article class="news-card">
+                <div class="news-card__image-wrap">
+                  <div class="news-card__image news-card__image--7"></div>
+                  <span class="news-cat news-cat--industry">Промышленность</span>
+                </div>
+                <div class="news-card__body">
+                  <div class="news-card__meta">
+                    <time datetime="2026-01-30">30 января 2026</time>
+                    <span>4 мин</span>
+                  </div>
+                  <h3 class="news-card__title">Агрохимический дивизион увеличил экспорт удобрений на 38% год к году</h3>
+                  <p class="news-card__excerpt">Рост достигнут за счёт расширения географии поставок в Центральной Азии и запуска новой линии гранулирования.</p>
+                  <a href="news-item.html" class="news-card__link">
+                    Подробнее
+                    <svg viewBox="0 0 16 16" aria-hidden="true">
+                      <path d="M3 8h10M9 4l4 4-4 4" />
+                    </svg>
+                  </a>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PARTNERS ===== -->
+  <section class="partners section-dark" id="partners">
+    <div class="container">
+      <div class="section-header section-header--centered">
+        <div class="section-label section-label--centered">
+          <span class="section-label__line"></span>
+          <span data-i18n="index.partners.label">Наши партнёры</span>
+          <span class="section-label__line"></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="partners__marquee partners__marquee--ltr">
+      <div class="partners__track partners__track--ltr">
+        <!-- repeated twice for seamless infinite loop -->
+        <div class="partners__logo"><img src="assets/img/logos/NMZ-logo 26.png" alt="NMZ" loading="lazy"></div>
+        <div class="partners__logo"><img src="assets/img/logos/JMZ-logo (horizontal dark).png" alt="JMZ" loading="lazy"></div>
+        <div class="partners__logo"><img src="assets/img/logos/TMZ.png" alt="TMZ" loading="lazy"></div>
+        <div class="partners__logo"><img src="assets/img/logos/BAMK logo 26.png" alt="BAMK" loading="lazy"></div>
+        <div class="partners__logo"><img src="assets/img/logos/Emirate steel 26-3.png" alt="Emirate Steel" loading="lazy"></div>
+        <div class="partners__logo"><img src="assets/img/logos/Shengli Steel 26.png" alt="Shengli Steel" loading="lazy"></div>
+        <div class="partners__logo"><img src="assets/img/logos/Sirdarya Metal Construction 26.png" alt="Sirdarya Metal Construction" loading="lazy"></div>
+        <div class="partners__logo"><img src="assets/img/logos/BA Chiqchiq metall logo 26.png" alt="BA Chiqchiq Metall" loading="lazy"></div>
+        <div class="partners__logo"><img src="assets/img/logos/TPP-logo 26.png" alt="TPP" loading="lazy"></div>
+        <div class="partners__logo"><img src="assets/img/logos/Akhangaran Brich-logo 26.png" alt="Akhangaran Brich" loading="lazy"></div>
+        <div class="partners__logo"><img src="assets/img/logos/BA Texnopark-removebg-preview 26.png" alt="BA Texnopark" loading="lazy"></div>
+        <div class="partners__logo"><img src="assets/img/logos/BA Solar-logo.png" alt="BA Solar" loading="lazy"></div>
+
+        <div class="partners__logo" aria-hidden="true"><img src="assets/img/logos/NMZ-logo 26.png" alt="" loading="lazy"></div>
+        <div class="partners__logo" aria-hidden="true"><img src="assets/img/logos/JMZ-logo (horizontal dark).png" alt="" loading="lazy"></div>
+        <div class="partners__logo" aria-hidden="true"><img src="assets/img/logos/TMZ.png" alt="" loading="lazy"></div>
+        <div class="partners__logo" aria-hidden="true"><img src="assets/img/logos/BAMK logo 26.png" alt="" loading="lazy"></div>
+        <div class="partners__logo" aria-hidden="true"><img src="assets/img/logos/Emirate steel 26-3.png" alt="" loading="lazy"></div>
+        <div class="partners__logo" aria-hidden="true"><img src="assets/img/logos/Shengli Steel 26.png" alt="" loading="lazy"></div>
+        <div class="partners__logo" aria-hidden="true"><img src="assets/img/logos/Sirdarya Metal Construction 26.png" alt="" loading="lazy"></div>
+        <div class="partners__logo" aria-hidden="true"><img src="assets/img/logos/BA Chiqchiq metall logo 26.png" alt="" loading="lazy"></div>
+        <div class="partners__logo" aria-hidden="true"><img src="assets/img/logos/TPP-logo 26.png" alt="" loading="lazy"></div>
+        <div class="partners__logo" aria-hidden="true"><img src="assets/img/logos/Akhangaran Brich-logo 26.png" alt="" loading="lazy"></div>
+        <div class="partners__logo" aria-hidden="true"><img src="assets/img/logos/BA Texnopark-removebg-preview 26.png" alt="" loading="lazy"></div>
+        <div class="partners__logo" aria-hidden="true"><img src="assets/img/logos/BA Solar-logo.png" alt="" loading="lazy"></div>
+      </div>
+    </div>
+
+    <div class="partners__marquee partners__marquee--rtl">
+      <div class="partners__track partners__track--rtl">
+        <div class="partners__logo"><img src="assets/img/logos/AWINER AGRO logo 26.png" alt="Awiner Agro" loading="lazy"></div>
+        <div class="partners__logo"><img src="assets/img/logos/ba tobacco_logo 26.png" alt="BA Tobacco" loading="lazy"></div>
+        <div class="partners__logo"><img src="assets/img/logos/B A Global house-logo 26.png" alt="BA Global House" loading="lazy"></div>
+        <div class="partners__logo"><img src="assets/img/logos/China house-logo 26.png" alt="China House" loading="lazy"></div>
+        <div class="partners__logo"><img src="assets/img/logos/Sirdaryo plast polimer.png" alt="Sirdaryo Plast Polimer" loading="lazy"></div>
+        <div class="partners__logo"><img src="assets/img/logos/Ti Chang Group 26-3.png" alt="Ti Chang Group" loading="lazy"></div>
+        <div class="partners__logo"><img src="assets/img/logos/Wang Da Group logo 26.png" alt="Wang Da Group" loading="lazy"></div>
+        <div class="partners__logo"><img src="assets/img/logos/BA INVEST-2-26 GROUP.png" alt="BA Invest Group" loading="lazy"></div>
+        <div class="partners__logo"><img src="assets/img/logos/Road Signs 26.png" alt="Road Signs" loading="lazy"></div>
+        <div class="partners__logo"><img src="assets/img/logos/YO' horizontal (dark) no bg.png" alt="YO'" loading="lazy"></div>
+        <div class="partners__logo"><img src="assets/img/logos/Фухин.png" alt="Фухин" loading="lazy"></div>
+
+        <div class="partners__logo" aria-hidden="true"><img src="assets/img/logos/AWINER AGRO logo 26.png" alt="" loading="lazy"></div>
+        <div class="partners__logo" aria-hidden="true"><img src="assets/img/logos/ba tobacco_logo 26.png" alt="" loading="lazy"></div>
+        <div class="partners__logo" aria-hidden="true"><img src="assets/img/logos/B A Global house-logo 26.png" alt="" loading="lazy"></div>
+        <div class="partners__logo" aria-hidden="true"><img src="assets/img/logos/China house-logo 26.png" alt="" loading="lazy"></div>
+        <div class="partners__logo" aria-hidden="true"><img src="assets/img/logos/Sirdaryo plast polimer.png" alt="" loading="lazy"></div>
+        <div class="partners__logo" aria-hidden="true"><img src="assets/img/logos/Ti Chang Group 26-3.png" alt="" loading="lazy"></div>
+        <div class="partners__logo" aria-hidden="true"><img src="assets/img/logos/Wang Da Group logo 26.png" alt="" loading="lazy"></div>
+        <div class="partners__logo" aria-hidden="true"><img src="assets/img/logos/BA INVEST-2-26 GROUP.png" alt="" loading="lazy"></div>
+        <div class="partners__logo" aria-hidden="true"><img src="assets/img/logos/Road Signs 26.png" alt="" loading="lazy"></div>
+        <div class="partners__logo" aria-hidden="true"><img src="assets/img/logos/YO' horizontal (dark) no bg.png" alt="" loading="lazy"></div>
+        <div class="partners__logo" aria-hidden="true"><img src="assets/img/logos/Фухин.png" alt="" loading="lazy"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT CTA ===== -->
+  <section class="contact-cta section-dark" id="contact">
+    <!-- <div class="contact-cta__number">07</div> -->
+    <div class="container">
+      <div class="contact-cta__inner">
+        <div class="section-label section-label--centered">
+          <span class="section-label__line"></span>
+          <span data-i18n="index.cta.label">Связаться с нами</span>
+          <span class="section-label__line"></span>
+        </div>
+        <h2 class="contact-cta__heading">
+          Готовы обсудить ваш следующий <span class="fw-bold" data-i18n="index.cta.heading_p2">проект</span>?
+        </h2>
+        <p class="contact-cta__desc" data-i18n="index.cta.text">
+          Свяжитесь с нашей командой для обсуждения возможностей партнёрства, инвестиционных предложений или общих
+          вопросов.
+        </p>
+        <a href="#contact-form" class="btn btn--blue" data-i18n="index.cta.btn">Оставить заявку</a>
+      </div>
+    </div>
+  </section>
+
+  </div><!-- /.page-shell -->
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" id="footer">
+    <div class="footer__main">
+      <div class="container">
+        <div class="footer__grid">
+          <!-- Brand -->
+          <div class="footer__brand">
+            <a href="#" class="footer__logo">
+              <img src="logo-light.png" alt="B.A. Holding" />
+            </a>
+            <p class="footer__brand-desc" data-i18n="footer.brand_desc">
+              Диверсифицированная холдинговая компания, управляющая проектами в сферах строительства, промышленности и
+              медиа с фокусом на стратегическое партнёрство с инвесторами.
+            </p>
+            <div class="footer__socials">
+              <a href="#" class="footer__social" aria-label="Telegram">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <defs>
+                    <linearGradient id="tg-grad" x1="0.5" y1="0" x2="0.5" y2="1">
+                      <stop offset="0" stop-color="#37BBFE"/>
+                      <stop offset="1" stop-color="#007DBB"/>
+                    </linearGradient>
+                  </defs>
+                  <circle cx="12" cy="12" r="12" fill="url(#tg-grad)"/>
+                  <path d="M5.49 11.6 17.3 7.04c.55-.2 1.03.13.85.96L16.13 18.5c-.14.66-.54.82-1.09.51l-3.02-2.23-1.46 1.4c-.16.16-.3.3-.6.3l.21-3.05 5.55-5.01c.24-.21-.05-.33-.37-.13l-6.86 4.32-2.96-.92c-.64-.2-.66-.64.05-.95z" fill="#fff"/>
+                </svg>
+              </a>
+              <a href="#" class="footer__social" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <defs>
+                    <radialGradient id="ig-grad" cx="0.3" cy="1.05" r="1.1">
+                      <stop offset="0" stop-color="#FED576"/>
+                      <stop offset="0.26" stop-color="#F47133"/>
+                      <stop offset="0.61" stop-color="#BC3081"/>
+                      <stop offset="1" stop-color="#4C63D2"/>
+                    </radialGradient>
+                  </defs>
+                  <rect x="2" y="2" width="20" height="20" rx="5.5" fill="url(#ig-grad)"/>
+                  <circle cx="12" cy="12" r="4.2" fill="none" stroke="#fff" stroke-width="1.7"/>
+                  <circle cx="17.3" cy="6.7" r="1.15" fill="#fff"/>
+                </svg>
+              </a>
+              <a href="#" class="footer__social" aria-label="Facebook">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path d="M24 12c0-6.63-5.37-12-12-12S0 5.37 0 12c0 5.99 4.39 10.95 10.13 11.85v-8.38H7.08V12h3.05V9.36c0-3.01 1.79-4.67 4.53-4.67 1.31 0 2.69.23 2.69.23v2.96h-1.52c-1.49 0-1.96.93-1.96 1.88V12h3.33l-.53 3.47h-2.8v8.38C19.61 22.95 24 17.99 24 12z" fill="#1877F2"/>
+                  <path d="m16.67 15.47.53-3.47h-3.33V9.76c0-.95.47-1.88 1.96-1.88h1.52V4.92s-1.38-.23-2.69-.23c-2.74 0-4.53 1.66-4.53 4.67V12H7.08v3.47h3.05v8.38c.61.1 1.24.15 1.87.15s1.26-.05 1.87-.15v-8.38h2.8z" fill="#fff"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <!-- Col: Информация -->
+          <div class="footer__col">
+            <h4 class="footer__col-title" data-i18n="footer.col_info">Информация</h4>
+            <ul class="footer__links">
+              <li><a href="about.html" data-i18n="nav.about">О компании</a></li>
+              <li><a href="projects.html" data-i18n="nav.projects">Проекты</a></li>
+              <li><a href="investors.html" data-i18n="nav.investors">Инвесторам</a></li>
+              <li><a href="career.html" data-i18n="nav.career">Карьера</a></li>
+              <li><a href="news.html" data-i18n="nav.news">Новости</a></li>
+              <li><a href="contacts.html" data-i18n="nav.contacts">Контакты</a></li>
+            </ul>
+          </div>
+          <!-- Col: Контакты -->
+          <div class="footer__col">
+            <h4 class="footer__col-title" data-i18n="footer.col_contacts">Контакты</h4>
+            <ul class="footer__contacts">
+              <li><a href="mailto:info@baholding.com">info@baholding.com</a></li>
+              <li><a href="tel:+998999999999">+998 55 203 22 22</a></li>
+              <li data-i18n="footer.address">Узбекистан, Ташкент, 123456</li>
+            </ul>
+          </div>
+          <!-- Col: Карта -->
+          <div class="footer__col footer__col--map">
+            <h4 class="footer__col-title" data-i18n="footer.col_map">Мы на карте</h4>
+            <div class="footer__map">
+              <iframe src="https://yandex.com/map-widget/v1/?ll=69.279737%2C41.311081&z=11&pt=69.279737%2C41.311081%2Cpm2rdm" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="B.A. Holding на карте"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <div class="footer__bottom-inner">
+          <p class="footer__copy" data-i18n="footer.copy">© 2026 B.A. Holding. Все права защищены.</p>
+          <div class="footer__legal">
+            <a href="#" data-i18n="footer.privacy">Политика конфиденциальности</a>
+            <a href="#" data-i18n="footer.terms">Условия использования</a>
+            <a href="#" data-i18n="footer.cookies">Политика cookies</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // ========== HEADER BEHAVIOR ==========
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('header--scrolled', window.scrollY > 40);
+    });
+
+    // Mobile burger menu
+    const burgerBtn = document.getElementById('burgerBtn');
+    const nav = document.querySelector('.header__nav');
+    burgerBtn.addEventListener('click', () => {
+      nav.classList.toggle('header__nav--open');
+      burgerBtn.classList.toggle('header__burger--open');
+    });
+
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(link => {
+      link.addEventListener('click', e => {
+        const id = link.getAttribute('href');
+        if (id === '#') return;
+        const target = document.querySelector(id);
+        if (target) {
+          e.preventDefault();
+          const offset = 80;
+          const top = target.getBoundingClientRect().top + window.scrollY - offset;
+          window.scrollTo({ top, behavior: 'smooth' });
+          nav.classList.remove('header__nav--open');
+          burgerBtn.classList.remove('header__burger--open');
+        }
+      });
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const projectsSwiper = new Swiper('.projects-swiper', {
+        loop: true,
+        slidesPerView: 1,
+        spaceBetween: 24,
+        speed: 5000,
+        grabCursor: true,
+        breakpoints: {
+          900: { slidesPerView: 2, spaceBetween: 28 },
+        },
+        autoplay: {
+          delay: 0,
+          disableOnInteraction: false,
+        }
+      });
+
+      const animateSlide = (slideEl, delay = 0) => {
+        if (!slideEl || typeof gsap === 'undefined') return;
+        const info = slideEl.querySelector('.project-card__info');
+        const imageWrap = slideEl.querySelector('.project-card__image-wrap');
+        const image = slideEl.querySelector('.project-card__image');
+        if (info) {
+          const parts = info.querySelectorAll('.project-card__category, .project-card__title, .project-card__desc, .project-card__actions');
+          if (parts.length) {
+            gsap.fromTo(parts,
+              { y: 28, opacity: 0 },
+              { y: 0, opacity: 1, duration: 0.75, stagger: 0.07, delay, ease: "power3.out", overwrite: true });
+          }
+        }
+        if (imageWrap) {
+          gsap.fromTo(imageWrap,
+            { y: 24, opacity: 0 },
+            { y: 0, opacity: 1, duration: 0.8, delay, ease: "power3.out", overwrite: true });
+        }
+        if (image) {
+          gsap.fromTo(image,
+            { scale: 1.18 },
+            { scale: 1, duration: 1.4, delay, ease: "power3.out", overwrite: true });
+        }
+      };
+
+      const animateVisible = () => {
+        const visible = projectsSwiper.slides.filter(s => s.classList.contains('swiper-slide-active') || s.classList.contains('swiper-slide-next'));
+        visible.forEach((s, i) => animateSlide(s, i * 0.12));
+      };
+
+      animateVisible();
+
+      const swiperEl = document.querySelector('.projects-swiper');
+      if (swiperEl) {
+        let frozen = false;
+        const freeze = () => {
+          if (frozen) return;
+          frozen = true;
+          const matrix = new DOMMatrix(getComputedStyle(projectsSwiper.wrapperEl).transform);
+          projectsSwiper.setTransition(0);
+          projectsSwiper.setTranslate(matrix.m41);
+          projectsSwiper.autoplay.stop();
+        };
+        const unfreeze = () => {
+          if (!frozen) return;
+          frozen = false;
+          // freeze() left transition at 0 and the wrapper pinned mid-slide.
+          // Re-arm the marquee symmetrically: apply full-speed transition and
+          // translate one slide-step further from the current visual position.
+          // autoplay (delay:0) takes over for subsequent steps once this lands.
+          const step = (projectsSwiper.slidesSizesGrid && projectsSwiper.slidesSizesGrid[0] || 0)
+            + (projectsSwiper.params.spaceBetween || 0);
+          projectsSwiper.setTransition(projectsSwiper.params.speed);
+          projectsSwiper.setTranslate(projectsSwiper.getTranslate() - step);
+          projectsSwiper.autoplay.start();
+        };
+        swiperEl.addEventListener('mouseenter', freeze);
+        swiperEl.addEventListener('mouseleave', unfreeze);
+      }
+
+      // ===== NEWS SLIDER (marquee, same pattern as projects) =====
+      const newsSwiperEl = document.querySelector('.news-swiper');
+      if (newsSwiperEl) {
+        const newsSwiper = new Swiper('.news-swiper', {
+          loop: true,
+          slidesPerView: 1.2,
+          spaceBetween: 20,
+          speed: 5000,
+          grabCursor: true,
+          breakpoints: {
+            640: { slidesPerView: 2, spaceBetween: 20 },
+            1024: { slidesPerView: 3, spaceBetween: 24 },
+          },
+          autoplay: {
+            delay: 0,
+            disableOnInteraction: false,
+          }
+        });
+
+        let newsFrozen = false;
+        const freezeNews = () => {
+          if (newsFrozen) return;
+          newsFrozen = true;
+          const matrix = new DOMMatrix(getComputedStyle(newsSwiper.wrapperEl).transform);
+          newsSwiper.setTransition(0);
+          newsSwiper.setTranslate(matrix.m41);
+          newsSwiper.autoplay.stop();
+        };
+        const unfreezeNews = () => {
+          if (!newsFrozen) return;
+          newsFrozen = false;
+          const step = (newsSwiper.slidesSizesGrid && newsSwiper.slidesSizesGrid[0] || 0)
+            + (newsSwiper.params.spaceBetween || 0);
+          newsSwiper.setTransition(newsSwiper.params.speed);
+          newsSwiper.setTranslate(newsSwiper.getTranslate() - step);
+          newsSwiper.autoplay.start();
+        };
+        newsSwiperEl.addEventListener('mouseenter', freezeNews);
+        newsSwiperEl.addEventListener('mouseleave', unfreezeNews);
+      }
+    });
+  </script>
+  <script src="modal.js"></script>
+  <!-- GSAP Animations -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="animations.js?v=3"></script>
+
+  <!-- ===== GEOGRAPHY MAP INTERACTIVITY ===== -->
+  <script>
+    (() => {
+      const HQ_PHONE = '+998 55 503 22 22';
+      const HQ_EMAIL = 'info@baholding.uz';
+      const LOGO_BASE = 'assets/img/logos/';
+
+      const cities = {
+        tashkent: {
+          title: 'Ташкент',
+          tag: 'Центральный кластер',
+          offices: [
+            {
+              tag: 'Главный офис',
+              title: 'BA Holding HQ',
+              logo: 'logo-light.png',
+              desc: 'Многопрофильная инвестиционная компания. Координация всех бизнес-направлений холдинга — строительство, металлургия, производство, агросектор, IT.',
+              address: 'Ташкент, Мирзо-Улугбекский район, ул. Мухаммада Юсуфа, 17А',
+              phone: HQ_PHONE,
+              email: 'guzal.tojimirzaeva@baholding.uz',
+              hours: 'Пн–Пт · 09:00–18:00',
+              employees: '5000+',
+              sectors: 'Управление · Инвестиции · Промышленность'
+            },
+            {
+              tag: 'Производство',
+              title: 'Fu-xin',
+              logo: LOGO_BASE + 'Фухин.png',
+              desc: 'Производство металлических конструкций и их горячее цинкование для защиты от коррозии.',
+              address: 'Ташкент, Бектемирский район, махалля Олтинтопган, ул. Олтинтопган, 8',
+              phone: HQ_PHONE,
+              email: HQ_EMAIL,
+              hours: 'Пн–Сб · 08:00–20:00',
+              employees: '150',
+              sectors: 'Металлоконструкции · Цинкование'
+            },
+            {
+              tag: 'Строительство',
+              title: 'China House',
+              logo: LOGO_BASE + 'China house-logo 26.png',
+              desc: 'Строительство жилых домов и коммерческих зданий.',
+              address: 'Ташкент, Бектемирский район, ул. Олтинтопган, 22',
+              phone: HQ_PHONE,
+              email: HQ_EMAIL,
+              hours: 'Пн–Пт · 09:00–18:00',
+              employees: '—',
+              sectors: 'Строительство · Девелопмент'
+            },
+            {
+              tag: 'Производство',
+              title: 'Toshkent Plast Polimer',
+              logo: LOGO_BASE + 'TPP-logo 26.png',
+              desc: 'Производство пластмассовых, картонных и полимерных композитных изделий.',
+              address: 'Ташкент, ул. Олтинтопган, 22',
+              phone: HQ_PHONE,
+              email: HQ_EMAIL,
+              hours: 'Пн–Пт · 09:00–18:00',
+              employees: '250',
+              sectors: 'Полимеры · Пластик · Картон'
+            }
+          ]
+        },
+        chirchiq: {
+          tag: 'Металлургия',
+          title: 'Чирчик · BA Chirchiq Metall',
+          logo: LOGO_BASE + 'BA Chiqchiq metall logo 26.png',
+          desc: 'Производство стальных шаров для строительных и промышленных нужд. Завод оснащён современным оборудованием, обеспечивающим высокую точность и износостойкость изделий.',
+          address: 'Ташкентская область, г. Чирчик, проспект А. Навои, 92',
+          phone: HQ_PHONE,
+          email: 'chirchiq.metall@baholding.uz',
+          hours: 'Пн–Сб · 08:00–20:00',
+          employees: '250',
+          sectors: 'Металлургия · Стальные шары'
+        },
+        ahangaran: {
+          title: 'Ахангаран',
+          tag: 'Производственный кластер',
+          offices: [
+            {
+              tag: 'Агрохимия',
+              title: 'Awiner AGRO',
+              logo: LOGO_BASE + 'AWINER AGRO logo 26.png',
+              desc: 'Производство и поставка химических средств для сельского хозяйства и садоводства.',
+              address: 'Ташкентская обл., Ахангаранский р-н, Увакский СВТ, махалля Алишер',
+              phone: HQ_PHONE,
+              email: HQ_EMAIL,
+              hours: 'Пн–Пт · 09:00–18:00',
+              employees: '—',
+              sectors: 'Агрохимия · Сельское хозяйство'
+            },
+            {
+              tag: 'Металлургия',
+              title: 'Tai Chang Group',
+              logo: LOGO_BASE + 'Ti Chang Group 26-3.png',
+              desc: 'Производство крупногабаритного металлопроката из высоколегированной стали.',
+              address: 'Ташкентская обл., Ахангаранский р-н, пос. Ён-Арик, махалля Алишер, ул. Акча, 14 ГА',
+              phone: HQ_PHONE,
+              email: HQ_EMAIL,
+              hours: 'Пн–Сб · 08:00–20:00',
+              employees: '350',
+              sectors: 'Металлопрокат · Высоколегированная сталь'
+            }
+          ]
+        },
+        bekabad: {
+          tag: 'Переработка',
+          title: 'Бекабад · Shengli Steel',
+          logo: LOGO_BASE + 'Shengli Steel 26.png',
+          desc: 'Переработка металлургического шлака. Площадка в Ташкентской области, на границе с Таджикистаном.',
+          address: 'Ташкентская область, г. Бекабад, махалля Самарканд, ул. Г. Гулома',
+          phone: HQ_PHONE,
+          email: HQ_EMAIL,
+          hours: 'Пн–Сб · 08:00–20:00',
+          employees: '150',
+          sectors: 'Металлургия · Переработка шлака'
+        },
+        chust: {
+          tag: 'Металлургия',
+          title: 'Чуст · NMZ',
+          logo: LOGO_BASE + 'NMZ-logo 26.png',
+          desc: 'Namangan Metallurgiya Zavodi (NMZ) — один из крупнейших металлургических заводов холдинга. Производство арматурного периодического профиля и катанки для промышленности и строительства Узбекистана.',
+          address: 'Наманганская область, Чустский район, массив Садачи',
+          phone: HQ_PHONE,
+          email: HQ_EMAIL,
+          hours: 'Пн–Сб · 08:00–20:00',
+          employees: '550',
+          sectors: 'Металлургия · Арматура · Катанка'
+        },
+        sirdaryo: {
+          title: 'Сырдарья',
+          tag: 'Промышленный кластер',
+          offices: [
+            {
+              tag: 'Технопарк',
+              title: 'BA Texnopark (Wang Da Group)',
+              logo: LOGO_BASE + 'BA Texnopark-removebg-preview 26.png',
+              desc: 'Сдача в аренду производственных и складских зданий, развитие малой промышленной зоны.',
+              address: 'Сырдарьинская обл., Сырдарьинский р-н, Хакикатский СВТ, Бетонка-1',
+              phone: HQ_PHONE,
+              email: HQ_EMAIL,
+              hours: 'Пн–Пт · 09:00–18:00',
+              employees: '1000+',
+              sectors: 'Промышленная аренда · Технопарк'
+            },
+            {
+              tag: 'Металлоконструкции',
+              title: 'Sirdarya Metal Construction',
+              logo: LOGO_BASE + 'Sirdarya Metal Construction 26.png',
+              desc: 'Производство и монтаж металлических конструкций для промышленных и гражданских объектов.',
+              address: 'Сырдарьинская обл., Сырдарьинский р-н, махалля Шоликор, ул. Бетонка, 1',
+              phone: HQ_PHONE,
+              email: HQ_EMAIL,
+              hours: 'Пн–Сб · 08:00–20:00',
+              employees: '200',
+              sectors: 'Металлоконструкции · Монтаж'
+            }
+          ]
+        },
+        jizzakh: {
+          title: 'Джизакская область',
+          tag: 'Металлургический кластер',
+          offices: [
+            {
+              tag: 'Металлургия',
+              title: 'Джизакский металлургический завод (JMZ)',
+              logo: LOGO_BASE + 'JMZ-logo (horizontal dark).png',
+              desc: 'Производство высококачественной арматуры A2/A3 и металлопроката для строительства и инженерных конструкций.',
+              address: 'Джизакская область, г. Джизак, промышленная зона «A»',
+              phone: '+998 95 858 66 66',
+              email: 'jmzsifatlisofpolat@gmail.com',
+              hours: 'Пн–Сб · 08:00–20:00',
+              employees: '250',
+              sectors: 'Металлургия · Арматура · Металлопрокат'
+            },
+            {
+              tag: 'Металлопрокат',
+              title: 'Emirate Steel',
+              logo: LOGO_BASE + 'Emirate steel 26-3.png',
+              desc: 'Производство металлопроката и арматуры для строительных и промышленных проектов. Бахмальский район Джизакской области.',
+              address: 'Джизакская обл., Бахмальский р-н, пос. Окташ, мкр. Сарой, 27',
+              phone: HQ_PHONE,
+              email: 'b.a.emirate.steel@gmail.com',
+              hours: 'Пн–Сб · 08:00–20:00',
+              employees: '250',
+              sectors: 'Металлопрокат · Арматура'
+            }
+          ]
+        },
+        sogd: {
+          tag: 'Зарубежный актив',
+          title: 'Гулистон · TMZ',
+          logo: LOGO_BASE + 'TMZ.png',
+          desc: 'Таджикский металлургический завод (TMZ) — современное предприятие, перерабатывающее металлический лом и производящее арматуру и катанку для строительной отрасли Таджикистана и Центральной Азии.',
+          address: 'Республика Таджикистан, Согдийская обл., промышленная зона Гулистон',
+          phone: HQ_PHONE,
+          email: HQ_EMAIL,
+          hours: 'Пн–Сб · 08:00–20:00',
+          employees: '350',
+          sectors: 'Металлургия · Переработка лома'
+        }
+      };
+
+      const card = document.getElementById('cityCard');
+      if (!card) return;
+
+      const tagEl       = card.querySelector('[data-tag]');
+      const titleEl     = card.querySelector('[data-title]');
+      const descEl      = card.querySelector('[data-desc]');
+      const addressEl   = card.querySelector('[data-address]');
+      const phoneEl     = card.querySelector('[data-phone]');
+      const phoneLink   = card.querySelector('[data-phone-href]');
+      const emailEl     = card.querySelector('[data-email]');
+      const emailLink   = card.querySelector('[data-email-href]');
+      const hoursEl     = card.querySelector('[data-hours]');
+      const employeesEl = card.querySelector('[data-employees]');
+      const sectorsEl   = card.querySelector('[data-sectors]');
+      const logoEl      = card.querySelector('.geography__panel-logo');
+      const officesEl   = card.querySelector('[data-offices]');
+      const detailsList = card.querySelector('.geography__panel-list');
+      const backBtn     = card.querySelector('[data-back]');
+      const backLabel   = card.querySelector('[data-back-label]');
+      const pins        = document.querySelectorAll('.geography__pin');
+
+      // Track which multi-office city we entered from, so back-button works
+      let currentMultiKey = null;
+
+      const renderDetails = (o) => {
+        tagEl.textContent       = o.tag;
+        titleEl.textContent     = o.title;
+        descEl.textContent      = o.desc;
+        addressEl.textContent   = o.address;
+        phoneEl.textContent     = o.phone;
+        phoneLink.href          = 'tel:' + o.phone.replace(/[^+\d]/g, '');
+        emailEl.textContent     = o.email;
+        emailLink.href          = 'mailto:' + o.email;
+        hoursEl.textContent     = o.hours;
+        employeesEl.textContent = o.employees;
+        sectorsEl.textContent   = o.sectors;
+        if (o.logo) logoEl.src  = o.logo;
+        officesEl.hidden = true;
+      };
+
+      const renderOfficePicker = (cityKey, c) => {
+        // Header shows the city itself; office cards live in the picker list below
+        tagEl.textContent   = c.tag;
+        titleEl.textContent = c.title;
+        if (logoEl) logoEl.src = 'logo-light.png';
+
+        officesEl.innerHTML = c.offices.map((o, i) => `
+          <li>
+            <button type="button" class="geography__office-card" data-office-index="${i}">
+              <img class="geography__office-logo" src="${o.logo || 'logo-light.png'}" alt="${o.title}" />
+              <span class="geography__office-meta">
+                <span class="geography__office-tag">${o.tag}</span>
+                <span class="geography__office-title">${o.title}</span>
+              </span>
+              <svg class="geography__office-arrow" viewBox="0 0 16 16" aria-hidden="true">
+                <path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+          </li>
+        `).join('');
+
+        backLabel.textContent = 'К офисам ' + c.title;
+        currentMultiKey = cityKey;
+        card.classList.add('is-multi');
+        card.classList.remove('is-detail-of-multi');
+        officesEl.hidden = false;
+        backBtn.hidden = true;
+      };
+
+      const showOfficeDetails = (officeIndex) => {
+        if (!currentMultiKey) return;
+        const c = cities[currentMultiKey];
+        const o = c && c.offices && c.offices[officeIndex];
+        if (!o) return;
+        card.classList.add('is-switching');
+        setTimeout(() => {
+          renderDetails(o);
+          // Leave picker mode so .geography__panel-desc and .geography__panel-list
+          // become visible again; `is-detail-of-multi` keeps the back-button shown.
+          card.classList.remove('is-multi');
+          card.classList.add('is-detail-of-multi');
+          backBtn.hidden = false;
+          card.classList.remove('is-switching');
+        }, 380);
+      };
+
+      const setCity = (key) => {
+        const c = cities[key];
+        if (!c) return;
+        card.classList.add('is-switching');
+        setTimeout(() => {
+          if (c.offices && c.offices.length) {
+            renderOfficePicker(key, c);
+          } else {
+            card.classList.remove('is-multi', 'is-detail-of-multi');
+            backBtn.hidden = true;
+            currentMultiKey = null;
+            renderDetails(c);
+          }
+          card.classList.remove('is-switching');
+        }, 380);
+
+        pins.forEach(p => p.classList.toggle('is-active', p.dataset.city === key));
+      };
+
+      pins.forEach(pin => {
+        pin.addEventListener('click', () => setCity(pin.dataset.city));
+      });
+
+      // Click on an office card inside the picker → show its details
+      officesEl.addEventListener('click', (e) => {
+        const btn = e.target.closest('[data-office-index]');
+        if (!btn) return;
+        showOfficeDetails(Number(btn.dataset.officeIndex));
+      });
+
+      // Back button → return from a multi-office detail view to the picker
+      backBtn.addEventListener('click', () => {
+        if (!currentMultiKey) return;
+        const c = cities[currentMultiKey];
+        if (!c) return;
+        card.classList.add('is-switching');
+        setTimeout(() => {
+          renderOfficePicker(currentMultiKey, c);
+          card.classList.remove('is-switching');
+        }, 380);
+      });
+
+      // Initial render: Tashkent pin is marked active in HTML, so seed the
+      // picker view immediately (no switching animation on first paint).
+      (() => {
+        const activePin = document.querySelector('.geography__pin.is-active');
+        const initialKey = (activePin && activePin.dataset.city) || 'tashkent';
+        const initial = cities[initialKey];
+        if (!initial) return;
+        if (initial.offices && initial.offices.length) {
+          renderOfficePicker(initialKey, initial);
+        } else {
+          renderDetails(initial);
+        }
+      })();
+
+      // Entrance animation when the info card scrolls into view
+      if ('IntersectionObserver' in window) {
+        const io = new IntersectionObserver((entries) => {
+          entries.forEach(e => {
+            if (e.isIntersecting) {
+              e.target.classList.add('is-in-view');
+              io.unobserve(e.target);
+            }
+          });
+        }, { threshold: 0.2, rootMargin: '0px 0px -8% 0px' });
+        io.observe(card);
+      } else {
+        card.classList.add('is-in-view');
+      }
+    })();
+  </script>
+
+  <!-- ===== DIRECTIONS CARDS ENTRANCE ===== -->
+  <script>
+    (() => {
+      const cards = document.querySelectorAll('.directions__grid .direction-card');
+      if (!cards.length) return;
+
+      if (!('IntersectionObserver' in window)) {
+        cards.forEach(c => c.classList.add('is-in-view'));
+        return;
+      }
+
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-in-view');
+            io.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.2, rootMargin: '0px 0px -10% 0px' });
+
+      cards.forEach(c => io.observe(c));
+    })();
+  </script>
+
+  <!-- ===== SECTION SNAP SCROLL ===== -->
+  <script>
+    window.SECTION_SNAP_CONFIG = {
+      skipClasses:   ['contact-cta', 'partners'],
+      mergeWithNext: ['news-home'],
+    };
+  </script>
+  <script src="section-snap.js"></script>
+</body>
+
+</html>

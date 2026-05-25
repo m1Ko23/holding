@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Инвесторам — B.A. Holding</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="investors.css" />
+  <script src="i18n.js" defer></script>
+</head>
+
+<body>
+
+  <div class="page-shell">
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a href="index.html" class="header__logo">
+        <img src="logo-dark.png" alt="B.A. Holding" />
+      </a>
+      <nav class="header__nav">
+        <a href="about.html" class="header__nav-link" data-i18n="nav.about">О компании</a>
+        <a href="projects.html" class="header__nav-link" data-i18n="nav.projects">Проекты</a>
+        <a href="investors.html" class="header__nav-link header__nav-link--active" data-i18n="nav.investors">Инвесторам</a>
+        <a href="career.html" class="header__nav-link" data-i18n="nav.career">Карьера</a>
+        <a href="news.html" class="header__nav-link" data-i18n="nav.news">Новости</a>
+        <a href="contacts.html" class="header__nav-link" data-i18n="nav.contacts">Контакты</a>
+      </nav>
+      <div class="lang-switch" role="group" aria-label="Language">
+        <button type="button" class="lang-switch__btn" data-lang-switch="ru">RU</button>
+        <button type="button" class="lang-switch__btn" data-lang-switch="uz">УЗ</button>
+      </div>
+      <a href="contacts.html#contact-form" class="btn btn--outline-blue btn--sm" data-i18n="nav.contact_btn">Связаться</a>
+      <button class="header__burger" aria-label="Меню" id="burgerBtn" data-i18n-attr="aria-label:nav.menu_aria"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="page-hero__bg">
+      <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=2000&q=80" alt="" />
+    </div>
+    <div class="page-hero__overlay"></div>
+    <div class="page-hero__fade"></div>
+    <div class="container page-hero__content">
+      <nav class="breadcrumb">
+        <a href="index.html" class="breadcrumb__link" data-i18n="crumb.home">Главная</a>
+        <span class="breadcrumb__sep">/</span>
+        <span class="breadcrumb__current" data-i18n="crumb.investors">Инвесторам</span>
+      </nav>
+      <h1 class="page-hero__title" data-i18n="investors.hero.title">Инвестиции в стабильный рост</h1>
+    </div>
+  </section>
+
+  <!-- KPI STATS (01) -->
+  <section class="inv-stats section-dark" id="kpi">
+    <!-- <div class="inv-stats__number">01</div> -->
+    <div class="container">
+      <div class="section-label">
+        <span class="section-label__line"></span>
+        <span data-i18n="investors.stats.label">Ключевые показатели</span>
+      </div>
+      <h2 class="section-heading inv-stats__heading" data-i18n="investors.stats.title">Цифры, которые говорят сами за себя</h2>
+      <div class="inv-stats__grid">
+        <div class="inv-stat">
+          <div class="inv-stat__icon-wrap">
+            <img src="https://www.figma.com/api/mcp/asset/7e5a3983-96cc-4cdb-a3ff-c3e46f20cfdb" alt="" />
+          </div>
+          <span class="inv-stat__number">$48.2 млрд</span>
+          <span class="inv-stat__label" data-i18n="inv.stat1">Совокупная стоимость активов</span>
+        </div>
+        <div class="inv-stat">
+          <div class="inv-stat__icon-wrap">
+            <img src="https://www.figma.com/api/mcp/asset/58597423-fede-4d15-931c-7afa5b3962ad" alt="" />
+          </div>
+          <span class="inv-stat__number">120+</span>
+          <span class="inv-stat__label" data-i18n="inv.stat2">Реализованных проектов</span>
+        </div>
+        <div class="inv-stat">
+          <div class="inv-stat__icon-wrap">
+            <img src="https://www.figma.com/api/mcp/asset/16544990-2f35-4b5e-b397-fe13df7548e2" alt="" />
+          </div>
+          <span class="inv-stat__number">18</span>
+          <span class="inv-stat__label" data-i18n="inv.stat3">Стран присутствия</span>
+        </div>
+        <div class="inv-stat">
+          <div class="inv-stat__icon-wrap">
+            <img src="https://www.figma.com/api/mcp/asset/dc38f1d4-f06b-4142-a44d-2d3f6cce96ff" alt="" />
+          </div>
+          <span class="inv-stat__number">25+</span>
+          <span class="inv-stat__label" data-i18n="inv.stat4">Лет на рынке</span>
+        </div>
+        <div class="inv-stat">
+          <div class="inv-stat__icon-wrap">
+            <img src="https://www.figma.com/api/mcp/asset/8a22c570-ab30-4e5b-9490-5257f25c760f" alt="" />
+          </div>
+          <span class="inv-stat__number">15.8%</span>
+          <span class="inv-stat__label" data-i18n="inv.stat5">Средняя доходность (IRR)</span>
+        </div>
+        <div class="inv-stat">
+          <div class="inv-stat__icon-wrap">
+            <img src="https://www.figma.com/api/mcp/asset/b78d1dc2-4c42-4e3b-a880-69a05897e7ea" alt="" />
+          </div>
+          <span class="inv-stat__number">4 200+</span>
+          <span class="inv-stat__label" data-i18n="inv.stat6">Сотрудников</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRINCIPLES -->
+  <section class="principles section-dark" id="principles">
+    <div class="container">
+      <div class="principles__grid">
+        <!-- Left: text + list -->
+        <div class="principles__text-col">
+          <div class="section-label">
+            <span class="section-label__line"></span>
+            <span data-i18n="investors.principles.label">Наш подход</span>
+          </div>
+          <h2 class="principles__heading" data-i18n="investors.principles.title">Принципы инвестирования</h2>
+          <p class="principles__intro" data-i18n="inv.principles.intro">Наша инвестиционная философия основана на балансе между доходностью и
+            безопасностью. Мы строим долгосрочные партнёрства, где интересы всех сторон максимально согласованы.</p>
+          <div class="principles__list">
+            <div class="principle-item">
+              <div class="principle-item__icon-wrap">
+                <img src="https://www.figma.com/api/mcp/asset/44d41d53-3301-4635-b0f4-2f0993973309" alt="" />
+              </div>
+              <div>
+                <h3 class="principle-item__title" data-i18n="inv.p1.title">Защита капитала</h3>
+                <p class="principle-item__text" data-i18n="inv.p1.text">Структурированный подход к управлению рисками с использованием
+                  диверсификации портфеля, хеджирования и многоуровневой системы контроля.</p>
+              </div>
+            </div>
+            <div class="principle-item">
+              <div class="principle-item__icon-wrap">
+                <img src="https://www.figma.com/api/mcp/asset/ac56874a-5eef-43d8-91d1-1b5c69f87e2a" alt="" />
+              </div>
+              <div>
+                <h3 class="principle-item__title" data-i18n="inv.p2.title">Прозрачность</h3>
+                <p class="principle-item__text" data-i18n="inv.p2.text">Регулярная детальная отчётность, открытый доступ к финансовым данным и
+                  прямая коммуникация с управляющей командой.</p>
+              </div>
+            </div>
+            <div class="principle-item">
+              <div class="principle-item__icon-wrap">
+                <img src="https://www.figma.com/api/mcp/asset/2f34c741-f8b0-4f3e-ab0f-3d4c8fbb7279" alt="" />
+              </div>
+              <div>
+                <h3 class="principle-item__title" data-i18n="inv.p3.title">Устойчивый рост</h3>
+                <p class="principle-item__text" data-i18n="inv.p3.text">Фокус на долгосрочное создание стоимости через стратегическое управление
+                  активами и реинвестирование прибыли.</p>
+              </div>
+            </div>
+            <div class="principle-item">
+              <div class="principle-item__icon-wrap">
+                <img src="https://www.figma.com/api/mcp/asset/12b0a4c5-31a3-4c0e-aba3-7a59491052dc" alt="" />
+              </div>
+              <div>
+                <h3 class="principle-item__title" data-i18n="inv.p4.title">Стратегическое партнёрство</h3>
+                <p class="principle-item__text" data-i18n="inv.p4.text">Гибкие модели со-инвестирования с согласованными интересами всех
+                  участников и совместным принятием ключевых решений.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Right: image + badge -->
+        <div class="principles__image-col">
+          <div class="principles__image-wrap">
+            <img src="https://images.unsplash.com/photo-1551836022-deb4988cc6c0?auto=format&fit=crop&w=1600&q=80"
+              alt="Принципы инвестирования" class="principles__image" loading="lazy" />
+          </div>
+          <div class="principles__badge">
+            <span class="principles__badge-number">15.8%</span>
+            <span class="principles__badge-label" data-i18n="inv.principles.badge_label">Средний IRR</span>
+          </div>
+          <div class="principles__corner-tr"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO STRUCTURE (02) -->
+  <section class="inv-portfolio section-dark" id="portfolio">
+    <!-- <div class="inv-portfolio__number">02</div> -->
+    <div class="container">
+      <div class="section-label">
+        <span class="section-label__line"></span>
+        <span data-i18n="investors.portfolio.label">Портфель</span>
+      </div>
+      <h2 class="section-heading" style="margin-bottom:64px" data-i18n="investors.portfolio.title">Структура инвестиционного портфеля</h2>
+      <div class="inv-portfolio__grid">
+        <div class="inv-sector">
+          <div class="inv-sector__header">
+            <div class="inv-sector__percent">42%</div>
+            <div class="inv-sector__icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round">
+                <rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect>
+                <path d="M9 22v-4h6v4"></path>
+                <path d="M8 6h.01"></path>
+                <path d="M16 6h.01"></path>
+                <path d="M12 6h.01"></path>
+                <path d="M12 10h.01"></path>
+                <path d="M12 14h.01"></path>
+                <path d="M16 10h.01"></path>
+                <path d="M16 14h.01"></path>
+                <path d="M8 10h.01"></path>
+                <path d="M8 14h.01"></path>
+              </svg>
+            </div>
+          </div>
+          <h3 class="inv-sector__name" data-i18n="inv.s1.name">Строительство</h3>
+          <p class="inv-sector__projects" data-i18n="inv.s1.projects">52 проекта</p>
+          <p class="inv-sector__desc" data-i18n="inv.s1.desc">Коммерческая и жилая недвижимость, инфраструктурные и специализированные объекты.
+          </p>
+          <div class="inv-sector__stats">
+            <div><span class="inv-sector__stat-label" data-i18n="inv.s1.stat1_label">Общая площадь</span><span class="inv-sector__stat-value">1.2 млн
+                м²</span></div>
+            <div><span class="inv-sector__stat-label" data-i18n="inv.s1.stat2_label">Средняя доходность</span><span
+                class="inv-sector__stat-value inv-sector__stat-value--accent">17.2%</span></div>
+          </div>
+        </div>
+        <div class="inv-sector">
+          <div class="inv-sector__header">
+            <div class="inv-sector__percent">31%</div>
+            <div class="inv-sector__icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M2 20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8l-7 5V8l-7 5V4H2z"></path>
+              </svg>
+            </div>
+          </div>
+          <h3 class="inv-sector__name" data-i18n="inv.s2.name">Промышленность</h3>
+          <p class="inv-sector__projects" data-i18n="inv.s2.projects">38 проектов</p>
+          <p class="inv-sector__desc" data-i18n="inv.s2.desc">Производственные мощности, логистическая инфраструктура и энергетические активы.
+          </p>
+          <div class="inv-sector__stats">
+            <div><span class="inv-sector__stat-label" data-i18n="inv.s2.stat1_label">Объём производства</span><span
+                class="inv-sector__stat-value">$12.8 млрд</span></div>
+            <div><span class="inv-sector__stat-label" data-i18n="inv.s1.stat2_label">Средняя доходность</span><span
+                class="inv-sector__stat-value inv-sector__stat-value--accent">14.5%</span></div>
+          </div>
+        </div>
+        <div class="inv-sector">
+          <div class="inv-sector__header">
+            <div class="inv-sector__percent">17%</div>
+            <div class="inv-sector__icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+            </div>
+          </div>
+          <h3 class="inv-sector__name" data-i18n="inv.s3.name">Медиа</h3>
+          <p class="inv-sector__projects" data-i18n="inv.s3.projects">24 проекта</p>
+          <p class="inv-sector__desc" data-i18n="inv.s3.desc">Цифровые платформы, производство контента и стратегические коммуникации.</p>
+          <div class="inv-sector__stats">
+            <div><span class="inv-sector__stat-label" data-i18n="inv.s3.stat1_label">Аудитория</span><span class="inv-sector__stat-value">18
+                млн+</span></div>
+            <div><span class="inv-sector__stat-label" data-i18n="inv.s1.stat2_label">Средняя доходность</span><span
+                class="inv-sector__stat-value inv-sector__stat-value--accent">21.3%</span></div>
+          </div>
+        </div>
+        <div class="inv-sector">
+          <div class="inv-sector__header">
+            <div class="inv-sector__percent">10%</div>
+            <div class="inv-sector__icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M21.21 15.89A10 10 0 1 1 8 2.83"></path>
+                <path d="M22 12A10 10 0 0 0 12 2v10z"></path>
+              </svg>
+            </div>
+          </div>
+          <h3 class="inv-sector__name" data-i18n="inv.s4.name">Финансы и инвестиции</h3>
+          <p class="inv-sector__projects" data-i18n="inv.s4.projects">8 проектов</p>
+          <p class="inv-sector__desc" data-i18n="inv.s4.desc">Венчурные инвестиции, фонды со-инвестирования и управление капиталом.</p>
+          <div class="inv-sector__stats">
+            <div><span class="inv-sector__stat-label" data-i18n="inv.s4.stat1_label">Под управлением</span><span class="inv-sector__stat-value">$4.8
+                млрд</span></div>
+            <div><span class="inv-sector__stat-label" data-i18n="inv.s1.stat2_label">Средняя доходность</span><span
+                class="inv-sector__stat-value inv-sector__stat-value--accent">12.8%</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- HOW TO BECOME INVESTOR -->
+  <section class="how-to section-dark" id="how-to">
+    <div class="container">
+      <div class="section-label">
+        <span class="section-label__line"></span>
+        <span data-i18n="inv.howto.label">Процесс</span>
+      </div>
+      <h2 class="section-heading" style="margin-bottom:64px" data-i18n="inv.howto.title">Как стать инвестором</h2>
+      <div class="steps">
+        <div class="step">
+          <div class="step__num">01</div>
+          <div class="step__content">
+            <h3 class="step__title">Первичная консультация</h3>
+            <p class="step__text">Обсуждаем ваши цели, горизонт инвестирования и предпочтения по уровню риска. Знакомим
+              с текущим портфелем и доступными форматами участия.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step__num">02</div>
+          <div class="step__content">
+            <h3 class="step__title">Анализ и предложение</h3>
+            <p class="step__text">Подготавливаем персональное инвестиционное предложение с детальным финансовым
+              моделированием и прогнозом доходности.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step__num">03</div>
+          <div class="step__content">
+            <h3 class="step__title">Due Diligence</h3>
+            <p class="step__text">Обеспечиваем полный доступ к документации для независимой проверки. Организуем встречи
+              с ключевыми руководителями и посещение объектов.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step__num">04</div>
+          <div class="step__content">
+            <h3 class="step__title">Структурирование сделки</h3>
+            <p class="step__text">Оформляем юридическую структуру с максимальной защитой интересов инвестора.
+              Согласовываем ключевые условия и механизмы выхода.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step__num">05</div>
+          <div class="step__content">
+            <h3 class="step__title">Управление и отчётность</h3>
+            <p class="step__text">Регулярная отчётность, прямой канал коммуникации и участие в ключевых решениях
+              согласно формату участия.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- FAQ -->
+  <section class="faq section-dark" id="faq">
+    <div class="container">
+      <div class="faq__grid">
+        <div class="faq__left">
+          <div class="section-label">
+            <span class="section-label__line"></span>
+            <span data-i18n="investors.faq.label">Вопросы</span>
+          </div>
+          <h2 class="faq__heading" data-i18n="investors.faq.title">Частые вопросы</h2>
+          <p class="faq__intro" data-i18n="inv.faq.intro">Ответы на основные вопросы потенциальных инвесторов. Если вы не нашли ответ — свяжитесь
+            с нами напрямую.</p>
+        </div>
+        <div class="faq__list">
+          <div class="faq-item">
+            <button class="faq-item__question" aria-expanded="false">
+              <span data-i18n="inv.faq.q1">Какова минимальная сумма инвестиций?</span>
+              <span class="faq-item__icon">+</span>
+            </button>
+            <div class="faq-item__answer">
+              <p data-i18n="inv.faq.a1">Минимальный порог входа зависит от выбранного формата участия. Для проектных инвестиций — от ₽30 млн,
+                для портфельного участия — от ₽100 млн, для стратегического партнёрства — от ₽500 млн.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-item__question" aria-expanded="false">
+              <span data-i18n="inv.faq.q2">Как обеспечивается прозрачность для инвесторов?</span>
+              <span class="faq-item__icon">+</span>
+            </button>
+            <div class="faq-item__answer">
+              <p data-i18n="inv.faq.a2">Мы предоставляем ежеквартальную и ежегодную финансовую отчётность, открытый доступ к ключевым данным
+                через личный кабинет инвестора, а также регулярные встречи с управляющей командой.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-item__question" aria-expanded="false">
+              <span data-i18n="inv.faq.q3">Какие механизмы защиты капитала предусмотрены?</span>
+              <span class="faq-item__icon">+</span>
+            </button>
+            <div class="faq-item__answer">
+              <p data-i18n="inv.faq.a3">Мы используем диверсификацию портфеля по секторам и географии, структурирование сделок с залоговым
+                обеспечением, страхование рисков и многоуровневую систему операционного контроля.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-item__question" aria-expanded="false">
+              <span data-i18n="inv.faq.q4">Каков средний срок инвестиционного горизонта?</span>
+              <span class="faq-item__icon">+</span>
+            </button>
+            <div class="faq-item__answer">
+              <p data-i18n="inv.faq.a4">Для проектных инвестиций — 2–4 года в зависимости от типа проекта. Для портфельных и стратегических
+                форматов — 5–10 лет с промежуточными выплатами дивидендов.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-item__question" aria-expanded="false">
+              <span data-i18n="inv.faq.q5">Как стать инвестором B.A. Holding?</span>
+              <span class="faq-item__icon">+</span>
+            </button>
+            <div class="faq-item__answer">
+              <p data-i18n="inv.faq.a5">Заполните форму обратной связи или напишите на investors@baholding.com. Наш отдел по работе с
+                инвесторами свяжется с вами в течение 24 часов для организации первичной консультации.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="contact-cta section-dark" id="cta">
+    <div class="container">
+      <div class="contact-cta__inner">
+        <div class="section-label section-label--centered">
+          <span class="section-label__line"></span>
+          <span data-i18n="investors.cta.label">Начать сотрудничество</span>
+          <span class="section-label__line"></span>
+        </div>
+        <h2 class="contact-cta__heading"><span data-i18n="investors.cta.heading_p1">Готовы инвестировать в</span> <span class="fw-bold" data-i18n="investors.cta.heading_p2">будущее</span>?</h2>
+        <p class="contact-cta__desc" data-i18n="investors.cta.desc">Свяжитесь с нашим отделом по работе с инвесторами для получения персонального
+          инвестиционного предложения.</p>
+        <a href="mailto:investors@baholding.com" class="btn btn--blue" data-i18n="investors.cta.btn">Стать инвестором</a>
+        <p class="inv-cta__email">investors@baholding.com</p>
+      </div>
+    </div>
+  </section>
+
+  </div><!-- /.page-shell -->
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__main">
+      <div class="container">
+        <div class="footer__grid">
+          <div class="footer__brand">
+            <a href="index.html" class="footer__logo">
+              <img src="logo-light.png" alt="B.A. Holding" />
+            </a>
+            <p class="footer__brand-desc" data-i18n="footer.brand_desc">Диверсифицированная холдинговая компания, управляющая проектами в сферах
+              строительства, промышленности и медиа с фокусом на стратегическое партнёрство с инвесторами.</p>
+            <div class="footer__socials">
+              <a href="#" class="footer__social" aria-label="Telegram">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <defs>
+                    <linearGradient id="tg-grad" x1="0.5" y1="0" x2="0.5" y2="1">
+                      <stop offset="0" stop-color="#37BBFE"/>
+                      <stop offset="1" stop-color="#007DBB"/>
+                    </linearGradient>
+                  </defs>
+                  <circle cx="12" cy="12" r="12" fill="url(#tg-grad)"/>
+                  <path d="M5.49 11.6 17.3 7.04c.55-.2 1.03.13.85.96L16.13 18.5c-.14.66-.54.82-1.09.51l-3.02-2.23-1.46 1.4c-.16.16-.3.3-.6.3l.21-3.05 5.55-5.01c.24-.21-.05-.33-.37-.13l-6.86 4.32-2.96-.92c-.64-.2-.66-.64.05-.95z" fill="#fff"/>
+                </svg>
+              </a>
+              <a href="#" class="footer__social" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <defs>
+                    <radialGradient id="ig-grad" cx="0.3" cy="1.05" r="1.1">
+                      <stop offset="0" stop-color="#FED576"/>
+                      <stop offset="0.26" stop-color="#F47133"/>
+                      <stop offset="0.61" stop-color="#BC3081"/>
+                      <stop offset="1" stop-color="#4C63D2"/>
+                    </radialGradient>
+                  </defs>
+                  <rect x="2" y="2" width="20" height="20" rx="5.5" fill="url(#ig-grad)"/>
+                  <circle cx="12" cy="12" r="4.2" fill="none" stroke="#fff" stroke-width="1.7"/>
+                  <circle cx="17.3" cy="6.7" r="1.15" fill="#fff"/>
+                </svg>
+              </a>
+              <a href="#" class="footer__social" aria-label="Facebook">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path d="M24 12c0-6.63-5.37-12-12-12S0 5.37 0 12c0 5.99 4.39 10.95 10.13 11.85v-8.38H7.08V12h3.05V9.36c0-3.01 1.79-4.67 4.53-4.67 1.31 0 2.69.23 2.69.23v2.96h-1.52c-1.49 0-1.96.93-1.96 1.88V12h3.33l-.53 3.47h-2.8v8.38C19.61 22.95 24 17.99 24 12z" fill="#1877F2"/>
+                  <path d="m16.67 15.47.53-3.47h-3.33V9.76c0-.95.47-1.88 1.96-1.88h1.52V4.92s-1.38-.23-2.69-.23c-2.74 0-4.53 1.66-4.53 4.67V12H7.08v3.47h3.05v8.38c.61.1 1.24.15 1.87.15s1.26-.05 1.87-.15v-8.38h2.8z" fill="#fff"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="footer__col">
+            <h4 class="footer__col-title" data-i18n="footer.col_info">Информация</h4>
+            <ul class="footer__links">
+              <li><a href="about.html" data-i18n="nav.about">О компании</a></li>
+              <li><a href="projects.html" data-i18n="nav.projects">Проекты</a></li>
+              <li><a href="investors.html" data-i18n="nav.investors">Инвесторам</a></li>
+              <li><a href="career.html" data-i18n="nav.career">Карьера</a></li>
+              <li><a href="news.html" data-i18n="nav.news">Новости</a></li>
+              <li><a href="contacts.html" data-i18n="nav.contacts">Контакты</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h4 class="footer__col-title" data-i18n="footer.col_contacts">Контакты</h4>
+            <ul class="footer__contacts">
+              <li><a href="mailto:info@baholding.com">info@baholding.com</a></li>
+              <li><a href="tel:+998999999999">+998 55 203 22 22</a></li>
+              <li data-i18n="footer.address">Узбекистан, Ташкент, 123456</li>
+            </ul>
+          </div>
+          <div class="footer__col footer__col--map">
+            <h4 class="footer__col-title" data-i18n="footer.col_map">Мы на карте</h4>
+            <div class="footer__map">
+              <iframe src="https://yandex.com/map-widget/v1/?ll=69.279737%2C41.311081&z=11&pt=69.279737%2C41.311081%2Cpm2rdm" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="B.A. Holding на карте"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <div class="footer__bottom-inner">
+          <p class="footer__copy" data-i18n="footer.copy">© 2026 B.A. Holding. Все права защищены.</p>
+          <div class="footer__legal">
+            <a href="#" data-i18n="footer.privacy">Политика конфиденциальности</a>
+            <a href="#" data-i18n="footer.terms">Условия использования</a>
+            <a href="#" data-i18n="footer.cookies">Политика cookies</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Header scroll
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => header.classList.toggle('header--scrolled', window.scrollY > 40));
+    // Burger
+    const burgerBtn = document.getElementById('burgerBtn');
+    const nav = document.querySelector('.header__nav');
+    burgerBtn.addEventListener('click', () => nav.classList.toggle('header__nav--open'));
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(link => {
+      link.addEventListener('click', e => {
+        const id = link.getAttribute('href');
+        if (id === '#') return;
+        const target = document.querySelector(id);
+        if (target) { e.preventDefault(); window.scrollTo({ top: target.getBoundingClientRect().top + window.scrollY - 80, behavior: 'smooth' }); }
+      });
+    });
+  </script>
+  <script src="modal.js"></script>
+
+  <!-- GSAP Animations -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="animations.js"></script>
+  <script src="section-snap.js"></script>
+</body>
+
+</html>

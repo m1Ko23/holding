@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fu-xin — B.A. Holding</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="projects.css" />
+  <link rel="stylesheet" href="project-item.css" />
+  <script src="i18n.js" defer></script>
+</head>
+
+<body>
+
+  <div class="page-shell">
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a href="index.html" class="header__logo">
+        <img src="logo-dark.png" alt="B.A. Holding" />
+      </a>
+      <nav class="header__nav">
+        <a href="about.html" class="header__nav-link" data-i18n="nav.about">О компании</a>
+        <a href="projects.html" class="header__nav-link header__nav-link--active" data-i18n="nav.projects">Проекты</a>
+        <a href="investors.html" class="header__nav-link" data-i18n="nav.investors">Инвесторам</a>
+        <a href="career.html" class="header__nav-link" data-i18n="nav.career">Карьера</a>
+        <a href="news.html" class="header__nav-link" data-i18n="nav.news">Новости</a>
+        <a href="contacts.html" class="header__nav-link" data-i18n="nav.contacts">Контакты</a>
+      </nav>
+      <div class="lang-switch" role="group" aria-label="Language">
+        <button type="button" class="lang-switch__btn" data-lang-switch="ru">RU</button>
+        <button type="button" class="lang-switch__btn" data-lang-switch="uz">УЗ</button>
+      </div>
+      <a href="contacts.html#contact-form" class="btn btn--outline-blue btn--sm" data-i18n="nav.contact_btn">Связаться</a>
+      <button class="header__burger" aria-label="Меню" id="burgerBtn" data-i18n-attr="aria-label:nav.menu_aria"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <!-- ===== PAGE HERO ===== -->
+  <section class="page-hero pi-hero">
+    <div class="page-hero__bg">
+      <img src="assets/img/projects/fuxin/banner.png" alt="" />
+    </div>
+    <div class="page-hero__overlay"></div>
+    <div class="page-hero__fade"></div>
+    <div class="container page-hero__content">
+      <nav class="breadcrumb">
+        <a href="index.html" class="breadcrumb__link" data-i18n="crumb.home">Главная</a>
+        <span class="breadcrumb__sep">/</span>
+        <a href="projects.html" class="breadcrumb__link" data-i18n="crumb.projects">Проекты</a>
+        <span class="breadcrumb__sep">/</span>
+        <span class="breadcrumb__current">Fu-xin</span>
+      </nav>
+      <div class="pi-hero__meta">
+        <span class="pi-hero__cat">Производство</span>
+      </div>
+      <h1 class="page-hero__title">Fu-xin<br>Металлоконструкции и горячее цинкование</h1>
+      <p class="pi-hero__lead">
+        Fu-xin — современное предприятие, специализирующееся на производстве металлоконструкций и их горячем цинковании для защиты от коррозии.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== KEY STATS ===== -->
+  <section class="pi-stats section-dark">
+    <div class="container">
+      <div class="pi-stats__grid">
+        <div class="pi-stats__item">
+          <span class="pi-stats__num">30 млн долларов</span>
+          <span class="pi-stats__lbl">Годовой оборот</span>
+        </div>
+        <div class="pi-stats__item">
+          <span class="pi-stats__num">150</span>
+          <span class="pi-stats__lbl">Сотрудников</span>
+        </div>
+        <div class="pi-stats__item">
+          <span class="pi-stats__num">16 000 тонна</span>
+          <span class="pi-stats__lbl">Мощность в год</span>
+        </div>
+        <div class="pi-stats__item">
+          <span class="pi-stats__num">2024</span>
+          <span class="pi-stats__lbl">Год запуска</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== OVERVIEW ===== -->
+  <section class="pi-overview section-dark">
+    <div class="container">
+      <div class="pi-overview__grid">
+
+        <!-- Main content -->
+        <div class="pi-overview__main">
+          <div class="section-label">
+            <span class="section-label__line"></span>
+            <span>О предприятии</span>
+          </div>
+          <h2 class="section-heading">Металлоконструкции и<br><span class="fw-semibold">горячее цинкование</span></h2>
+
+          <p class="pi-overview__para">
+            Fu-xin — это промышленное предприятие, ориентированное на производство металлоконструкций различного назначения. Дополнительно завод выполняет процесс горячего цинкования, что обеспечивает защиту изделий от коррозии и увеличивает срок их службы.
+          </p>
+
+          <p class="pi-overview__para">
+            Предприятие оснащено современным оборудованием и работает в соответствии с промышленными стандартами качества. Продукция используется в строительстве, инфраструктурных и промышленных проектах.
+          </p>
+
+          <div class="pi-overview__features">
+            <div class="pi-feature">
+              <span class="pi-feature__num">01</span>
+              <div>
+                <h4 class="pi-feature__title">Металлические конструкции</h4>
+              </div>
+            </div>
+            <div class="pi-feature">
+              <span class="pi-feature__num">02</span>
+              <div>
+                <h4 class="pi-feature__title">Оцинкованные металлические изделия</h4>
+              </div>
+            </div>
+            <div class="pi-feature">
+              <span class="pi-feature__num">03</span>
+              <div>
+                <h4 class="pi-feature__title">Строительные металлоконструкции</h4>
+              </div>
+            </div>
+            <div class="pi-feature">
+              <span class="pi-feature__num">04</span>
+              <div>
+                <h4 class="pi-feature__title">Конструкции для промышленного применения</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sidebar logo card -->
+        <aside class="pi-overview__aside">
+          <div class="pi-logo-card">
+            <img class="pi-logo-card__img" src="assets/img/logos/Фухин.png" alt="Fu-xin" />
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GALLERY ===== -->
+  <section class="pi-gallery section-dark">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-header__left">
+          <div class="section-label">
+            <span class="section-label__line"></span>
+            <span>Галерея</span>
+          </div>
+          <h2 class="section-heading">Производство <span class="fw-semibold">в кадре</span></h2>
+        </div>
+      </div>
+      <div class="pi-gallery__slider" data-pi-gallery>
+        <div class="pi-gallery__viewport">
+          <div class="pi-gallery__track" data-pi-track>
+            <div class="pi-gallery__slide">
+              <div class="pi-gallery__img" style="background-image:url('assets/img/projects/fuxin/1.jpg')"></div>
+            </div>
+            <div class="pi-gallery__slide">
+              <div class="pi-gallery__img" style="background-image:url('assets/img/projects/fuxin/2.jpg')"></div>
+            </div>
+            <div class="pi-gallery__slide">
+              <div class="pi-gallery__img" style="background-image:url('assets/img/projects/fuxin/3.jpg')"></div>
+            </div>
+            <div class="pi-gallery__slide">
+              <div class="pi-gallery__img" style="background-image:url('assets/img/projects/fuxin/4.jpg')"></div>
+            </div>
+            <div class="pi-gallery__slide">
+              <div class="pi-gallery__img" style="background-image:url('assets/img/projects/fuxin/5.jpg')"></div>
+            </div>
+            <div class="pi-gallery__slide">
+              <div class="pi-gallery__img" style="background-image:url('assets/img/projects/fuxin/6.jpg')"></div>
+            </div>
+          </div>
+        </div>
+
+        <button type="button" class="pi-gallery__nav pi-gallery__nav--prev" data-pi-prev aria-label="Предыдущее фото">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <button type="button" class="pi-gallery__nav pi-gallery__nav--next" data-pi-next aria-label="Следующее фото">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+
+        <div class="pi-gallery__dots" data-pi-dots></div>
+        <div class="pi-gallery__counter">
+          <span data-pi-current>1</span><span class="pi-gallery__counter-sep">/</span><span data-pi-total>4</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== RELATED PROJECTS ===== -->
+  <section class="pi-related section-dark">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-header__left">
+          <div class="section-label">
+            <span class="section-label__line"></span>
+            <span>Похожие проекты</span>
+          </div>
+          <h2 class="section-heading">Другие <span class="fw-semibold">производственные активы</span></h2>
+        </div>
+        <a href="projects.html?cat=production" class="link-arrow">Все проекты направления →</a>
+      </div>
+
+      <div class="pi-related__grid">
+        <a href="project-tpp.html" class="proj-card">
+          <div class="proj-card__image-wrap">
+            <div class="proj-card__image" style="background-image: linear-gradient(135deg,rgba(14,28,66,0.5),rgba(8,18,46,0.65)), url('assets/img/projects/plast-polimer/banner.JPG'); background-size: cover; background-position: center;"></div>
+          </div>
+          <div class="proj-card__body">
+            <span class="proj-card__cat">Производство</span>
+            <h3 class="proj-card__title">Toshkent Plast Polimer</h3>
+            <p class="proj-card__desc">Toshkent Plast Polimer — промышленное предприятие, специализирующееся на выпуске картонной упаковки, пластмассовых изделий и полимерных компаундов</p>
+            <div class="proj-card__meta">
+              <div class="proj-card__meta-row">
+                <span class="proj-card__meta-key">Ташкент, ул. Олтин-Топган</span>
+                <span class="proj-card__meta-val">250 сотр.</span>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="project-ba-texnopark.html" class="proj-card">
+          <div class="proj-card__image-wrap">
+            <div class="proj-card__image" style="background-image: linear-gradient(135deg,rgba(14,28,66,0.5),rgba(8,18,46,0.65)), url('assets/img/projects/other/other (11).jpeg'); background-size: cover; background-position: center;"></div>
+          </div>
+          <div class="proj-card__body">
+            <span class="proj-card__cat">Производство</span>
+            <h3 class="proj-card__title">BA Texnopark (Wang Da Group)</h3>
+            <p class="proj-card__desc">BA Texnopark — промышленный технопарк, предоставляющий в аренду производственные и складские помещения для размещения предприятий различных отраслей</p>
+            <div class="proj-card__meta">
+              <div class="proj-card__meta-row">
+                <span class="proj-card__meta-key">Сырдарьинская обл., Хакикат</span>
+                <span class="proj-card__meta-val">более 1000 сотр.</span>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="project-sirdarya-metal-construction.html" class="proj-card">
+          <div class="proj-card__image-wrap">
+            <div class="proj-card__image" style="background-image: linear-gradient(135deg,rgba(14,28,66,0.5),rgba(8,18,46,0.65)), url('assets/img/projects/other/other (16).jpeg'); background-size: cover; background-position: center;"></div>
+          </div>
+          <div class="proj-card__body">
+            <span class="proj-card__cat">Производство</span>
+            <h3 class="proj-card__title">Sirdarya Metal Construction</h3>
+            <p class="proj-card__desc">Sirdarya Metal Construction — современное предприятие, специализирующееся на производстве и монтаже металлических конструкций для строительных проектов различно…</p>
+            <div class="proj-card__meta">
+              <div class="proj-card__meta-row">
+                <span class="proj-card__meta-key">Сырдарьинская обл., Хакикат</span>
+                <span class="proj-card__meta-val">200 сотр.</span>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section class="contact-cta section-dark">
+    <div class="container">
+      <div class="contact-cta__inner">
+        <div class="section-label section-label--centered">
+          <span class="section-label__line"></span>
+          <span>Сотрудничество</span>
+          <span class="section-label__line"></span>
+        </div>
+        <h2 class="contact-cta__heading">Заинтересованы в <span class="fw-bold">партнёрстве</span>?</h2>
+        <p class="contact-cta__desc">Готовы обсудить поставки металлопроката, объёмы и условия. Свяжитесь с нашим коммерческим отделом.</p>
+        <div style="display:flex;gap:20px;flex-wrap:wrap;justify-content:center">
+          <a href="contacts.html#contact-form" class="btn btn--blue">Связаться</a>
+          <a href="projects.html?cat=production" class="btn btn--outline">Все проекты направления</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  </div><!-- /.page-shell -->
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer__main">
+      <div class="container">
+        <div class="footer__grid">
+          <div class="footer__brand">
+            <a href="index.html" class="footer__logo">
+              <img src="logo-light.png" alt="B.A. Holding" />
+            </a>
+            <p class="footer__brand-desc" data-i18n="footer.brand_desc">Диверсифицированная холдинговая компания, управляющая проектами в сферах строительства, промышленности и медиа с фокусом на стратегическое партнёрство с инвесторами.</p>
+            <div class="footer__socials">
+              <a href="#" class="footer__social" aria-label="Telegram">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <defs>
+                    <linearGradient id="tg-grad" x1="0.5" y1="0" x2="0.5" y2="1">
+                      <stop offset="0" stop-color="#37BBFE"/>
+                      <stop offset="1" stop-color="#007DBB"/>
+                    </linearGradient>
+                  </defs>
+                  <circle cx="12" cy="12" r="12" fill="url(#tg-grad)"/>
+                  <path d="M5.49 11.6 17.3 7.04c.55-.2 1.03.13.85.96L16.13 18.5c-.14.66-.54.82-1.09.51l-3.02-2.23-1.46 1.4c-.16.16-.3.3-.6.3l.21-3.05 5.55-5.01c.24-.21-.05-.33-.37-.13l-6.86 4.32-2.96-.92c-.64-.2-.66-.64.05-.95z" fill="#fff"/>
+                </svg>
+              </a>
+              <a href="#" class="footer__social" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <defs>
+                    <radialGradient id="ig-grad" cx="0.3" cy="1.05" r="1.1">
+                      <stop offset="0" stop-color="#FED576"/>
+                      <stop offset="0.26" stop-color="#F47133"/>
+                      <stop offset="0.61" stop-color="#BC3081"/>
+                      <stop offset="1" stop-color="#4C63D2"/>
+                    </radialGradient>
+                  </defs>
+                  <rect x="2" y="2" width="20" height="20" rx="5.5" fill="url(#ig-grad)"/>
+                  <circle cx="12" cy="12" r="4.2" fill="none" stroke="#fff" stroke-width="1.7"/>
+                  <circle cx="17.3" cy="6.7" r="1.15" fill="#fff"/>
+                </svg>
+              </a>
+              <a href="#" class="footer__social" aria-label="Facebook">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path d="M24 12c0-6.63-5.37-12-12-12S0 5.37 0 12c0 5.99 4.39 10.95 10.13 11.85v-8.38H7.08V12h3.05V9.36c0-3.01 1.79-4.67 4.53-4.67 1.31 0 2.69.23 2.69.23v2.96h-1.52c-1.49 0-1.96.93-1.96 1.88V12h3.33l-.53 3.47h-2.8v8.38C19.61 22.95 24 17.99 24 12z" fill="#1877F2"/>
+                  <path d="m16.67 15.47.53-3.47h-3.33V9.76c0-.95.47-1.88 1.96-1.88h1.52V4.92s-1.38-.23-2.69-.23c-2.74 0-4.53 1.66-4.53 4.67V12H7.08v3.47h3.05v8.38c.61.1 1.24.15 1.87.15s1.26-.05 1.87-.15v-8.38h2.8z" fill="#fff"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="footer__col">
+            <h4 class="footer__col-title" data-i18n="footer.col_info">Информация</h4>
+            <ul class="footer__links">
+              <li><a href="about.html" data-i18n="nav.about">О компании</a></li>
+              <li><a href="projects.html" data-i18n="nav.projects">Проекты</a></li>
+              <li><a href="investors.html" data-i18n="nav.investors">Инвесторам</a></li>
+              <li><a href="career.html" data-i18n="nav.career">Карьера</a></li>
+              <li><a href="news.html" data-i18n="nav.news">Новости</a></li>
+              <li><a href="contacts.html" data-i18n="nav.contacts">Контакты</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h4 class="footer__col-title" data-i18n="footer.col_contacts">Контакты</h4>
+            <ul class="footer__contacts">
+              <li><a href="mailto:info@baholding.com">info@baholding.com</a></li>
+              <li><a href="tel:+998999999999">+998 55 203 22 22</a></li>
+              <li data-i18n="footer.address">Узбекистан, Ташкент, 123456</li>
+            </ul>
+          </div>
+          <div class="footer__col footer__col--map">
+            <h4 class="footer__col-title" data-i18n="footer.col_map">Мы на карте</h4>
+            <div class="footer__map">
+              <iframe src="https://yandex.com/map-widget/v1/?ll=69.279737%2C41.311081&z=11&pt=69.279737%2C41.311081%2Cpm2rdm" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="B.A. Holding на карте"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <div class="footer__bottom-inner">
+          <p class="footer__copy" data-i18n="footer.copy">© 2026 B.A. Holding. Все права защищены.</p>
+          <div class="footer__legal">
+            <a href="#" data-i18n="footer.privacy">Политика конфиденциальности</a>
+            <a href="#" data-i18n="footer.terms">Условия использования</a>
+            <a href="#" data-i18n="footer.cookies">Политика cookies</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => header.classList.toggle('header--scrolled', window.scrollY > 40));
+    const burgerBtn = document.getElementById('burgerBtn');
+    const nav = document.querySelector('.header__nav');
+    burgerBtn.addEventListener('click', () => { nav.classList.toggle('header__nav--open'); });
+  </script>
+
+  <!-- GSAP Animations -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="animations.js?v=3"></script>
+
+  <!-- ===== GALLERY SLIDER ===== -->
+  <script>
+    (() => {
+      const slider = document.querySelector('[data-pi-gallery]');
+      if (!slider) return;
+      const track = slider.querySelector('[data-pi-track]');
+      const slides = Array.from(track.children);
+      const prevBtn = slider.querySelector('[data-pi-prev]');
+      const nextBtn = slider.querySelector('[data-pi-next]');
+      const dotsBox = slider.querySelector('[data-pi-dots]');
+      const cur = slider.querySelector('[data-pi-current]');
+      const total = slider.querySelector('[data-pi-total]');
+      if (!slides.length) return;
+
+      let index = 0;
+      const count = slides.length;
+      if (total) total.textContent = String(count);
+
+      // build dots
+      slides.forEach((_, i) => {
+        const b = document.createElement('button');
+        b.type = 'button';
+        b.className = 'pi-gallery__dot';
+        b.setAttribute('aria-label', `Слайд ${i + 1}`);
+        b.addEventListener('click', () => go(i));
+        dotsBox.appendChild(b);
+      });
+      const dots = Array.from(dotsBox.children);
+
+      const go = (next) => {
+        index = (next + count) % count;
+        track.style.transform = `translateX(-${index * 100}%)`;
+        slides.forEach((s, i) => s.classList.toggle('is-active', i === index));
+        dots.forEach((d, i) => d.classList.toggle('is-active', i === index));
+        if (cur) cur.textContent = String(index + 1);
+      };
+
+      prevBtn.addEventListener('click', () => go(index - 1));
+      nextBtn.addEventListener('click', () => go(index + 1));
+
+      // keyboard
+      slider.tabIndex = 0;
+      slider.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowLeft')  { e.preventDefault(); go(index - 1); }
+        if (e.key === 'ArrowRight') { e.preventDefault(); go(index + 1); }
+      });
+
+      // swipe
+      let startX = null, dx = 0;
+      track.addEventListener('pointerdown', (e) => {
+        startX = e.clientX; dx = 0;
+        track.style.transition = 'none';
+        try { track.setPointerCapture(e.pointerId); } catch (_) {}
+      });
+      track.addEventListener('pointermove', (e) => {
+        if (startX == null) return;
+        dx = e.clientX - startX;
+        const w = slider.querySelector('.pi-gallery__viewport').clientWidth;
+        track.style.transform = `translateX(calc(-${index * 100}% + ${dx}px))`;
+        if (Math.abs(dx) > w * 0.001) e.preventDefault();
+      });
+      const endDrag = () => {
+        if (startX == null) return;
+        track.style.transition = '';
+        const w = slider.querySelector('.pi-gallery__viewport').clientWidth;
+        if (dx < -w * 0.15) go(index + 1);
+        else if (dx > w * 0.15) go(index - 1);
+        else go(index);
+        startX = null; dx = 0;
+      };
+      track.addEventListener('pointerup', endDrag);
+      track.addEventListener('pointercancel', endDrag);
+
+      // init
+      go(0);
+    })();
+  </script>
+
+  <!-- ===== SECTION SNAP SCROLL ===== -->
+  <script src="section-snap.js"></script>
+</body>
+
+</html>

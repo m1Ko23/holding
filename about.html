@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>О компании — B.A. Holding</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="about.css?v=10" />
+  <script src="i18n.js" defer></script>
+</head>
+
+<body>
+
+  <div class="page-shell">
+
+  <!-- ===== HEADER ===== -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a href="index.html" class="header__logo">
+        <img src="logo-dark.png" alt="B.A. Holding" />
+      </a>
+      <nav class="header__nav">
+        <a href="about.html" class="header__nav-link header__nav-link--active" data-i18n="nav.about">О компании</a>
+        <a href="projects.html" class="header__nav-link" data-i18n="nav.projects">Проекты</a>
+        <a href="investors.html" class="header__nav-link" data-i18n="nav.investors">Инвесторам</a>
+        <a href="career.html" class="header__nav-link" data-i18n="nav.career">Карьера</a>
+        <a href="news.html" class="header__nav-link" data-i18n="nav.news">Новости</a>
+        <a href="contacts.html" class="header__nav-link" data-i18n="nav.contacts">Контакты</a>
+      </nav>
+      <div class="lang-switch" role="group" aria-label="Language">
+        <button type="button" class="lang-switch__btn" data-lang-switch="ru">RU</button>
+        <button type="button" class="lang-switch__btn" data-lang-switch="uz">УЗ</button>
+      </div>
+      <a href="contacts.html#contact-form" class="btn btn--outline-blue btn--sm" data-i18n="nav.contact_btn">Связаться</a>
+      <button class="header__burger" aria-label="Меню" id="burgerBtn" data-i18n-attr="aria-label:nav.menu_aria">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== PAGE HERO ===== -->
+  <section class="page-hero">
+    <div class="page-hero__bg">
+      <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=2000&q=80" alt="" />
+    </div>
+    <div class="page-hero__overlay"></div>
+    <div class="page-hero__fade"></div>
+    <div class="container page-hero__content">
+      <nav class="breadcrumb">
+        <a href="index.html" class="breadcrumb__link" data-i18n="crumb.home">Главная</a>
+        <span class="breadcrumb__sep">/</span>
+        <span class="breadcrumb__current" data-i18n="crumb.about">О компании</span>
+      </nav>
+      <h1 class="page-hero__title" data-i18n="about.hero.title">О компании B.A. Holding</h1>
+    </div>
+  </section>
+
+  <!-- ===== WHO WE ARE ===== -->
+  <section class="about-who section-dark" id="who">
+    <!-- <div class="about-who__number">01</div> -->
+    <div class="container">
+      <div class="section-label">
+        <span class="section-label__line"></span>
+        <span data-i18n="about.who.label">Кто мы</span>
+      </div>
+      <div class="about-who__grid">
+        <!-- Image col -->
+        <div class="about-who__image-col">
+          <div class="about-who__image-wrap">
+            <img src="assets/main/office-main.png" alt="О компании"
+              class="about-who__image" data-i18n-attr="alt:about.hero.title" />
+          </div>
+          <div class="about-who__badge">
+            <span class="about-who__badge-number">2007</span>
+            <span class="about-who__badge-label" data-i18n="about.who.badge_label">год основания</span>
+          </div>
+          <div class="about-who__corner-tl"></div>
+        </div>
+        <!-- Text col -->
+        <div class="about-who__text-col">
+          <h2 class="about-who__heading">
+            <span data-i18n="about.who.heading_l1">Многопрофильный холдинг,</span><br />
+            <span data-i18n="about.who.heading_l2">основанный в 2007 году</span>
+          </h2>
+          <p class="about-who__para" data-i18n="about.who.para1">
+            B.A. Holding — многопрофильный инвестиционный холдинг, основанный в 2007 году. Компания объединяет 11
+            предприятий в сферах тяжёлой промышленности, металлургии, строительства, девелопмента, агрохимии и
+            производства пластиковой продукции.
+          </p>
+          <p class="about-who__para" data-i18n="about.who.para2">
+            Холдинг реализует проекты полного цикла — от инициации и инвестирования до операционного управления и
+            масштабирования. География присутствия охватывает ключевые регионы Узбекистана, а также Республику
+            Таджикистан.
+          </p>
+          <p class="about-who__para" data-i18n="about.who.para3">
+            Холдинг имеет успешный опыт запуска greenfield-проектов и создания совместных предприятий с китайскими
+            партнёрами. Производственная мощность — свыше 1 млн тонн металлопродукции в год.
+          </p>
+          <div class="about-who__stats">
+            <div class="about-who__stat">
+              <span class="about-who__stat-number">18</span>
+              <span class="about-who__stat-label" data-i18n="about.who.stat1_label">Предприятий</span>
+            </div>
+            <div class="about-who__stat">
+              <span class="about-who__stat-number">4 000+</span>
+              <span class="about-who__stat-label" data-i18n="about.who.stat2_label">Сотрудников</span>
+            </div>
+            <div class="about-who__stat">
+              <span class="about-who__stat-number">$1 млрд+</span>
+              <span class="about-who__stat-label" data-i18n="about.who.stat3_label">Оборот в год</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MISSION & VALUES ===== -->
+  <section class="values section-dark" id="values">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-header__left">
+          <div class="section-label">
+            <span class="section-label__line"></span>
+            <span data-i18n="about.values.label">Принципы</span>
+          </div>
+          <h2 class="section-heading"><span data-i18n="about.values.heading_p1">Миссия и</span> <span class="fw-semibold" data-i18n="about.values.heading_p2">ценности</span></h2>
+        </div>
+      </div>
+      <div class="values__grid">
+        <div class="value-card">
+          <div class="value-card__icon-wrap">
+            <img src="https://www.figma.com/api/mcp/asset/a0f643c0-4d95-4564-a950-fae1c7bc4079" alt=""
+              class="value-card__icon" />
+          </div>
+          <h3 class="value-card__title" data-i18n="about.values.mission_title">Миссия</h3>
+          <p class="value-card__text" data-i18n="about.values.mission_text">Формировать диверсифицированный портфель качественных бизнесов, создающих
+            устойчивую ценность для инвесторов, партнёров и сообществ на каждом рынке присутствия.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-card__icon-wrap">
+            <img src="https://www.figma.com/api/mcp/asset/ff73bf39-e953-461e-9a46-ab6d3e530582" alt=""
+              class="value-card__icon" />
+          </div>
+          <h3 class="value-card__title" data-i18n="about.values.vision_title">Видение</h3>
+          <p class="value-card__text" data-i18n="about.values.vision_text">Стать глобально признанной холдинговой компанией, известной стратегическим
+            превосходством, операционной дисциплиной и надёжными партнёрствами с инвесторами.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-card__icon-wrap">
+            <img src="https://www.figma.com/api/mcp/asset/dbeb1f2f-59e4-4ee2-9ad9-466094aac87a" alt=""
+              class="value-card__icon" />
+          </div>
+          <h3 class="value-card__title" data-i18n="about.values.integrity_title">Честность</h3>
+          <p class="value-card__text" data-i18n="about.values.integrity_text">Мы поддерживаем высочайшие стандарты прозрачности, этичного поведения и
+            ответственности в каждых деловых отношениях и каждом принимаемом решении.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HISTORY SLIDER ===== -->
+  <section class="history section-dark" id="history">
+    <div class="container">
+      <div class="section-label">
+        <span class="section-label__line"></span>
+        <span data-i18n="about.history.label">Наша история</span>
+      </div>
+      <h2 class="section-heading" style="margin-bottom: 64px;"><span data-i18n="about.history.heading_p1">Ключевые</span> <span class="fw-semibold" data-i18n="about.history.heading_p2">вехи</span></h2>
+    </div>
+
+    <div class="history-slider">
+      <div class="history-slider__track">
+        <!-- Set 1 -->
+        <article class="history-slide">
+          <div class="history-slide__image" style="background-image: linear-gradient(180deg, rgba(8,18,46,0.15), rgba(8,18,46,0.55)), url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=900&q=80');"></div>
+          <div class="history-slide__content">
+            <span class="history-slide__year">2007</span>
+            <h3 class="history-slide__title" data-i18n="about.history.s1_title">Основание</h3>
+            <p class="history-slide__text" data-i18n="about.history.s1_text">B.A. Holding основана Баходиром Абдуллаевым как многопрофильный инвестиционный холдинг. Первые проекты — в сфере металлургии и строительства в Узбекистане.</p>
+          </div>
+        </article>
+
+        <article class="history-slide">
+          <div class="history-slide__image" style="background-image: linear-gradient(180deg, rgba(8,18,46,0.15), rgba(8,18,46,0.55)), url('https://images.unsplash.com/photo-1518709268805-4e9042af2176?auto=format&fit=crop&w=900&q=80');"></div>
+          <div class="history-slide__content">
+            <span class="history-slide__year">2010</span>
+            <h3 class="history-slide__title" data-i18n="about.history.s2_title">Металлургическая экспансия</h3>
+            <p class="history-slide__text" data-i18n="about.history.s2_text">Запущен Наманганский металлургический завод (NMZ). Начало производства металлопроката и арматуры для строительной отрасли.</p>
+          </div>
+        </article>
+
+        <article class="history-slide">
+          <div class="history-slide__image" style="background-image: linear-gradient(180deg, rgba(8,18,46,0.15), rgba(8,18,46,0.55)), url('https://images.unsplash.com/photo-1565008576549-57569a49371d?auto=format&fit=crop&w=900&q=80');"></div>
+          <div class="history-slide__content">
+            <span class="history-slide__year">2014</span>
+            <h3 class="history-slide__title" data-i18n="about.history.s3_title">Диверсификация производства</h3>
+            <p class="history-slide__text" data-i18n="about.history.s3_text">Открыт завод FUXIN по производству металлоконструкций и горячему цинкованию. Запущен Toshkent Plast Polimer — производство пластиковых изделий.</p>
+          </div>
+        </article>
+
+        <article class="history-slide">
+          <div class="history-slide__image" style="background-image: linear-gradient(180deg, rgba(8,18,46,0.15), rgba(8,18,46,0.55)), url('https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=900&q=80');"></div>
+          <div class="history-slide__content">
+            <span class="history-slide__year">2018</span>
+            <h3 class="history-slide__title" data-i18n="about.history.s4_title">Международные партнёрства</h3>
+            <p class="history-slide__text" data-i18n="about.history.s4_text">Созданы совместные предприятия с китайскими партнёрами. Запуск Sirdarya Metal Construction и выход на рынок Таджикистана.</p>
+          </div>
+        </article>
+
+        <article class="history-slide">
+          <div class="history-slide__image" style="background-image: linear-gradient(180deg, rgba(8,18,46,0.15), rgba(8,18,46,0.55)), url('https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=900&q=80');"></div>
+          <div class="history-slide__content">
+            <span class="history-slide__year">2022</span>
+            <h3 class="history-slide__title" data-i18n="about.history.s5_title">Награждение и признание</h3>
+            <p class="history-slide__text" data-i18n="about.history.s5_text">Основатель холдинга Баходир Абдуллаев награждён Президентом Узбекистана орденом «Мехнат шухрати». Оборот превысил $1 млрд.</p>
+          </div>
+        </article>
+
+        <article class="history-slide">
+          <div class="history-slide__image" style="background-image: linear-gradient(180deg, rgba(8,18,46,0.15), rgba(8,18,46,0.55)), url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=900&q=80');"></div>
+          <div class="history-slide__content">
+            <span class="history-slide__year">2026</span>
+            <h3 class="history-slide__title" data-i18n="about.history.s6_title">Стратегическое развитие</h3>
+            <p class="history-slide__text" data-i18n="about.history.s6_text">Холдинг объединяет 18 предприятий, более 4 000 сотрудников. Продолжается запуск новых greenfield-проектов и расширение географии присутствия.</p>
+          </div>
+        </article>
+
+        <!-- Set 2 (duplicate for seamless infinite loop) -->
+        <article class="history-slide" aria-hidden="true">
+          <div class="history-slide__image" style="background-image: linear-gradient(180deg, rgba(8,18,46,0.15), rgba(8,18,46,0.55)), url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=900&q=80');"></div>
+          <div class="history-slide__content">
+            <span class="history-slide__year">2007</span>
+            <h3 class="history-slide__title" data-i18n="about.history.s1_title">Основание</h3>
+            <p class="history-slide__text" data-i18n="about.history.s1_text">B.A. Holding основана Баходиром Абдуллаевым как многопрофильный инвестиционный холдинг. Первые проекты — в сфере металлургии и строительства в Узбекистане.</p>
+          </div>
+        </article>
+
+        <article class="history-slide" aria-hidden="true">
+          <div class="history-slide__image" style="background-image: linear-gradient(180deg, rgba(8,18,46,0.15), rgba(8,18,46,0.55)), url('https://images.unsplash.com/photo-1518709268805-4e9042af2176?auto=format&fit=crop&w=900&q=80');"></div>
+          <div class="history-slide__content">
+            <span class="history-slide__year">2010</span>
+            <h3 class="history-slide__title" data-i18n="about.history.s2_title">Металлургическая экспансия</h3>
+            <p class="history-slide__text" data-i18n="about.history.s2_text">Запущен Наманганский металлургический завод (NMZ). Начало производства металлопроката и арматуры для строительной отрасли.</p>
+          </div>
+        </article>
+
+        <article class="history-slide" aria-hidden="true">
+          <div class="history-slide__image" style="background-image: linear-gradient(180deg, rgba(8,18,46,0.15), rgba(8,18,46,0.55)), url('https://images.unsplash.com/photo-1565008576549-57569a49371d?auto=format&fit=crop&w=900&q=80');"></div>
+          <div class="history-slide__content">
+            <span class="history-slide__year">2014</span>
+            <h3 class="history-slide__title" data-i18n="about.history.s3_title">Диверсификация производства</h3>
+            <p class="history-slide__text" data-i18n="about.history.s3_text">Открыт завод FUXIN по производству металлоконструкций и горячему цинкованию. Запущен Toshkent Plast Polimer — производство пластиковых изделий.</p>
+          </div>
+        </article>
+
+        <article class="history-slide" aria-hidden="true">
+          <div class="history-slide__image" style="background-image: linear-gradient(180deg, rgba(8,18,46,0.15), rgba(8,18,46,0.55)), url('https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=900&q=80');"></div>
+          <div class="history-slide__content">
+            <span class="history-slide__year">2018</span>
+            <h3 class="history-slide__title" data-i18n="about.history.s4_title">Международные партнёрства</h3>
+            <p class="history-slide__text" data-i18n="about.history.s4_text">Созданы совместные предприятия с китайскими партнёрами. Запуск Sirdarya Metal Construction и выход на рынок Таджикистана.</p>
+          </div>
+        </article>
+
+        <article class="history-slide" aria-hidden="true">
+          <div class="history-slide__image" style="background-image: linear-gradient(180deg, rgba(8,18,46,0.15), rgba(8,18,46,0.55)), url('https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=900&q=80');"></div>
+          <div class="history-slide__content">
+            <span class="history-slide__year">2022</span>
+            <h3 class="history-slide__title" data-i18n="about.history.s5_title">Награждение и признание</h3>
+            <p class="history-slide__text" data-i18n="about.history.s5_text">Основатель холдинга Баходир Абдуллаев награждён Президентом Узбекистана орденом «Мехнат шухрати». Оборот превысил $1 млрд.</p>
+          </div>
+        </article>
+
+        <article class="history-slide" aria-hidden="true">
+          <div class="history-slide__image" style="background-image: linear-gradient(180deg, rgba(8,18,46,0.15), rgba(8,18,46,0.55)), url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=900&q=80');"></div>
+          <div class="history-slide__content">
+            <span class="history-slide__year">2026</span>
+            <h3 class="history-slide__title" data-i18n="about.history.s6_title">Стратегическое развитие</h3>
+            <p class="history-slide__text" data-i18n="about.history.s6_text">Холдинг объединяет 18 предприятий, более 4 000 сотрудников. Продолжается запуск новых greenfield-проектов и расширение географии присутствия.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ===== FOUNDERS ===== -->
+  <section class="founders section-dark" id="founders">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-header__left">
+          <div class="section-label">
+            <span class="section-label__line"></span>
+            <span data-i18n="about.founders.label">Семья основателя</span>
+          </div>
+          <h2 class="section-heading"><span data-i18n="about.founders.heading_p1">Учредительский</span> <span class="fw-semibold" data-i18n="about.founders.heading_p2">состав</span></h2>
+        </div>
+      </div>
+      <ul class="founders__grid">
+        <li class="founder-card" data-anim="left">
+          <img src="assets/about/Баходир.jpeg" alt="Абдуллаев Баходир Тожимирзаевич" class="founder-card__img" loading="lazy" />
+          <span class="founder-card__overlay"></span>
+          <span class="founder-card__content">
+            <span class="founder-card__role" data-i18n="about.founders.f1_role">Основатель B.A. Holding</span>
+            <span class="founder-card__name">Абдуллаев<br>Баходир Тожимирзаевич</span>
+          </span>
+        </li>
+        <li class="founder-card" data-anim="down">
+          <img src="assets/about/ГУЛБАХОР.jpeg" alt="Тожимирзаева Гулбахор Баходыровна" class="founder-card__img" loading="lazy" />
+          <span class="founder-card__overlay"></span>
+          <span class="founder-card__content">
+            <span class="founder-card__role" data-i18n="about.founders.f2_role">Генеральный директор ассоциации</span>
+            <span class="founder-card__name">Тожимирзаева<br>Гулбахор Баходыровна</span>
+          </span>
+        </li>
+        <li class="founder-card" data-anim="up">
+          <img src="assets/about/ГУЛИНУР.jpeg" alt="Абдуллаева Гулинур Баходыровна" class="founder-card__img" loading="lazy" />
+          <span class="founder-card__overlay"></span>
+          <span class="founder-card__content">
+            <span class="founder-card__role" data-i18n="about.founders.f3_role">Финансовый директор ассоциации</span>
+            <span class="founder-card__name">Абдуллаева<br>Гулинур Баходыровна</span>
+          </span>
+        </li>
+        <li class="founder-card" data-anim="right">
+          <img src="assets/about/ГУЗАЛХОН.jpeg" alt="Тожимирзаева Гузалхон Баходыровна" class="founder-card__img" loading="lazy" />
+          <span class="founder-card__overlay"></span>
+          <span class="founder-card__content">
+            <span class="founder-card__role" data-i18n="about.founders.f4_role">Директор департамента развития бизнеса</span>
+            <span class="founder-card__name">Тожимирзаева<br>Гузалхон Баходыровна</span>
+          </span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== LEADERSHIP ===== -->
+  <section class="leadership section-dark" id="leadership">
+    <!-- <div class="leadership__number">03</div> -->
+    <div class="container">
+      <div class="section-header">
+        <div class="section-header__left">
+          <div class="section-label">
+            <span class="section-label__line"></span>
+            <span data-i18n="about.lead.label">Руководство</span>
+          </div>
+          <h2 class="section-heading"><span data-i18n="about.lead.heading_p1">Управляющий</span> <span class="fw-semibold" data-i18n="about.lead.heading_p2">состав</span></h2>
+        </div>
+      </div>
+      <ul class="team-grid">
+        <li class="team-card">
+          <img src="assets/about/Шерзод.png" alt="Карабаев Шерзод Гайратович" class="team-card__img" loading="lazy" />
+          <span class="team-card__overlay"></span>
+          <span class="team-card__content">
+            <span class="team-card__role" data-i18n="about.lead.role1">Заместитель директора</span>
+            <span class="team-card__name">Карабаев<br>Шерзод Гайратович</span>
+          </span>
+        </li>
+        <li class="team-card">
+          <img src="assets/about/Мухиддин.png" alt="Утаганов Мухиддин Нурбоевич" class="team-card__img" loading="lazy" />
+          <span class="team-card__overlay"></span>
+          <span class="team-card__content">
+            <span class="team-card__role" data-i18n="about.lead.role2">Главный юрист-консультант</span>
+            <span class="team-card__name">Утаганов<br>Мухиддин Нурбоевич</span>
+          </span>
+        </li>
+        <li class="team-card">
+          <img src="assets/about/Бобур.png" alt="Саидов Бобур Гуломович" class="team-card__img" loading="lazy" />
+          <span class="team-card__overlay"></span>
+          <span class="team-card__content">
+            <span class="team-card__role" data-i18n="about.lead.role3">Финансовый директор</span>
+            <span class="team-card__name">Саидов<br>Бобур Гуломович</span>
+          </span>
+        </li>
+        <li class="team-card">
+          <img src="assets/about/Мирсобит.png" alt="Рахмонов Мирсобит Миркамол угли" class="team-card__img" loading="lazy" />
+          <span class="team-card__overlay"></span>
+          <span class="team-card__content">
+            <span class="team-card__role" data-i18n="about.lead.role4">Главный бухгалтер</span>
+            <span class="team-card__name">Рахмонов<br>Мирсобит Миркамол угли</span>
+          </span>
+        </li>
+        <li class="team-card">
+          <img src="assets/about/Ильхомжон.png" alt="Абдуллаев Ильхомжон Тожимирзаевич" class="team-card__img" loading="lazy" />
+          <span class="team-card__overlay"></span>
+          <span class="team-card__content">
+            <span class="team-card__role" data-i18n="about.lead.role5">Бизнес-ассистент</span>
+            <span class="team-card__name">Абдуллаев<br>Ильхомжон Тожимирзаевич</span>
+          </span>
+        </li>
+        <li class="team-card">
+          <img src="assets/about/Шахзод.png" alt="Худойбердиев Шахзод Абдушукурович" class="team-card__img" loading="lazy" />
+          <span class="team-card__overlay"></span>
+          <span class="team-card__content">
+            <span class="team-card__role" data-i18n="about.lead.role6">Руководитель PR-отдела</span>
+            <span class="team-card__name">Худойбердиев<br>Шахзод Абдушукурович</span>
+          </span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== CULTURE ===== -->
+  <section class="culture section-dark" id="culture">
+    <div class="container">
+    <div class="culture__grid">
+      <div class="culture__image-col">
+        <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=1600&q=80" alt="Корпоративная культура"
+          class="culture__image" data-i18n-attr="alt:about.culture.label" />
+        <div class="culture__image-overlay"></div>
+      </div>
+      <div class="culture__content">
+        <div class="section-label">
+          <span class="section-label__line"></span>
+          <span data-i18n="about.culture.label">Корпоративная культура</span>
+        </div>
+        <h2 class="culture__heading">
+          <span data-i18n="about.culture.heading_l1">Ориентация на людей,</span><br />
+          <span class="fw-semibold" data-i18n="about.culture.heading_l2">нацеленность на результат</span>
+        </h2>
+        <p class="culture__para" data-i18n="about.culture.para1">
+          B.A. Holding корпоративная культура построена на уважении, ответственности и совместном стремлении к
+          совершенству. Мы инвестируем в наших людей, потому что знаем — исключительные команды создают исключительные
+          проекты.
+        </p>
+        <p class="culture__para" data-i18n="about.culture.para2">
+          Наша организационная структура способствует сотрудничеству между подразделениями, обмену знаниями и плоскому
+          процессу принятия решений, наделяющему полномочиями лидеров на каждом уровне.
+        </p>
+        <div class="culture__features">
+          <div class="culture__feature">
+            <span class="culture__feature-dot"></span>
+            <span data-i18n="about.culture.feat1">Кросс-функциональные команды</span>
+          </div>
+          <div class="culture__feature">
+            <span class="culture__feature-dot"></span>
+            <span data-i18n="about.culture.feat2">Программы наставничества</span>
+          </div>
+          <div class="culture__feature">
+            <span class="culture__feature-dot"></span>
+            <span data-i18n="about.culture.feat3">Международная мобильность</span>
+          </div>
+          <div class="culture__feature">
+            <span class="culture__feature-dot"></span>
+            <span data-i18n="about.culture.feat4">Непрерывное обучение</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- ===== PARTNERSHIP CTA ===== -->
+  <section class="partner-cta section-dark">
+    <div class="container">
+      <div class="partner-cta__inner">
+        <div class="section-label section-label--centered">
+          <span class="section-label__line"></span>
+          <span data-i18n="about.partner.label">Партнёрство</span>
+          <span class="section-label__line"></span>
+        </div>
+        <h2 class="partner-cta__heading">
+          <span data-i18n="about.partner.heading_p1">Заинтересованы в</span> <span class="fw-semibold" data-i18n="about.partner.heading_p2">сотрудничестве</span>?
+        </h2>
+        <p class="partner-cta__desc" data-i18n="about.partner.desc">
+          Мы приветствуем обращения от потенциальных партнёров, инвесторов и профессионалов, разделяющих наше видение
+          стратегического роста.
+        </p>
+        <div class="partner-cta__actions">
+          <a href="index.html#contact" class="btn btn--blue" data-i18n="btn.contact">Связаться</a>
+          <a href="index.html" class="btn btn--outline" data-i18n="btn.home">На главную</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  </div><!-- /.page-shell -->
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" id="footer">
+    <div class="footer__main">
+      <div class="container">
+        <div class="footer__grid">
+          <div class="footer__brand">
+            <a href="index.html" class="footer__logo">
+              <img src="logo-light.png" alt="B.A. Holding" />
+            </a>
+            <p class="footer__brand-desc" data-i18n="footer.brand_desc">
+              Диверсифицированная холдинговая компания, управляющая проектами в сферах строительства, промышленности и
+              медиа с фокусом на стратегическое партнёрство с инвесторами.
+            </p>
+            <div class="footer__socials">
+              <a href="#" class="footer__social" aria-label="Telegram">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <defs>
+                    <linearGradient id="tg-grad" x1="0.5" y1="0" x2="0.5" y2="1">
+                      <stop offset="0" stop-color="#37BBFE"/>
+                      <stop offset="1" stop-color="#007DBB"/>
+                    </linearGradient>
+                  </defs>
+                  <circle cx="12" cy="12" r="12" fill="url(#tg-grad)"/>
+                  <path d="M5.49 11.6 17.3 7.04c.55-.2 1.03.13.85.96L16.13 18.5c-.14.66-.54.82-1.09.51l-3.02-2.23-1.46 1.4c-.16.16-.3.3-.6.3l.21-3.05 5.55-5.01c.24-.21-.05-.33-.37-.13l-6.86 4.32-2.96-.92c-.64-.2-.66-.64.05-.95z" fill="#fff"/>
+                </svg>
+              </a>
+              <a href="#" class="footer__social" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <defs>
+                    <radialGradient id="ig-grad" cx="0.3" cy="1.05" r="1.1">
+                      <stop offset="0" stop-color="#FED576"/>
+                      <stop offset="0.26" stop-color="#F47133"/>
+                      <stop offset="0.61" stop-color="#BC3081"/>
+                      <stop offset="1" stop-color="#4C63D2"/>
+                    </radialGradient>
+                  </defs>
+                  <rect x="2" y="2" width="20" height="20" rx="5.5" fill="url(#ig-grad)"/>
+                  <circle cx="12" cy="12" r="4.2" fill="none" stroke="#fff" stroke-width="1.7"/>
+                  <circle cx="17.3" cy="6.7" r="1.15" fill="#fff"/>
+                </svg>
+              </a>
+              <a href="#" class="footer__social" aria-label="Facebook">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path d="M24 12c0-6.63-5.37-12-12-12S0 5.37 0 12c0 5.99 4.39 10.95 10.13 11.85v-8.38H7.08V12h3.05V9.36c0-3.01 1.79-4.67 4.53-4.67 1.31 0 2.69.23 2.69.23v2.96h-1.52c-1.49 0-1.96.93-1.96 1.88V12h3.33l-.53 3.47h-2.8v8.38C19.61 22.95 24 17.99 24 12z" fill="#1877F2"/>
+                  <path d="m16.67 15.47.53-3.47h-3.33V9.76c0-.95.47-1.88 1.96-1.88h1.52V4.92s-1.38-.23-2.69-.23c-2.74 0-4.53 1.66-4.53 4.67V12H7.08v3.47h3.05v8.38c.61.1 1.24.15 1.87.15s1.26-.05 1.87-.15v-8.38h2.8z" fill="#fff"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="footer__col">
+            <h4 class="footer__col-title" data-i18n="footer.col_info">Информация</h4>
+            <ul class="footer__links">
+              <li><a href="about.html" data-i18n="nav.about">О компании</a></li>
+              <li><a href="projects.html" data-i18n="nav.projects">Проекты</a></li>
+              <li><a href="investors.html" data-i18n="nav.investors">Инвесторам</a></li>
+              <li><a href="career.html" data-i18n="nav.career">Карьера</a></li>
+              <li><a href="news.html" data-i18n="nav.news">Новости</a></li>
+              <li><a href="contacts.html" data-i18n="nav.contacts">Контакты</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h4 class="footer__col-title" data-i18n="footer.col_contacts">Контакты</h4>
+            <ul class="footer__contacts">
+              <li><a href="mailto:info@baholding.com">info@baholding.com</a></li>
+              <li><a href="tel:+998999999999">+998 55 203 22 22</a></li>
+              <li data-i18n="footer.address">Узбекистан, Ташкент, 123456</li>
+            </ul>
+          </div>
+          <div class="footer__col footer__col--map">
+            <h4 class="footer__col-title" data-i18n="footer.col_map">Мы на карте</h4>
+            <div class="footer__map">
+              <iframe src="https://yandex.com/map-widget/v1/?ll=69.279737%2C41.311081&z=11&pt=69.279737%2C41.311081%2Cpm2rdm" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="B.A. Holding на карте"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <div class="footer__bottom-inner">
+          <p class="footer__copy" data-i18n="footer.copy">© 2026 B.A. Holding. Все права защищены.</p>
+          <div class="footer__legal">
+            <a href="#" data-i18n="footer.privacy">Политика конфиденциальности</a>
+            <a href="#" data-i18n="footer.terms">Условия использования</a>
+            <a href="#" data-i18n="footer.cookies">Политика cookies</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('header--scrolled', window.scrollY > 40);
+    });
+    const burgerBtn = document.getElementById('burgerBtn');
+    const nav = document.querySelector('.header__nav');
+    burgerBtn.addEventListener('click', () => {
+      nav.classList.toggle('header__nav--open');
+      burgerBtn.classList.toggle('header__burger--open');
+    });
+    document.querySelectorAll('a[href^="#"]').forEach(link => {
+      link.addEventListener('click', e => {
+        const id = link.getAttribute('href');
+        if (id === '#') return;
+        const target = document.querySelector(id);
+        if (target) {
+          e.preventDefault();
+          const top = target.getBoundingClientRect().top + window.scrollY - 80;
+          window.scrollTo({ top, behavior: 'smooth' });
+          nav.classList.remove('header__nav--open');
+        }
+      });
+    });
+  </script>
+  <script src="modal.js"></script>
+
+  <!-- GSAP Animations -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="animations.js?v=3"></script>
+  <script src="section-snap.js"></script>
+
+  <!-- ===== HISTORY SLIDER: auto-scroll + drag-to-scrub ===== -->
+  <script>
+    (() => {
+      const slider = document.querySelector('.history-slider');
+      const track  = slider && slider.querySelector('.history-slider__track');
+      if (!slider || !track) return;
+
+      const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      const SPEED = 40; // px per second — matches the previous 60s CSS animation
+
+      let offset = 0;
+      let loopDistance = 0;
+      let isHovered = false;
+      let isDragging = false;
+      let dragStartPointer = 0;
+      let dragStartOffset = 0;
+      let dragMoved = 0;
+      let activePointerId = null;
+      let lastTime = performance.now();
+      let rafId = 0;
+
+      const measure = () => {
+        // Track contains 2 identical sets of slides separated by `gap`.
+        // To loop seamlessly we shift by one full set + one gap.
+        const cs = getComputedStyle(track);
+        const gap = parseFloat(cs.columnGap || cs.gap || '0') || 0;
+        const fullWidth = track.scrollWidth;
+        loopDistance = (fullWidth + gap) / 2;
+      };
+
+      const wrap = (x) => {
+        if (loopDistance <= 0) return x;
+        // Keep offset in (-loopDistance, 0]
+        x = x % loopDistance;
+        if (x > 0) x -= loopDistance;
+        return x;
+      };
+
+      const apply = () => {
+        track.style.transform = `translate3d(${offset}px, 0, 0)`;
+      };
+
+      const tick = (now) => {
+        const dt = (now - lastTime) / 1000;
+        lastTime = now;
+        if (!isHovered && !isDragging && !reduceMotion && loopDistance > 0) {
+          offset = wrap(offset - SPEED * dt);
+          apply();
+        }
+        rafId = requestAnimationFrame(tick);
+      };
+
+      // Hover pause (also handles touch hover via pointerenter/leave)
+      slider.addEventListener('pointerenter', (e) => {
+        if (e.pointerType === 'mouse') isHovered = true;
+      });
+      slider.addEventListener('pointerleave', (e) => {
+        if (e.pointerType === 'mouse') isHovered = false;
+      });
+
+      // Drag
+      slider.addEventListener('pointerdown', (e) => {
+        if (e.button !== undefined && e.button !== 0) return;
+        isDragging = true;
+        dragMoved = 0;
+        dragStartPointer = e.clientX;
+        dragStartOffset = offset;
+        activePointerId = e.pointerId;
+        try { slider.setPointerCapture(e.pointerId); } catch (_) {}
+        slider.classList.add('is-dragging');
+      });
+
+      slider.addEventListener('pointermove', (e) => {
+        if (!isDragging || e.pointerId !== activePointerId) return;
+        const delta = e.clientX - dragStartPointer;
+        dragMoved = Math.abs(delta);
+        offset = wrap(dragStartOffset + delta);
+        apply();
+      });
+
+      const endDrag = (e) => {
+        if (!isDragging || (e.pointerId !== undefined && e.pointerId !== activePointerId)) return;
+        isDragging = false;
+        activePointerId = null;
+        slider.classList.remove('is-dragging');
+        try { slider.releasePointerCapture(e.pointerId); } catch (_) {}
+      };
+
+      slider.addEventListener('pointerup', endDrag);
+      slider.addEventListener('pointercancel', endDrag);
+
+      // Suppress click on a slide right after a drag (prevent ghost clicks)
+      slider.addEventListener('click', (e) => {
+        if (dragMoved > 5) { e.preventDefault(); e.stopPropagation(); dragMoved = 0; }
+      }, true);
+
+      // Don't drag from native draggable elements (images)
+      slider.querySelectorAll('img').forEach(img => { img.draggable = false; });
+
+      // Pause when tab/window hidden so we don't drift on resume
+      document.addEventListener('visibilitychange', () => {
+        if (!document.hidden) lastTime = performance.now();
+      });
+
+      const start = () => {
+        measure();
+        lastTime = performance.now();
+        cancelAnimationFrame(rafId);
+        rafId = requestAnimationFrame(tick);
+      };
+
+      start();
+      window.addEventListener('resize', measure);
+      window.addEventListener('load', () => { measure(); apply(); });
+      if (document.fonts && document.fonts.ready) {
+        document.fonts.ready.then(() => { measure(); apply(); });
+      }
+    })();
+  </script>
+
+</body>
+
+</html>

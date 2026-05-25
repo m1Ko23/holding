@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Новости — B.A. Holding</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="news.css" />
+  <script src="i18n.js" defer></script>
+</head>
+
+<body>
+
+  <div class="page-shell">
+
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a href="index.html" class="header__logo">
+        <img src="logo-dark.png" alt="B.A. Holding" />
+      </a>
+      <nav class="header__nav">
+        <a href="about.html" class="header__nav-link" data-i18n="nav.about">О компании</a>
+        <a href="projects.html" class="header__nav-link" data-i18n="nav.projects">Проекты</a>
+        <a href="investors.html" class="header__nav-link" data-i18n="nav.investors">Инвесторам</a>
+        <a href="career.html" class="header__nav-link" data-i18n="nav.career">Карьера</a>
+        <a href="news.html" class="header__nav-link header__nav-link--active" data-i18n="nav.news">Новости</a>
+        <a href="contacts.html" class="header__nav-link" data-i18n="nav.contacts">Контакты</a>
+      </nav>
+      <div class="lang-switch" role="group" aria-label="Language">
+        <button type="button" class="lang-switch__btn" data-lang-switch="ru">RU</button>
+        <button type="button" class="lang-switch__btn" data-lang-switch="uz">УЗ</button>
+      </div>
+      <a href="contacts.html#contact-form" class="btn btn--outline-blue btn--sm" data-i18n="nav.contact_btn">Связаться</a>
+      <button class="header__burger" aria-label="Меню" id="burgerBtn" data-i18n-attr="aria-label:nav.menu_aria"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="page-hero news-hero">
+    <div class="page-hero__bg">
+      <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=2000&q=80" alt="Новости B.A. Holding" />
+    </div>
+    <div class="page-hero__overlay"></div>
+    <div class="page-hero__fade"></div>
+    <div class="container page-hero__content">
+      <nav class="breadcrumb">
+        <a href="index.html" class="breadcrumb__link" data-i18n="crumb.home">Главная</a>
+        <span class="breadcrumb__sep">/</span>
+        <span class="breadcrumb__current" data-i18n="crumb.news">Новости</span>
+      </nav>
+      <h1 class="page-hero__title" data-i18n="news.hero.title">Новости и события</h1>
+    </div>
+  </section>
+
+  <!-- NEWS GRID -->
+  <section class="news-grid-section section-dark" id="news">
+    <div class="container">
+
+      <div class="news-grid-header">
+        <div>
+          <div class="section-label">
+            <span class="section-label__line"></span>
+            <span data-i18n="news.grid.label">Все новости</span>
+          </div>
+          <h2 class="news-grid__heading" data-i18n="news.grid.title">Лента событий</h2>
+        </div>
+      </div>
+
+      <div class="news-filters" id="newsFilters">
+        <button class="news-filter is-active" data-filter="all" data-i18n="news.filter_all">Все</button>
+        <button class="news-filter" data-filter="company" data-i18n="news.filter_company">Компания</button>
+        <button class="news-filter" data-filter="projects" data-i18n="news.filter_projects">Проекты</button>
+        <button class="news-filter" data-filter="industry" data-i18n="news.filter_industry">Промышленность</button>
+        <button class="news-filter" data-filter="media" data-i18n="news.filter_media">Медиа и события</button>
+      </div>
+
+      <div class="news-grid" id="newsGrid">
+
+        <!-- 1 -->
+        <article class="news-card" data-cat="industry">
+          <div class="news-card__image-wrap">
+            <div class="news-card__image news-card__image--1"></div>
+            <span class="news-cat news-cat--industry" data-i18n="news.filter_industry">Промышленность</span>
+          </div>
+          <div class="news-card__body">
+            <div class="news-card__meta">
+              <time datetime="2026-04-07">7 апреля 2026</time>
+              <span>4 мин</span>
+            </div>
+            <h3 class="news-card__title" data-i18n="news.n1.title">NMZ наращивает выпуск арматуры: производство выросло на 18% за квартал</h3>
+            <p class="news-card__excerpt" data-i18n="news.n1.excerpt">Наманганский металлургический завод завершил модернизацию прокатного стана и
+              вышел на новые показатели производства.</p>
+            <a href="news-item.html" class="news-card__link">
+              <span data-i18n="news.more_short">Подробнее</span>
+              <svg viewBox="0 0 16 16" aria-hidden="true">
+                <path d="M3 8h10M9 4l4 4-4 4" />
+              </svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- 2 -->
+        <article class="news-card" data-cat="company">
+          <div class="news-card__image-wrap">
+            <div class="news-card__image news-card__image--2"></div>
+            <span class="news-cat news-cat--company" data-i18n="news.filter_company">Компания</span>
+          </div>
+          <div class="news-card__body">
+            <div class="news-card__meta">
+              <time datetime="2026-03-28">28 марта 2026</time>
+              <span>3 мин</span>
+            </div>
+            <h3 class="news-card__title" data-i18n="news.n2.title">B.A. Holding подписал соглашение о создании нового JV с китайскими партнёрами
+            </h3>
+            <p class="news-card__excerpt" data-i18n="news.n2.excerpt">В рамках Ташкентского инвестиционного форума холдинг заключил соглашение о
+              совместном предприятии по производству металлоконструкций.</p>
+            <a href="news-item.html" class="news-card__link">
+              <span data-i18n="news.more_short">Подробнее</span>
+              <svg viewBox="0 0 16 16" aria-hidden="true">
+                <path d="M3 8h10M9 4l4 4-4 4" />
+              </svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- 3 -->
+        <article class="news-card" data-cat="projects">
+          <div class="news-card__image-wrap">
+            <div class="news-card__image news-card__image--3"></div>
+            <span class="news-cat news-cat--projects" data-i18n="news.filter_projects">Проекты</span>
+          </div>
+          <div class="news-card__body">
+            <div class="news-card__meta">
+              <time datetime="2026-03-20">20 марта 2026</time>
+              <span>5 мин</span>
+            </div>
+            <h3 class="news-card__title" data-i18n="news.n3.title">Джизакский металлургический завод выходит на проектную мощность 200 тыс. т/год
+            </h3>
+            <p class="news-card__excerpt" data-i18n="news.n3.excerpt">После завершения второй очереди строительства JMZ достиг плановых показателей
+              производства арматуры класса A400 и A500.</p>
+            <a href="news-item.html" class="news-card__link">
+              <span data-i18n="news.more_short">Подробнее</span>
+              <svg viewBox="0 0 16 16" aria-hidden="true">
+                <path d="M3 8h10M9 4l4 4-4 4" />
+              </svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- 4 -->
+        <article class="news-card" data-cat="industry">
+          <div class="news-card__image-wrap">
+            <div class="news-card__image news-card__image--4"></div>
+            <span class="news-cat news-cat--industry" data-i18n="news.filter_industry">Промышленность</span>
+          </div>
+          <div class="news-card__body">
+            <div class="news-card__meta">
+              <time datetime="2026-03-14">14 марта 2026</time>
+              <span>3 мин</span>
+            </div>
+            <h3 class="news-card__title" data-i18n="news.n4.title">FUXIN запустил новую линию горячего цинкования мощностью 5 000 т/год</h3>
+            <p class="news-card__excerpt" data-i18n="news.n4.excerpt">Ввод в эксплуатацию нового оборудования позволит увеличить долю
+              антикоррозионных покрытий в общем объёме выпуска предприятия.</p>
+            <a href="news-item.html" class="news-card__link">
+              <span data-i18n="news.more_short">Подробнее</span>
+              <svg viewBox="0 0 16 16" aria-hidden="true">
+                <path d="M3 8h10M9 4l4 4-4 4" />
+              </svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- 5 -->
+        <article class="news-card" data-cat="projects">
+          <div class="news-card__image-wrap">
+            <div class="news-card__image news-card__image--5"></div>
+            <span class="news-cat news-cat--projects" data-i18n="news.filter_projects">Проекты</span>
+          </div>
+          <div class="news-card__body">
+            <div class="news-card__meta">
+              <time datetime="2026-03-05">5 марта 2026</time>
+              <span>4 мин</span>
+            </div>
+            <h3 class="news-card__title" data-i18n="news.n5.title">B.A. Techno Park принял первых резидентов: шесть производственных компаний
+              начали работу</h3>
+            <p class="news-card__excerpt" data-i18n="news.n5.excerpt">Технопарк с железнодорожным доступом и подстанцией 10 МВт открыл площадки для
+              производителей сэндвич-панелей, лифтового оборудования и обоев.</p>
+            <a href="news-item.html" class="news-card__link">
+              <span data-i18n="news.more_short">Подробнее</span>
+              <svg viewBox="0 0 16 16" aria-hidden="true">
+                <path d="M3 8h10M9 4l4 4-4 4" />
+              </svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- 6 -->
+        <article class="news-card" data-cat="media">
+          <div class="news-card__image-wrap">
+            <div class="news-card__image news-card__image--6"></div>
+            <span class="news-cat news-cat--media" data-i18n="news.filter_media">Медиа и события</span>
+          </div>
+          <div class="news-card__body">
+            <div class="news-card__meta">
+              <time datetime="2026-02-27">27 февраля 2026</time>
+              <span>2 мин</span>
+            </div>
+            <h3 class="news-card__title" data-i18n="news.n6.title">B.A. Holding представил инвестиционный портфель на Ташкентском бизнес-форуме
+            </h3>
+            <p class="news-card__excerpt" data-i18n="news.n6.excerpt">Делегация холдинга провела серию переговоров с потенциальными партнёрами и
+              презентовала возможности для со-инвестирования в металлургические и строительные проекты.</p>
+            <a href="news-item.html" class="news-card__link">
+              <span data-i18n="news.more_short">Подробнее</span>
+              <svg viewBox="0 0 16 16" aria-hidden="true">
+                <path d="M3 8h10M9 4l4 4-4 4" />
+              </svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- 7 -->
+        <article class="news-card" data-cat="industry">
+          <div class="news-card__image-wrap">
+            <div class="news-card__image news-card__image--7"></div>
+            <span class="news-cat news-cat--industry" data-i18n="news.filter_industry">Промышленность</span>
+          </div>
+          <div class="news-card__body">
+            <div class="news-card__meta">
+              <time datetime="2026-02-18">18 февраля 2026</time>
+              <span>4 мин</span>
+            </div>
+            <h3 class="news-card__title" data-i18n="news.n7.title">Toshkent Plast Polimer открывает новый цех: 30+ видов изделий из вторичного
+              пластика</h3>
+            <p class="news-card__excerpt" data-i18n="news.n7.excerpt">Запуск третьего производственного корпуса увеличит общий объём переработки
+              пластика до 35 млн кв.м. и создаст дополнительно 80 рабочих мест.</p>
+            <a href="news-item.html" class="news-card__link">
+              <span data-i18n="news.more_short">Подробнее</span>
+              <svg viewBox="0 0 16 16" aria-hidden="true">
+                <path d="M3 8h10M9 4l4 4-4 4" />
+              </svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- 8 -->
+        <article class="news-card" data-cat="company">
+          <div class="news-card__image-wrap">
+            <div class="news-card__image news-card__image--8"></div>
+            <span class="news-cat news-cat--company" data-i18n="news.filter_company">Компания</span>
+          </div>
+          <div class="news-card__body">
+            <div class="news-card__meta">
+              <time datetime="2026-02-10">10 февраля 2026</time>
+              <span>6 мин</span>
+            </div>
+            <h3 class="news-card__title" data-i18n="news.n8.title">Стратегия B.A. Holding на 2026–2030: расширение до 15 предприятий и выход на
+              рынки СНГ</h3>
+            <p class="news-card__excerpt" data-i18n="news.n8.excerpt">Совет директоров утвердил пятилетний стратегический план, предусматривающий
+              открытие четырёх новых производственных объектов и увеличение численности персонала до 5 000 человек.</p>
+            <a href="news-item.html" class="news-card__link">
+              <span data-i18n="news.more_short">Подробнее</span>
+              <svg viewBox="0 0 16 16" aria-hidden="true">
+                <path d="M3 8h10M9 4l4 4-4 4" />
+              </svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- 9 -->
+        <article class="news-card" data-cat="industry">
+          <div class="news-card__image-wrap">
+            <div class="news-card__image news-card__image--9"></div>
+            <span class="news-cat news-cat--industry" data-i18n="news.filter_industry">Промышленность</span>
+          </div>
+          <div class="news-card__body">
+            <div class="news-card__meta">
+              <time datetime="2026-01-29">29 января 2026</time>
+              <span>3 мин</span>
+            </div>
+            <h3 class="news-card__title" data-i18n="news.n9.title">Emirate Steel установил рекорд выплавки стали — 58 тыс. тонн за квартал</h3>
+            <p class="news-card__excerpt" data-i18n="news.n9.excerpt">Завод в Бухарской области вышел на пиковые показатели производства благодаря
+              оптимизации плавильного оборудования и логистики поставок металлолома.</p>
+            <a href="news-item.html" class="news-card__link">
+              <span data-i18n="news.more_short">Подробнее</span>
+              <svg viewBox="0 0 16 16" aria-hidden="true">
+                <path d="M3 8h10M9 4l4 4-4 4" />
+              </svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- 10 -->
+        <article class="news-card" data-cat="projects">
+          <div class="news-card__image-wrap">
+            <div class="news-card__image news-card__image--10"></div>
+            <span class="news-cat news-cat--projects" data-i18n="news.filter_projects">Проекты</span>
+          </div>
+          <div class="news-card__body">
+            <div class="news-card__meta">
+              <time datetime="2026-01-21">21 января 2026</time>
+              <span>4 мин</span>
+            </div>
+            <h3 class="news-card__title" data-i18n="news.n10.title">Таджикский металлургический комбинат расширяет мощности: новая линия прокатки
+            </h3>
+            <p class="news-card__excerpt" data-i18n="news.n10.excerpt">Инвестиции в модернизацию комбината в г. Гулистан составят $12 млн.
+              Производительность вырастет до 70 тыс. т металлопроката в год.</p>
+            <a href="news-item.html" class="news-card__link">
+              <span data-i18n="news.more_short">Подробнее</span>
+              <svg viewBox="0 0 16 16" aria-hidden="true">
+                <path d="M3 8h10M9 4l4 4-4 4" />
+              </svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- 11 -->
+        <article class="news-card" data-cat="media">
+          <div class="news-card__image-wrap">
+            <div class="news-card__image news-card__image--11"></div>
+            <span class="news-cat news-cat--media" data-i18n="news.filter_media">Медиа и события</span>
+          </div>
+          <div class="news-card__body">
+            <div class="news-card__meta">
+              <time datetime="2026-01-15">15 января 2026</time>
+              <span>3 мин</span>
+            </div>
+            <h3 class="news-card__title" data-i18n="news.n11.title">Руководство B.A. Holding приняло участие в государственном совещании по
+              развитию промышленности</h3>
+            <p class="news-card__excerpt" data-i18n="news.n11.excerpt">Генеральный директор ассоциации Тожимирзаева Г.Б. выступила с докладом о роли
+              частного бизнеса в создании рабочих мест и импортозамещении.</p>
+            <a href="news-item.html" class="news-card__link">
+              <span data-i18n="news.more_short">Подробнее</span>
+              <svg viewBox="0 0 16 16" aria-hidden="true">
+                <path d="M3 8h10M9 4l4 4-4 4" />
+              </svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- 12 -->
+        <article class="news-card" data-cat="industry">
+          <div class="news-card__image-wrap">
+            <div class="news-card__image news-card__image--12"></div>
+            <span class="news-cat news-cat--industry" data-i18n="news.filter_industry">Промышленность</span>
+          </div>
+          <div class="news-card__body">
+            <div class="news-card__meta">
+              <time datetime="2026-01-08">8 января 2026</time>
+              <span>3 мин</span>
+            </div>
+            <h3 class="news-card__title" data-i18n="news.n12.title">AWINER AGRO поставил рекордный объём удобрений в зимний сезон — 2 500 т</h3>
+            <p class="news-card__excerpt" data-i18n="news.n12.excerpt">Компания расширила линейку агрохимической продукции до 100 наименований и
+              закрыла заказы аграрных хозяйств Ташкентской и Сырдарьинской областей.</p>
+            <a href="news-item.html" class="news-card__link">
+              <span data-i18n="news.more_short">Подробнее</span>
+              <svg viewBox="0 0 16 16" aria-hidden="true">
+                <path d="M3 8h10M9 4l4 4-4 4" />
+              </svg>
+            </a>
+          </div>
+        </article>
+
+      </div><!-- /.news-grid -->
+
+      <div class="news-grid-footer" id="newsGridFooter">
+        <p class="news-count" id="newsCount">Показано 12 из 12 материалов</p>
+        <div class="news-empty" id="newsEmpty" hidden>
+          <p data-i18n="news.empty">По вашему запросу ничего не найдено.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  </div><!-- /.page-shell -->
+
+  <!-- FOOTER -->
+  <footer class="footer" id="footer">
+    <div class="footer__main">
+      <div class="container">
+        <div class="footer__grid">
+          <div class="footer__brand">
+            <a href="index.html" class="footer__logo">
+              <img src="logo-light.png" alt="B.A. Holding" />
+            </a>
+            <p class="footer__brand-desc" data-i18n="footer.brand_desc">
+              Диверсифицированная холдинговая компания, управляющая проектами в сферах строительства, промышленности и
+              медиа с фокусом на стратегическое партнёрство с инвесторами.
+            </p>
+            <div class="footer__socials">
+              <a href="#" class="footer__social" aria-label="Telegram">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <defs>
+                    <linearGradient id="tg-grad" x1="0.5" y1="0" x2="0.5" y2="1">
+                      <stop offset="0" stop-color="#37BBFE"/>
+                      <stop offset="1" stop-color="#007DBB"/>
+                    </linearGradient>
+                  </defs>
+                  <circle cx="12" cy="12" r="12" fill="url(#tg-grad)"/>
+                  <path d="M5.49 11.6 17.3 7.04c.55-.2 1.03.13.85.96L16.13 18.5c-.14.66-.54.82-1.09.51l-3.02-2.23-1.46 1.4c-.16.16-.3.3-.6.3l.21-3.05 5.55-5.01c.24-.21-.05-.33-.37-.13l-6.86 4.32-2.96-.92c-.64-.2-.66-.64.05-.95z" fill="#fff"/>
+                </svg>
+              </a>
+              <a href="#" class="footer__social" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <defs>
+                    <radialGradient id="ig-grad" cx="0.3" cy="1.05" r="1.1">
+                      <stop offset="0" stop-color="#FED576"/>
+                      <stop offset="0.26" stop-color="#F47133"/>
+                      <stop offset="0.61" stop-color="#BC3081"/>
+                      <stop offset="1" stop-color="#4C63D2"/>
+                    </radialGradient>
+                  </defs>
+                  <rect x="2" y="2" width="20" height="20" rx="5.5" fill="url(#ig-grad)"/>
+                  <circle cx="12" cy="12" r="4.2" fill="none" stroke="#fff" stroke-width="1.7"/>
+                  <circle cx="17.3" cy="6.7" r="1.15" fill="#fff"/>
+                </svg>
+              </a>
+              <a href="#" class="footer__social" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <rect width="24" height="24" rx="3" fill="#0A66C2"/>
+                  <path d="M7.06 9.5h2.88V18.5H7.06V9.5zm1.44-4.05a1.67 1.67 0 1 1 0 3.34 1.67 1.67 0 0 1 0-3.34zM11.5 9.5h2.76v1.23h.04c.38-.72 1.32-1.48 2.72-1.48 2.91 0 3.45 1.92 3.45 4.41V18.5h-2.88v-4.4c0-1.05-.02-2.4-1.46-2.4-1.46 0-1.69 1.14-1.69 2.32V18.5H11.5V9.5z" fill="#fff"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="footer__col">
+            <h4 class="footer__col-title" data-i18n="footer.col_info">Информация</h4>
+            <ul class="footer__links">
+              <li><a href="about.html" data-i18n="nav.about">О компании</a></li>
+              <li><a href="projects.html" data-i18n="nav.projects">Проекты</a></li>
+              <li><a href="investors.html" data-i18n="nav.investors">Инвесторам</a></li>
+              <li><a href="career.html" data-i18n="nav.career">Карьера</a></li>
+              <li><a href="news.html" data-i18n="nav.news">Новости</a></li>
+              <li><a href="contacts.html" data-i18n="nav.contacts">Контакты</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h4 class="footer__col-title" data-i18n="footer.col_contacts">Контакты</h4>
+            <ul class="footer__contacts">
+              <li><a href="mailto:info@baholding.com">info@baholding.com</a></li>
+              <li><a href="tel:+998552032222">+998 55 203 22 22</a></li>
+              <li>г. Ташкент, Мирзо Улугбекский район,<br>ул. Мухаммада Юсуфа, д. 17</li>
+            </ul>
+          </div>
+          <div class="footer__col footer__col--map">
+            <h4 class="footer__col-title" data-i18n="footer.col_map">Мы на карте</h4>
+            <div class="footer__map">
+              <iframe src="https://yandex.com/map-widget/v1/?ll=69.279737%2C41.311081&z=11&pt=69.279737%2C41.311081%2Cpm2rdm" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="B.A. Holding на карте"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <div class="footer__bottom-inner">
+          <p class="footer__copy" data-i18n="footer.copy">&copy; 2026 B.A. Holding. Все права защищены.</p>
+          <div class="footer__legal">
+            <a href="#" data-i18n="footer.privacy">Политика конфиденциальности</a>
+            <a href="#" data-i18n="footer.terms">Условия использования</a>
+            <a href="#" data-i18n="footer.cookies">Политика cookies</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('header--scrolled', window.scrollY > 40);
+    });
+
+    const burgerBtn = document.getElementById('burgerBtn');
+    const nav = document.querySelector('.header__nav');
+    burgerBtn.addEventListener('click', () => {
+      nav.classList.toggle('header__nav--open');
+      burgerBtn.classList.toggle('header__burger--open');
+    });
+
+    document.querySelectorAll('a[href^="#"]').forEach(link => {
+      link.addEventListener('click', e => {
+        const id = link.getAttribute('href');
+        if (id === '#') return;
+        const target = document.querySelector(id);
+        if (target) {
+          e.preventDefault();
+          const top = target.getBoundingClientRect().top + window.scrollY - 80;
+          window.scrollTo({ top, behavior: 'smooth' });
+          nav.classList.remove('header__nav--open');
+          burgerBtn.classList.remove('header__burger--open');
+        }
+      });
+    });
+
+    /* ---- FILTER ---- */
+    const allCards = Array.from(document.querySelectorAll('.news-card'));
+    const filterBtns = Array.from(document.querySelectorAll('.news-filter'));
+    const countEl = document.getElementById('newsCount');
+    const emptyEl = document.getElementById('newsEmpty');
+
+    let activeFilter = 'all';
+    const CARD_DUR = 0.32;
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        if (btn.classList.contains('is-active')) return;
+        activeFilter = btn.dataset.filter;
+        filterBtns.forEach(b => b.classList.toggle('is-active', b === btn));
+        applyFilters({ animate: true });
+      });
+    });
+
+    const hideCardInstant = card => {
+      if (window.gsap) gsap.killTweensOf(card);
+      card.style.display = 'none';
+      card.style.opacity = '';
+      card.style.transform = '';
+    };
+
+    const showCard = (card, delay = 0) => {
+      if (!window.gsap) { card.style.display = ''; return; }
+      card.style.display = '';
+      gsap.killTweensOf(card);
+      gsap.fromTo(card,
+        { opacity: 0, scale: 0.92, y: 8 },
+        { opacity: 1, scale: 1, y: 0, duration: CARD_DUR, ease: 'power2.out', delay,
+          clearProps: 'opacity,transform'
+        });
+    };
+
+    function applyFilters({ animate = false } = {}) {
+      const toHide = [];
+      const visibleCards = [];
+
+      allCards.forEach(card => {
+        const catOk = activeFilter === 'all' || card.dataset.cat === activeFilter;
+        const wasHidden = card.style.display === 'none';
+
+        if (catOk) {
+          visibleCards.push(card);
+        } else if (!wasHidden) {
+          toHide.push(card);
+        }
+      });
+
+      if (animate && window.gsap) {
+        toHide.forEach(hideCardInstant);
+        visibleCards.forEach((c, i) => showCard(c, i * 0.08));
+      } else {
+        toHide.forEach(c => { c.style.display = 'none'; });
+        visibleCards.forEach(c => { c.style.display = ''; });
+      }
+
+      const tpl = (window.i18n && window.i18n.T[window.i18n.getLang()]['news.count_template'])
+        || 'Показано {visible} из {total} материалов';
+      countEl.textContent = tpl.replace('{visible}', visibleCards.length).replace('{total}', allCards.length);
+      emptyEl.hidden = visibleCards.length !== 0;
+    }
+
+    applyFilters();
+    document.addEventListener('i18n:change', () => applyFilters());
+
+    // Make every news card open the article view
+    document.querySelectorAll('.news-card').forEach(card => {
+      card.style.cursor = 'pointer';
+      card.addEventListener('click', e => {
+        if (e.target.closest('a, button')) return;
+        window.location.href = 'news-item.html';
+      });
+    });
+  </script>
+
+  <script src="modal.js"></script>
+
+  <!-- GSAP Animations -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="animations.js"></script>
+</body>
+
+</html>

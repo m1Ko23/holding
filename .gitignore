@@ -1,0 +1,17 @@
+# --- editor / OS junk ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# --- local Claude Code & Playwright state ---
+.claude/
+.playwright-mcp/
+
+# --- temp / log files ---
+*.log
+_patch_log.txt
+_err.log
+
+# --- assets too large for GitHub (100 MB hard limit per file) ---
+main-video.mp4

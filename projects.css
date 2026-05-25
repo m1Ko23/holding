@@ -1,0 +1,844 @@
+/* ===== PROJECTS PAGE STYLES ===== */
+
+/* Active nav link */
+.header__nav-link--active {
+  color: #fff;
+}
+
+.header--scrolled .header__nav-link--active {
+  color: #0f1b3d;
+}
+
+/* ===========================
+   STATS BAR
+=========================== */
+.proj-stats {
+  background: transparent;
+}
+
+.proj-stats__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background: transparent;
+}
+
+.proj-stats__item {
+  background: transparent;
+  height: 164px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 0 24px;
+  text-align: center;
+}
+
+.proj-stats__item:not(:first-child) {
+  border-left: 1px solid rgba(255, 255, 255, .1);
+}
+
+.proj-stats__number {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1;
+  color: #fff;
+}
+
+.proj-stats__label {
+  font-size: 17px;
+  font-weight: 400;
+  color: var(--color-muted);
+  line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+  .proj-stats__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .proj-stats__item {
+    height: 120px;
+  }
+
+  .proj-stats__item:not(:first-child) {
+    border-left: none;
+  }
+
+  .proj-stats__item:nth-child(2n) {
+    border-left: 1px solid rgba(255, 255, 255, .1);
+  }
+
+  .proj-stats__number {
+    font-size: 30px;
+  }
+
+  .proj-stats__label {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .proj-stats__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* ===========================
+   FLAGSHIP PROJECT
+=========================== */
+.flagship {
+  background: transparent;
+  padding: var(--section-pt) 0 этолт0px;
+  position: relative;
+  overflow: hidden;
+}
+
+.flagship__number {
+  position: absolute;
+  top: 24px;
+  left: 32px;
+  font-size: 320px;
+  font-weight: 700;
+  line-height: 1;
+  color: rgba(26, 42, 90, .4);
+  pointer-events: none;
+  user-select: none;
+}
+
+.flagship .container {
+  position: relative;
+  z-index: 1;
+}
+
+.flagship__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+  margin-top: 64px;
+}
+
+.flagship__image-col {
+  position: relative;
+  overflow: hidden;
+}
+
+.flagship__image {
+  width: 100%;
+  height: 560px;
+  object-fit: cover;
+  display: block;
+}
+
+.flagship__image-gradient {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(15, 27, 61, .5), transparent 60%);
+}
+
+.flagship__badge {
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(15, 27, 61, .8);
+  border: 0.8px solid rgba(255, 255, 255, .15);
+  padding: 10px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  letter-spacing: 0.02em;
+}
+
+.flagship__badge-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.flagship__info {
+  display: flex;
+  flex-direction: column;
+}
+
+.flagship__category {
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.flagship__title {
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #fff;
+  margin-bottom: 24px;
+}
+
+.flagship__desc {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.85;
+  color: var(--color-muted);
+  margin-bottom: 40px;
+}
+
+.flagship__meta {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 24px;
+  margin-bottom: 40px;
+  padding-top: 32px;
+  border-top: 0.8px solid rgba(255, 255, 255, .1);
+}
+
+.flagship__meta-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.flagship__meta-item img {
+  display: none;
+}
+
+.flagship__meta-item::before {
+  content: "";
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+  margin-top: 2px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.flagship__meta-item:nth-child(1)::before {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 22 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 20c4-5 7-8 7-11a7 7 0 0 0-14 0c0 3 3 6 7 11z' stroke='%23ffffff' stroke-width='1.6' stroke-linejoin='round'/%3E%3Ccircle cx='11' cy='9' r='2.5' stroke='%23ffffff' stroke-width='1.6'/%3E%3C/svg%3E");
+}
+
+.flagship__meta-item:nth-child(2)::before {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 22 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='11' cy='11' r='8' stroke='%23ffffff' stroke-width='1.6'/%3E%3Cpath d='m7 11 3 3 5-6' stroke='%23ffffff' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+}
+
+.flagship__meta-item:nth-child(3)::before {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 22 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='8' cy='8' r='3' stroke='%23ffffff' stroke-width='1.6'/%3E%3Cpath d='M2 19c0-3 3-5 6-5s6 2 6 5' stroke='%23ffffff' stroke-width='1.6' stroke-linecap='round'/%3E%3Ccircle cx='15' cy='9' r='2.5' stroke='%23ffffff' stroke-width='1.6'/%3E%3Cpath d='M13 19c0-2 1-4 3-4s4 1 4 4' stroke='%23ffffff' stroke-width='1.6' stroke-linecap='round'/%3E%3C/svg%3E");
+}
+
+.flagship__meta-item:nth-child(4)::before {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 22 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 3v16M7 6h6c1.5 0 2.5 1 2.5 2s-1 2-2.5 2H9c-1.5 0-2.5 1-2.5 2s1 2 2.5 2h6' stroke='%23ffffff' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+}
+
+.flagship__meta-item>div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.flagship__meta-label {
+  font-size: 11px;
+  font-weight: 400;
+  color: var(--color-muted);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.flagship__meta-value {
+  font-size: 15px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.proj-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.proj-btn__icon {
+  display: none;
+}
+
+.proj-btn::after {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3 8h10m-4-4 4 4-4 4' stroke='%23fff' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") no-repeat center / contain;
+  transition: transform .2s;
+}
+
+.proj-btn:hover::after {
+  transform: translateX(2px);
+}
+
+@media (max-width: 1000px) {
+  .flagship__grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .flagship__image {
+    height: 380px;
+  }
+
+  .flagship__number {
+    font-size: 180px;
+  }
+}
+
+/* ===========================
+   PORTFOLIO GRID
+=========================== */
+.portfolio {
+  background: transparent;
+  padding: 100px 0 80px;
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio__number {
+  position: absolute;
+  top: 24px;
+  right: 32px;
+  font-size: 320px;
+  font-weight: 700;
+  line-height: 1;
+  color: rgba(26, 42, 90, .4);
+  pointer-events: none;
+  user-select: none;
+}
+
+.portfolio .container {
+  position: relative;
+  z-index: 1;
+}
+
+.portfolio__header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.portfolio__search-wrap {
+  flex-shrink: 0;
+}
+
+.portfolio__search {
+  background: rgba(255, 255, 255, .05);
+  border: 0.8px solid rgba(255, 255, 255, .12);
+  color: #fff;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 300;
+  padding: 12px 20px;
+  width: 260px;
+  outline: none;
+  transition: border-color .2s;
+}
+
+.portfolio__search::placeholder {
+  color: #fff;
+}
+
+.portfolio__search:focus {
+  border-color: #fff;
+}
+
+/* Filters */
+.filters {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 48px;
+}
+
+.filters__row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.filter-btn {
+  background: transparent;
+  border: 0.8px solid rgba(255, 255, 255, .15);
+  color: var(--color-muted);
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all .2s;
+  white-space: nowrap;
+}
+
+.filter-btn:hover {
+  border-color: rgba(86, 124, 223, .5);
+  color: #fff;
+}
+
+.filter-btn--active {
+  background: var(--color-accent);
+  border-color: #fff;
+  color: #fff;
+}
+
+.filter-btn--sm {
+  font-size: 12px;
+  padding: 7px 14px;
+}
+
+/* Project Cards Grid */
+.proj-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.proj-card {
+  background: var(--color-bg);
+  border: 0.8px solid rgba(255, 255, 255, .07);
+  transition: border-color .2s, transform .3s;
+}
+
+.proj-card:hover {
+  border-color: rgba(86, 124, 223, .35);
+  transform: translateY(-4px);
+}
+
+.proj-card__image-wrap {
+  position: relative;
+  height: 220px;
+  overflow: hidden;
+}
+
+.proj-card__image {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: transform .5s ease;
+}
+
+.proj-card:hover .proj-card__image {
+  transform: scale(1.05);
+}
+
+/* Themed stock images per project */
+/* 1 NMZ — металлургия (локальный файл) */
+.proj-card__image--1  { background: linear-gradient(135deg,rgba(14,28,66,0.5),rgba(8,18,46,0.65)), url('assets/main/metallurgy.jpg') center/cover no-repeat; }
+/* 2 JMZ — металлургия (локальный файл) */
+.proj-card__image--2  { background: linear-gradient(135deg,rgba(14,28,66,0.5),rgba(8,18,46,0.65)), url('assets/main/metallurgy.jpg') center 30%/cover no-repeat; }
+/* 3 Emirate Steel — индустриальный объект */
+.proj-card__image--3  { background: linear-gradient(135deg,rgba(14,28,66,0.5),rgba(8,18,46,0.65)), url('https://images.unsplash.com/photo-1582407947304-fd86f028f716?auto=format&fit=crop&w=900&q=80') center/cover no-repeat; }
+/* 4 Таджикский металлургический комбинат — локальный */
+.proj-card__image--4  { background: linear-gradient(135deg,rgba(14,28,66,0.5),rgba(8,18,46,0.65)), url('assets/main/metallurgy.jpg') center 70%/cover no-repeat; }
+/* 5 China House Construction — жилые/коммерческие здания */
+.proj-card__image--5  { background: linear-gradient(135deg,rgba(14,28,66,0.5),rgba(8,18,46,0.65)), url('https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=900&q=80') center/cover no-repeat; }
+/* 6 FUXIN — металлоконструкции */
+.proj-card__image--6  { background: linear-gradient(135deg,rgba(14,28,66,0.5),rgba(8,18,46,0.65)), url('https://images.unsplash.com/photo-1488972685288-c3fd157d7c7a?auto=format&fit=crop&w=900&q=80') center/cover no-repeat; }
+/* 7 TPP — пластиковые контейнеры / производство */
+.proj-card__image--7  { background: linear-gradient(135deg,rgba(14,28,66,0.5),rgba(8,18,46,0.65)), url('https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=900&q=80') center/cover no-repeat; }
+/* 8 Shengli Steel — переработка отходов */
+.proj-card__image--8  { background: linear-gradient(135deg,rgba(14,28,66,0.5),rgba(8,18,46,0.65)), url('https://images.unsplash.com/photo-1530587191325-3db32d826c18?auto=format&fit=crop&w=900&q=80') center/cover no-repeat; }
+/* 9 Sirdarya Metal Construction — металлоконструкции (локальный) */
+.proj-card__image--9  { background: linear-gradient(135deg,rgba(14,28,66,0.5),rgba(8,18,46,0.65)), url('assets/main/metallurgy.jpg') center 50%/cover no-repeat; }
+/* 10 AWINER AGRO — поле / сельхозсектор */
+.proj-card__image--10 { background: linear-gradient(135deg,rgba(14,28,66,0.5),rgba(8,18,46,0.65)), url('https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&w=900&q=80') center/cover no-repeat; }
+/* 11 B.A. Techno Park — индустриальный комплекс */
+.proj-card__image--11 { background: linear-gradient(135deg,rgba(14,28,66,0.5),rgba(8,18,46,0.65)), url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=900&q=80') center/cover no-repeat; }
+/* 12 reserve slot — городской офис */
+.proj-card__image--12 { background: linear-gradient(135deg,rgba(14,28,66,0.5),rgba(8,18,46,0.65)), url('https://images.unsplash.com/photo-1503387762-4b0ac6c6d2bf?auto=format&fit=crop&w=900&q=80') center/cover no-repeat; }
+
+/* Status badge */
+.proj-card__status {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  padding: 4px 10px;
+  text-transform: uppercase;
+}
+
+.proj-card__status--done {
+  background: rgba(34, 197, 94, .15);
+  color: #fff;
+  border: 0.8px solid rgba(34, 197, 94, .3);
+}
+
+.proj-card__status--progress {
+  background: rgba(86, 124, 223, .15);
+  color: #fff;
+  border: 0.8px solid rgba(86, 124, 223, .3);
+}
+
+.proj-card__status--design {
+  background: rgba(234, 179, 8, .12);
+  color: #fff;
+  border: 0.8px solid rgba(234, 179, 8, .3);
+}
+
+.proj-card__body {
+  padding: 24px;
+}
+
+.proj-card__cat {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #fff;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.proj-card__title {
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  line-height: 1.3;
+  margin-bottom: 10px;
+}
+
+.proj-card__desc {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.75;
+  color: var(--color-muted);
+  margin-bottom: 20px;
+}
+
+.proj-card__meta {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding-top: 16px;
+  border-top: 0.8px solid rgba(255, 255, 255, .07);
+  margin-bottom: 16px;
+}
+
+.proj-card__meta-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.proj-card__meta-key,
+.proj-card__meta-val {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--color-muted);
+}
+
+.proj-card__meta-val {
+  text-align: right;
+  color: #fff;
+}
+
+.link-arrow--sm {
+  font-size: 14px;
+}
+
+.portfolio__count {
+  font-size: 14px;
+  color: var(--color-muted);
+  margin-top: 8px;
+}
+
+@media (max-width: 1000px) {
+  .proj-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .portfolio__number {
+    font-size: 180px;
+  }
+}
+
+@media (max-width: 700px) {
+  .portfolio__header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .portfolio__search {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .proj-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ===========================
+   GEOGRAPHY
+=========================== */
+.geography {
+  background: transparent;
+  padding: var(--section-pt) 0 80px;
+}
+
+.geography__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.geography__text {
+  display: flex;
+  flex-direction: column;
+}
+
+.geography__heading {
+  font-size: 36px;
+  font-weight: 300;
+  line-height: 1.25;
+  color: #fff;
+  margin: 24px 0 20px;
+}
+
+.geography__heading .fw-semibold {
+  font-weight: 600;
+}
+
+.geography__desc {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.85;
+  color: var(--color-muted);
+  margin-bottom: 32px;
+}
+
+.geography__cities {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px 20px;
+  margin-bottom: 40px;
+}
+
+.geography__city {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 0;
+  border-bottom: 0.8px solid rgba(255, 255, 255, .08);
+}
+
+.geography__city img {
+  display: none;
+}
+
+.geography__city::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10 18c4-5 6-8 6-10a6 6 0 0 0-12 0c0 2 2 5 6 10z' stroke='%23ffffff' stroke-width='1.5' stroke-linejoin='round'/%3E%3Ccircle cx='10' cy='8' r='2' fill='%23ffffff'/%3E%3C/svg%3E") no-repeat center / contain;
+}
+
+.geography__city>div {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.geography__city strong {
+  font-size: 15px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.geography__city span {
+  font-size: 12px;
+  color: var(--color-muted);
+}
+
+.geography__map-col {
+  position: relative;
+  overflow: hidden;
+}
+
+.geography__map {
+  width: 100%;
+  height: 520px;
+  object-fit: cover;
+  display: block;
+}
+
+.geography__map-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, rgba(15, 27, 61, .2), transparent);
+}
+
+.geography__badge {
+  position: absolute;
+  bottom: 32px;
+  right: 32px;
+  width: 120px;
+  height: 120px;
+  background: #273477;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+.geography__badge-number {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1;
+  color: #fff;
+}
+
+.geography__badge-label {
+  font-size: 12px;
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
+}
+
+.geography__corner-tl {
+  position: absolute;
+  top: -16px;
+  left: -16px;
+  width: 64px;
+  height: 64px;
+  border-top: 1.6px solid rgba(86, 124, 223, .3);
+  border-left: 1.6px solid rgba(86, 124, 223, .3);
+}
+
+@media (max-width: 1000px) {
+  .geography__grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .geography__map {
+    height: 360px;
+  }
+}
+
+/* ===========================
+   SECTORS
+=========================== */
+.sectors {
+  background: transparent;
+  padding: var(--section-pt) 0 80px;
+  position: relative;
+  overflow: hidden;
+}
+
+.sectors__number {
+  position: absolute;
+  top: 24px;
+  left: 32px;
+  font-size: 320px;
+  font-weight: 700;
+  line-height: 1;
+  color: rgba(26, 42, 90, .4);
+  pointer-events: none;
+  user-select: none;
+}
+
+.sectors .container {
+  position: relative;
+  z-index: 1;
+}
+
+.sectors__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background: rgba(255, 255, 255, .06);
+}
+
+.sector-card {
+  background: var(--color-bg-alt);
+  padding: 40px;
+}
+
+.sector-card__count {
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 1;
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+.sector-card__name {
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 8px;
+}
+
+.sector-card__share {
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff;
+  letter-spacing: 0.03em;
+  margin-bottom: 0;
+}
+
+.sector-card__divider {
+  height: 0.8px;
+  background: rgba(255, 255, 255, .1);
+  margin: 24px 0;
+}
+
+.sector-card__meta {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sector-card__meta>div {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.sector-card__meta-label {
+  font-size: 11px;
+  font-weight: 400;
+  color: var(--color-muted);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.sector-card__meta-value {
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+}
+
+@media (max-width: 1000px) {
+  .sectors__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .sectors__number {
+    font-size: 180px;
+  }
+}
+
+@media (max-width: 500px) {
+  .sectors__grid {
+    grid-template-columns: 1fr;
+  }
+}
