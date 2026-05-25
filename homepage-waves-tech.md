@@ -290,7 +290,7 @@ body {
 
 Hero состоит из трёх фоновых слоёв:
 
-1. Основная картинка `hero.png`
+1. Основная картинка `hero.webp`
 2. Радиальные цветовые пятна поверх картинки
 3. Тёмный прозрачный overlay для затемнения и читаемости текста
 
@@ -304,7 +304,7 @@ Hero состоит из трёх фоновых слоёв:
   className="absolute inset-0 z-0"
 >
   <Image
-    src="/home/hero.png"
+    src="/home/hero.webp"
     alt="B.A. Holding hero background"
     fill
     priority

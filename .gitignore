@@ -15,3 +15,5 @@ _err.log
 
 # --- assets too large for GitHub (100 MB hard limit per file) ---
 main-video.mp4
+__pycache__/
+_err.log

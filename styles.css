@@ -1905,8 +1905,8 @@ ul {
   margin-top: 4px;
 }
 
-/* HQ holding logo is the white logo-light.png — render it without the white pill */
-.geography__panel-logo[src$="logo-light.png"] {
+/* HQ holding logo is the white logo-light.webp — render it without the white pill */
+.geography__panel-logo[src$="logo-light.webp"] {
   background: transparent;
   padding: 0;
   border-radius: 0;

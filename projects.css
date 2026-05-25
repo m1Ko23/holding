@@ -434,13 +434,13 @@
 
 /* Themed stock images per project */
 /* 1 NMZ — металлургия (локальный файл) */
-.proj-card__image--1  { background: linear-gradient(135deg,rgba(14,28,66,0.5),rgba(8,18,46,0.65)), url('assets/main/metallurgy.jpg') center/cover no-repeat; }
+.proj-card__image--1  { background: linear-gradient(135deg,rgba(14,28,66,0.5),rgba(8,18,46,0.65)), url('assets/main/metallurgy.webp') center/cover no-repeat; }
 /* 2 JMZ — металлургия (локальный файл) */
-.proj-card__image--2  { background: linear-gradient(135deg,rgba(14,28,66,0.5),rgba(8,18,46,0.65)), url('assets/main/metallurgy.jpg') center 30%/cover no-repeat; }
+.proj-card__image--2  { background: linear-gradient(135deg,rgba(14,28,66,0.5),rgba(8,18,46,0.65)), url('assets/main/metallurgy.webp') center 30%/cover no-repeat; }
 /* 3 Emirate Steel — индустриальный объект */
 .proj-card__image--3  { background: linear-gradient(135deg,rgba(14,28,66,0.5),rgba(8,18,46,0.65)), url('https://images.unsplash.com/photo-1582407947304-fd86f028f716?auto=format&fit=crop&w=900&q=80') center/cover no-repeat; }
 /* 4 Таджикский металлургический комбинат — локальный */
-.proj-card__image--4  { background: linear-gradient(135deg,rgba(14,28,66,0.5),rgba(8,18,46,0.65)), url('assets/main/metallurgy.jpg') center 70%/cover no-repeat; }
+.proj-card__image--4  { background: linear-gradient(135deg,rgba(14,28,66,0.5),rgba(8,18,46,0.65)), url('assets/main/metallurgy.webp') center 70%/cover no-repeat; }
 /* 5 China House Construction — жилые/коммерческие здания */
 .proj-card__image--5  { background: linear-gradient(135deg,rgba(14,28,66,0.5),rgba(8,18,46,0.65)), url('https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=900&q=80') center/cover no-repeat; }
 /* 6 FUXIN — металлоконструкции */
@@ -450,7 +450,7 @@
 /* 8 Shengli Steel — переработка отходов */
 .proj-card__image--8  { background: linear-gradient(135deg,rgba(14,28,66,0.5),rgba(8,18,46,0.65)), url('https://images.unsplash.com/photo-1530587191325-3db32d826c18?auto=format&fit=crop&w=900&q=80') center/cover no-repeat; }
 /* 9 Sirdarya Metal Construction — металлоконструкции (локальный) */
-.proj-card__image--9  { background: linear-gradient(135deg,rgba(14,28,66,0.5),rgba(8,18,46,0.65)), url('assets/main/metallurgy.jpg') center 50%/cover no-repeat; }
+.proj-card__image--9  { background: linear-gradient(135deg,rgba(14,28,66,0.5),rgba(8,18,46,0.65)), url('assets/main/metallurgy.webp') center 50%/cover no-repeat; }
 /* 10 AWINER AGRO — поле / сельхозсектор */
 .proj-card__image--10 { background: linear-gradient(135deg,rgba(14,28,66,0.5),rgba(8,18,46,0.65)), url('https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&w=900&q=80') center/cover no-repeat; }
 /* 11 B.A. Techno Park — индустриальный комплекс */
