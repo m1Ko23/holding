@@ -2,4 +2,8 @@ name = "holding"
 compatibility_date = "2025-05-25"
 
 [assets]
-directory = "."
+directory = "./"
+not_found_handling = "single-page-application"
+
+[build]
+exclude = [".git"]
